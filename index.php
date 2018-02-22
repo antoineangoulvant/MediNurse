@@ -34,13 +34,13 @@
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="charts.php">
                     <i class="fa fa-fw fa-area-chart"></i>
                     <span class="nav-link-text">Charts</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="tables.php">
                     <i class="fa fa-fw fa-table"></i>
                     <span class="nav-link-text">Tables</span>
                 </a>
@@ -52,10 +52,10 @@
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapseComponents">
                     <li>
-                        <a href="navbar.html">Navbar</a>
+                        <a href="navbar.php">Navbar</a>
                     </li>
                     <li>
-                        <a href="cards.html">Cards</a>
+                        <a href="cards.php">Cards</a>
                     </li>
                 </ul>
             </li>
@@ -66,16 +66,16 @@
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapseExamplePages">
                     <li>
-                        <a href="login.html">Login Page</a>
+                        <a href="login.php">Login Page</a>
                     </li>
                     <li>
-                        <a href="register.html">Registration Page</a>
+                        <a href="register.php">Registration Page</a>
                     </li>
                     <li>
-                        <a href="forgot-password.html">Forgot Password Page</a>
+                        <a href="forgot-password.php">Forgot Password Page</a>
                     </li>
                     <li>
-                        <a href="blank.html">Blank Page</a>
+                        <a href="blank.php">Blank Page</a>
                     </li>
                 </ul>
             </li>
@@ -1102,7 +1102,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <a class="btn btn-primary" href="login.php">Logout</a>
                 </div>
             </div>
         </div>

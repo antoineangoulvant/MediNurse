@@ -29,8 +29,8 @@
                         <div class="text-center"><button type="submit" class="btn btn-primary">Connexion</button></div>
                     </form>
                     <div class="text-center">
-                        <?php //<a class="d-block small mt-3" href="register.html">Register an Account</a> ?>
-                        <a class="d-block small mt-3" href="forgot-password.html">Mot de passe oublié</a>
+                        <?php //<a class="d-block small mt-3" href="register.php">Register an Account</a> ?>
+                        <a class="d-block small mt-3" href="forgot-password.php">Mot de passe oublié</a>
                     </div>
                 </div>
             </div>
