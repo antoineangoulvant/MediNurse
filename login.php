@@ -30,7 +30,7 @@
                     </form>
                     <div class="text-center">
                         <?php //<a class="d-block small mt-3" href="register.php">Register an Account</a> ?>
-                        <a class="d-block small mt-3" href="forgot-password.php">Mot de passe oublié</a>
+                        <!--<a class="d-block small mt-3" href="forgot-password.php">Mot de passe oublié</a>-->
                     </div>
                 </div>
             </div>
