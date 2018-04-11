@@ -1,0 +1,3306 @@
+	/**
+	 * Feuille de style de phpMyLab.
+	 *
+	 * Date de création : 3 Avril 2012<br/>
+	 * Date de dernière modification : 7 Aout 2012
+	 * @version 1.2.0
+	 * @author Cedric Gagnevin <cedric.gagnevin@laposte.net>
+	 * @license http://www.cecill.info/licences/Licence_CeCILL_V2-en.html
+	 * @copyright CNRS (c) 2015
+	 * @package phpMyLab
+	 */
+	
+	/*********************************************************************************
+	 ******************************  PLAN     ****************************************
+	 *********************************************************************************
+	
+		  | - A -  Styles globaux
+		  | - A1-  Bouton MISSIONS
+		  | - A2-  Bouton CONGES
+		  | - A3-  Bouton PLANNING
+		  | - A4-  Bouton EXPEDITION
+		  | - A5-  Bouton SHARE
+	      	  | - B -  Reception.php
+		  | - B1-  Interface d'authentification
+		  | - B2-  Interface de changement de mot de passe
+		  | - C -  Styles communs à tous les modules
+		  | - C1-  Module MISSIONS
+		  | - C2-  Module CONGES
+		  | - C21- 	Fenetre modale pour les conges
+		  | - C3-  Module PLANNING
+		  | - C4-  Module EXPEDITIONS
+		  | - C5-  Module SHARE/INVENTAIRE
+		  | - C6-  Module COMMUNITY
+
+
+/*********************************************************************************
+*************************** A-  Styles globaux ***********************************
+**********************************************************************************/
+
+body
+{
+	font-family: verdana,arial,helvetica,geneva,sans-serif;
+	font-size: 0.9em;
+	background: -moz-radial-gradient(circle, white, #EFEFEF);
+	background:-webkit-radial-gradient(circle, white, #EFEFEF); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-radial-gradient(circle, white, #EFEFEF); /* pour Firefox 3.6+ */
+	background:-ms-radial-gradient(circle, white, #EFEFEF); /* pour pour IE 10+ */
+	background:-o-radial-gradient(circle, white, #EFEFEF); /* pour Opera 11.10+ */
+	background:radial-gradient(circle, white, #EFEFEF); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='white',endColorstr='#EFEFEF', GradientType=0); /* dégradé pour IE 9- */
+	padding: 20px 0px 0px 0px;
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+/* Pour IE de sorte a ce que le background prenne toute la fenetre (evite les blancs) */
+html
+{
+	height: 100%;
+	width: 100%;
+}
+
+/* Pas défaut les liens ne sont pas soulignes */
+a
+{
+	text-decoration: none;
+}
+
+img
+{
+	border: none;
+}
+
+label[for]
+{
+	cursor: pointer;
+}
+
+.cursor_pointer
+{
+	cursor: pointer;
+}
+
+input
+{
+	height: 20px;
+}
+
+input[type=submit], input[type=button]
+{
+	min-height: 25px;
+}
+
+/* Classe de centrage */
+.centrer
+{
+	text-align: center;
+}
+
+/* Classe de centrage pour les elements de type bloc */
+.centrerBloc
+{
+	margin: auto;
+}
+
+/* Classe pour mettre en gras */
+.gras
+{
+	font-weight: bold;
+}
+
+/* Classe pour mettre une marge interieur de 60px a gauche */
+.padding
+{
+	padding-left: 60px;
+}
+
+/* Classe pour mettre en vert */
+.vert
+{
+	color: #33CC00;
+}
+
+/* Classe pour mettre en rouge */
+.rouge
+{
+	color: red;
+}
+
+/* Date + heure actuelle */
+.dateHeure
+{
+	text-align: right;
+	color: #15266D;
+}
+
+/* Align le texte a droite */
+.alignDroite
+{
+	text-align: right;
+}
+
+/* Align le texte a gauche */
+.alignGauche
+{
+	text-align: left;
+}
+
+
+/* Ligne foncee */
+.ligne_foncee
+{
+	background-color: #EBEAED;
+}
+
+/* Ligne claire */
+.ligne_claire
+{
+	background-color: #FAF9FC;
+}
+
+
+/* Champs en lecture seule */
+input[readonly]
+{
+	background-color: #E8E8E8;
+}
+
+#footer a
+{
+	color: #15266D;
+	text-decoration: underline;
+}
+
+#footer a:hover
+{
+	color: white;
+}
+
+
+#footer input[id=dateCourante]
+{
+	background-color: transparent;
+	border: none;
+	padding-left: 10px;
+	font-size: 1em;
+	color: #15266D;
+}
+
+#footer td:first-child
+{
+	padding-left: 20px;
+}
+
+/* Pied de page */
+#footer
+{
+	width: 100%;
+	background: #53708A;
+	background:-webkit-gradient(linear, left top, left bottom, from(#b8c4ce), to(#193F63)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#b8c4ce,#193F63); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#b8c4ce,#193F63); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#b8c4ce,#193F63); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#b8c4ce,#193F63); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b8c4ce',endColorstr='#193F63', GradientType=0); /* dégradé pour IE 9- */
+	-webkit-border-radius: 0px 0px 13px 13px;
+	-moz-border-radius: 0px 0px 13px 13px;
+	-ms-border-radius: 0px 0px 13px 13px;
+	-o-border-radius: 0px 0px 13px 13px;
+	border-radius: 0px 0px 13px 13px;
+	color: #595959;
+	height: 60px;
+	font-size: 0.85em;
+	border-top: solid 3px #cacaca;
+}
+
+/*********************************************************************************
+*************************** A1-  Bouton MISSIONS *********************************
+**********************************************************************************/
+
+/* Style du bouton "missions" */             /* et des boutons submit dans MISSIONS */
+#authentification input[name=missions_bouton], #aller_retourANDcommentaire #mission_envoyer, #aller_retourANDcommentaire #mission_annuler, .bouton_missions
+{
+	font-size:1.2em;
+	margin-top: 20px;
+    height:35px;
+    line-height:7px; 
+    text-align:center;
+    color: #238DFF;
+    background: #282828;
+	background:-webkit-gradient(linear, left top, left bottom, from(#282828), to(#606060)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#282828,#606060); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#282828,#606060); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#282828,#606060); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#282828,#606060); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+	
+	text-shadow:0px 1px 0px black;
+	-webkit-box-shadow:0 0 5px rgba(0,0,0,0.5),
+                       0 -1px 0 rgba(255,255,255,0.4);
+	-moz-box-shadow:0 0 5px rgba(0,0,0,0.5),
+					0 -1px 0 rgba(255,255,255,0.4);
+	-ms-box-shadow:0 0 5px rgba(0,0,0,0.5),
+                       0 -1px 0 rgba(255,255,255,0.4);
+	-o-box-shadow:0 0 5px rgba(0,0,0,0.5),
+                       0 -1px 0 rgba(255,255,255,0.4);
+	box-shadow:0 0 5px rgba(0,0,0,0.5),
+			   0 -1px 0 rgba(255,255,255,0.4);
+	cursor: pointer;
+}
+
+/* Style lors du survol du bouton "missions" */             /* et des boutons submit dans MISSIONS */
+#authentification input[name=missions_bouton]:hover, #aller_retourANDcommentaire #mission_envoyer:hover, #aller_retourANDcommentaire #mission_annuler:hover, .bouton_missions:hover
+{
+	text-shadow:0px 1px 0px rgba(255,255,255,0.2);
+	color: black;
+	background: #6699FF;
+	background:-webkit-gradient(linear, left top, left bottom, from(#6699FF), to(#3366FF)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#6699FF,#3366FF); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#6699FF,#3366FF); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#6699FF,#3366FF); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#606060,#3366FF); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+}
+
+/* Style lors du clic sur le bouton "missions" */             /* et des boutons submit dans MISSIONS */
+#authentification input[name=missions_bouton]:active, #aller_retourANDcommentaire #mission_envoyer:active, #aller_retourANDcommentaire #mission_annuler:active, .bouton_missions:active
+{
+    color: black;
+	background: #3366FF;
+	background:-webkit-gradient(linear, left top, left bottom, from(#3366FF), to(#6699FF)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#3366FF,#6699FF); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#3366FF,#6699FF); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#3366FF,#6699FF); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#3366FF,#6699FF); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+
+	
+    -webkit-box-shadow:1px 1px 10px #185991 inset, 0 1px 0 rgba(255,255,255,0.4);
+	-moz-box-shadow:1px 1px 10px #185991 inset, 0 1px 0 rgba(255,255,255,0.4);
+	-ms-box-shadow:1px 1px 10px #185991 inset, 0 1px 0 rgba(255,255,255,0.4);
+	-o-box-shadow:1px 1px 10px #185991 inset, 0 1px 0 rgba(255,255,255,0.4);
+	box-shadow:1px 1px 10px #185991 inset, 0 1px 0 rgba(255,255,255,0.4);
+}
+
+/*********************************************************************************
+***************************** A2-  Bouton CONGES *********************************
+**********************************************************************************/
+
+/* Style du bouton "conges" */						/* et des boutons submit dans CONGES */
+#authentification input[name=conges_bouton], #debut_finANDcommentaire #conge_envoyer, #debut_finANDcommentaire #conge_annuler, .bouton_conges
+{
+	font-size:1.2em;
+    height:35px;
+    line-height:7px; 
+    text-align:center;
+    color: #49AD35;
+    background: #282828;
+	background:-webkit-gradient(linear, left top, left bottom, from(#282828), to(#606060)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#282828,#606060); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#282828,#606060); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#282828,#606060); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#282828,#606060); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+	
+	text-shadow:0px 1px 0px black;
+	-webkit-box-shadow:0 0 5px rgba(0,0,0,0.5),
+                       0 -1px 0 rgba(255,255,255,0.4);
+	-moz-box-shadow:0 0 5px rgba(0,0,0,0.5),
+					0 -1px 0 rgba(255,255,255,0.4);
+	-ms-box-shadow:0 0 5px rgba(0,0,0,0.5),
+                       0 -1px 0 rgba(255,255,255,0.4);
+	-o-box-shadow:0 0 5px rgba(0,0,0,0.5),
+                       0 -1px 0 rgba(255,255,255,0.4);
+	box-shadow:0 0 5px rgba(0,0,0,0.5),
+			   0 -1px 0 rgba(255,255,255,0.4);
+	cursor: pointer;
+}
+
+/* Style lors du survol du bouton "conges" */				/* et des boutons submit dans CONGES */
+#authentification input[name=conges_bouton]:hover, #debut_finANDcommentaire #conge_envoyer:hover, #debut_finANDcommentaire #conge_annuler:hover,.bouton_conges:hover
+{
+	color:black;
+	text-shadow:0px 1px 0px lightgrey;
+	background: #9FFF51;
+	background:-webkit-gradient(linear, left top, left bottom, from(#9FFF51), to(#68d256)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#9FFF51,#68d256); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#9FFF51,#68d256); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#9FFF51,#68d256); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#9FFF51,#68d256); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+
+}
+
+/* Style lors du clic sur le bouton "conges" */				/* et des boutons submit dans CONGES */
+#authentification input[name=conges_bouton]:active, #debut_finANDcommentaire #conge_envoyer:active, #debut_finANDcommentaire #conge_annuler:active, .bouton_conges:active
+{
+    color: black;
+	background: #00CC00;
+	background:-webkit-gradient(linear, left top, left bottom, from(#00CC00), to(#9FFF51)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#00CC00,#9FFF51); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#00CC00,#9FFF51); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#00CC00,#9FFF51); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#00CC00,#9FFF51); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+
+	
+    -webkit-box-shadow:1px 1px 10px #17A81E inset, 0 1px 0 rgba(255,255,255,0.4);
+	-moz-box-shadow:1px 1px 10px #17A81E inset, 0 1px 0 rgba(255,255,255,0.4);
+	-ms-box-shadow:1px 1px 10px #17A81E inset, 0 1px 0 rgba(255,255,255,0.4);
+	-o-box-shadow:1px 1px 10px #17A81E inset, 0 1px 0 rgba(255,255,255,0.4);
+	box-shadow:1px 1px 10px #17A81E inset, 0 1px 0 rgba(255,255,255,0.4);
+}
+
+
+/*********************************************************************************
+***************************** A3-  Bouton PLANNING *******************************
+**********************************************************************************/
+
+/* Style du bouton "planning" */
+#authentification input[name=planning_bouton]
+{
+	font-size:1.2em;
+    height:35px;
+    line-height:7px; 
+    text-align:center;
+    color: #3EB1B7;
+    background: #282828;
+	background:-webkit-gradient(linear, left top, left bottom, from(#282828), to(#606060)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#282828,#606060); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#282828,#606060); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#282828,#606060); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#282828,#606060); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+	
+	text-shadow:0px 1px 0px black;
+	-webkit-box-shadow:0 0 5px rgba(0,0,0,0.5),
+                       0 -1px 0 rgba(255,255,255,0.4);
+	-moz-box-shadow:0 0 5px rgba(0,0,0,0.5),
+					0 -1px 0 rgba(255,255,255,0.4);
+	-ms-box-shadow:0 0 5px rgba(0,0,0,0.5),
+                       0 -1px 0 rgba(255,255,255,0.4);
+	-o-box-shadow:0 0 5px rgba(0,0,0,0.5),
+                       0 -1px 0 rgba(255,255,255,0.4);
+	box-shadow:0 0 5px rgba(0,0,0,0.5),
+			   0 -1px 0 rgba(255,255,255,0.4);
+	cursor: pointer;
+	
+}
+
+/* Style lors du survol du bouton "planning" */
+#authentification input[name=planning_bouton]:hover
+{
+	color:black;
+	text-shadow:0px 1px 0px lightgrey;
+	background: #62F7B2;
+	background:-webkit-gradient(linear, left top, left bottom, from(#62F7B2), to(#50C991)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#62F7B2,#50C991); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#62F7B2,#50C991); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#62F7B2,#50C991); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#62F7B2,#50C991); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+
+}
+
+/* Style lors du clic sur le bouton "planning" */
+#authentification input[name=planning_bouton]:active
+{
+    color:black;
+	background: #50C991;
+	background:-webkit-gradient(linear, left top, left bottom, from(#50C991), to(#62F7B2)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#50C991,#62F7B2); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#50C991,#62F7B2); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#50C991,#62F7B2); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#50C991,#62F7B2); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+
+	
+    	-webkit-box-shadow:1px 1px 10px #3E9B6E inset, 0 1px 0 rgba(255,255,255,0.4);
+	-moz-box-shadow:1px 1px 10px #3E9B6E inset, 0 1px 0 rgba(255,255,255,0.4);
+	-ms-box-shadow:1px 1px 10px #3E9B6E inset, 0 1px 0 rgba(255,255,255,0.4);
+	-o-box-shadow:1px 1px 10px #3E9B6E inset, 0 1px 0 rgba(255,255,255,0.4);
+	box-shadow:1px 1px 10px #3E9B6E inset, 0 1px 0 rgba(255,255,255,0.4);
+}
+
+
+
+/*********************************************************************************
+***************************** A4-  Bouton EXPEDITION *****************************
+**********************************************************************************/
+
+/* Style du bouton "expeditions" */						/* et des boutons submit dans EXPEDITIONS */
+#authentification input[name=expeditions_bouton], #expedition_envoyer, #expedition_annuler, .bouton_expedition
+{
+	font-size:1.2em;
+	height:35px;
+	line-height:7px; 
+	text-align:center;
+	color: #FFE049;
+	background: #282828;
+	background:-webkit-gradient(linear, left top, left bottom, from(#282828), to(#606060)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#282828,#606060); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#282828,#606060); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#282828,#606060); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#282828,#606060); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+	
+	text-shadow:0px 1px 0px black;
+	-webkit-box-shadow:0 0 5px rgba(0,0,0,0.5),
+                       0 -1px 0 rgba(255,255,255,0.4);
+	-moz-box-shadow:0 0 5px rgba(0,0,0,0.5),
+					0 -1px 0 rgba(255,255,255,0.4);
+	-ms-box-shadow:0 0 5px rgba(0,0,0,0.5),
+                       0 -1px 0 rgba(255,255,255,0.4);
+	-o-box-shadow:0 0 5px rgba(0,0,0,0.5),
+                       0 -1px 0 rgba(255,255,255,0.4);
+	box-shadow:0 0 5px rgba(0,0,0,0.5),
+			   0 -1px 0 rgba(255,255,255,0.4);
+	cursor: pointer;
+}
+
+/* Style lors du survol du bouton "expeditions" */				/* et des boutons submit dans EXPEDITIONS */
+#authentification input[name=expeditions_bouton]:hover, #expedition_envoyer:hover, #expedition_annuler:hover, .bouton_expedition:hover
+{
+	color:black;
+	text-shadow:0px 1px 0px lightgrey;
+	background: #FFF53F;
+	background:-webkit-gradient(linear, left top, left bottom, from(#FFF53F), to(#F2D246)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#FFF53F,#F2D246); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#FFF53F,#F2D246); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#FFF53F,#F2D246); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#FFF53F,#F2D246); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+
+}
+
+/* Style lors du clic du bouton "expeditions" */				/* et des boutons submit dans EXPEDITIONS */
+#authentification input[name=expeditions_bouton]:active, #expedition_envoyer:active, #expedition_annuler:active, .bouton_expedition:active
+{
+    	color: black;
+	background: #F2D246;
+	background:-webkit-gradient(linear, left top, left bottom, from(#F2D246), to(#FFF53F)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#F2D246,#FFF53F); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#F2D246,#FFF53F); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#F2D246,#FFF53F); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#F2D246,#FFF53F); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+
+	
+    	-webkit-box-shadow:1px 1px 10px #DDC040 inset, 0 1px 0 rgba(255,255,255,0.4);
+	-moz-box-shadow:1px 1px 10px #DDC040 inset, 0 1px 0 rgba(255,255,255,0.4);
+	-ms-box-shadow:1px 1px 10px #DDC040 inset, 0 1px 0 rgba(255,255,255,0.4);
+	-o-box-shadow:1px 1px 10px #DDC040 inset, 0 1px 0 rgba(255,255,255,0.4);
+	box-shadow:1px 1px 10px #DDC040 inset, 0 1px 0 rgba(255,255,255,0.4);
+}
+
+
+
+/*********************************************************************************
+***************************** A5-  Bouton SHARE **********************************
+**********************************************************************************/
+
+/* Style du bouton "share" */						
+#authentification input[name=share_bouton]
+{
+	font-size:1.2em;
+	height:35px;
+	line-height:7px; 
+	text-align:center;
+	color: lightgrey;
+	background: #282828;
+	background:-webkit-gradient(linear, left top, left bottom, from(#282828), to(#606060)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#282828,#606060); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#282828,#606060); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#282828,#606060); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#282828,#606060); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+	
+	text-shadow:0px 1px 0px black;
+	-webkit-box-shadow:0 0 5px rgba(0,0,0,0.5),
+                       0 -1px 0 rgba(255,255,255,0.4);
+	-moz-box-shadow:0 0 5px rgba(0,0,0,0.5),
+					0 -1px 0 rgba(255,255,255,0.4);
+	-ms-box-shadow:0 0 5px rgba(0,0,0,0.5),
+                       0 -1px 0 rgba(255,255,255,0.4);
+	-o-box-shadow:0 0 5px rgba(0,0,0,0.5),
+                       0 -1px 0 rgba(255,255,255,0.4);
+	box-shadow:0 0 5px rgba(0,0,0,0.5),
+			   0 -1px 0 rgba(255,255,255,0.4);
+	cursor: pointer;
+}
+
+/* Style lors du survol du bouton "share" */
+#authentification input[name=share_bouton]:hover
+{
+	color:black;
+	text-shadow:0px 1px 0px grey;
+	background: lightgrey;
+	background:-webkit-gradient(linear, left top, left bottom, from(#F4F4F4), to(#DBDBDB)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#F4F4F4,#DBDBDB); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#F4F4F4,#DBDBDB); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#F4F4F4,#DBDBDB); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#F4F4F4,#DBDBDB); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+
+}
+
+/* Style lors du clic du bouton "share" */	
+#authentification input[name=share_bouton]:active
+{
+    	color: black;
+	background: #DBDBDB;
+	background:-webkit-gradient(linear, left top, left bottom, from(#DBDBDB), to(#F4F4F4)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#DBDBDB,#F4F4F4); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#DBDBDB,#F4F4F4); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#DBDBDB,#F4F4F4); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#DBDBDB,#F4F4F4); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+
+	
+    	-webkit-box-shadow:1px 1px 10px #B7B7B7 inset, 0 1px 0 rgba(255,255,255,0.4);
+	-moz-box-shadow:1px 1px 10px #B7B7B7 inset, 0 1px 0 rgba(255,255,255,0.4);
+	-ms-box-shadow:1px 1px 10px #B7B7B7 inset, 0 1px 0 rgba(255,255,255,0.4);
+	-o-box-shadow:1px 1px 10px #B7B7B7 inset, 0 1px 0 rgba(255,255,255,0.4);
+	box-shadow:1px 1px 10px #B7B7B7 inset, 0 1px 0 rgba(255,255,255,0.4);
+}
+
+
+/*********************************************************************************
+*************************** B-  Reception.php ************************************
+**********************************************************************************/
+
+/*En tete de page */
+#header
+{
+	width: 100%;	
+	background: #E85A20;
+    	background:-webkit-gradient(linear, left top, left bottom, from(#E85A20), to(#f5b89f)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#E85A20,#f5b89f); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#E85A20,#f5b89f); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#E85A20,#f5b89f); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#E85A20,#f5b89f); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#E85A20',endColorstr='#f5b89f', GradientType=0); /* dégradé pour IE 9- */
+	-moz-border-radius: 13px 13px 0px 0px;
+	-ms-border-radius: 13px 13px 0px 0px;
+	-o-border-radius: 13px 13px 0px 0px;
+	border-radius: 13px 13px 0px 0px;
+	color: white;
+	height: 60px;
+	border-bottom: solid 10px #180E55;
+	box-shadow: 0px 4px 12px grey;
+}
+
+/* Sous bloc de body, centré au milieu de la page */
+#conteneur
+{
+	background-color: white;
+	margin: auto;
+	width: 700px;
+	border: 2px darkgrey solid;
+	box-shadow: 1px 1px 12px #555;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
+}
+
+/* Style des liens de gestion des mdp et de retour à l'identification */
+.lien_jaune
+{
+	font-size: 0.7em;
+	color: #FFB74C;
+	background-color: transparent;
+	border: none;
+}
+
+/* Au survol des liens de gestion des mdp et de retour à l'identification */
+.lien_jaune:hover
+{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/* Positionnement du logo */
+#header img[name=logo]
+{
+	position: relative;
+	top: 40px;
+	left: 30px;
+}
+
+/* Version de phpmylab */
+#version
+{
+	margin: auto;
+	width: 700px;
+	color: black;
+	font-size: 0.8em;
+}
+
+/* Mention CNIL */
+#version a
+{
+	text-decoration: underline;
+	color: black;
+}
+
+/* Survol de la Mention CNIL */
+#version a:hover
+{
+	text-decoration: underline;
+	color: darkgrey;
+}
+
+
+/* Corps de la page d'authentification */
+#authentification 
+{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+
+/* Bloc d'authentification */
+#authentification table
+{
+	width: 500px;
+	margin: auto;
+}
+
+
+
+/*
+#authentification table td
+{
+	border: 2px black solid;
+}
+*/
+
+
+/* Nom utilisateur , Mot de passe */
+#authentification td>label
+{
+	cursor: pointer;
+}
+
+/* Nom utilisateur , Mot de passe */
+#authentification label
+{
+	position: relative;
+	left: 50px;
+}
+
+/* Bouton unique pour acceder au logiciel */
+#go_pml
+{
+	position: relative;
+	top: -15px;
+	left: -50px;
+}
+
+/* Liste deroulante de choix des modules dans reception.php */
+#select_reception
+{
+	border-color: darkblue;
+	background: #EAEAEA;
+	background:-webkit-gradient(linear, left top, left bottom, from(#EAEAEA), to(#F7F7F7));
+	background:-moz-linear-gradient(top,#EAEAEA,#F7F7F7); 
+	background:-ms-linear-gradient(top,#EAEAEA,#F7F7F7); 
+	background:-o-linear-gradient(top,#EAEAEA,#F7F7F7); 
+	background:linear-gradient(top,#EAEAEA,#F7F7F7); 
+	height: 31px;
+	text-align: center;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-weight: bold;
+	margin-left: 1px;
+	margin-right: 1px;
+	border-radius: 5px;
+	position: relative;
+	top: -3px;
+}
+
+#select_reception option
+{
+	font-weight: normal;
+	text-align: left;
+}
+
+#btn_connexion
+{
+	border-color: darkgrey;
+	color: white;
+	background: #01106B;
+	background:-webkit-gradient(linear, left top, left bottom, from(#01106B), to(#16397F));
+	background:-moz-linear-gradient(top,#01106B,#16397F); 
+	background:-ms-linear-gradient(top,#01106B,#16397F); 
+	background:-o-linear-gradient(top,#01106B,#16397F); 
+	background:linear-gradient(top,#01106B,#16397F); 
+	height: 31px;
+	text-align: center;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-weight: bold;
+	margin-right: 10px;
+	margin-left: 1px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+/*********************************************************************************
+******************* B1- Interface d'authentification *****************************
+**********************************************************************************/
+
+/* Espacement entre les 2 images (cle et authentification) */
+img[name=cle]
+{
+	padding-right: 40px;
+}
+
+/* Marge extérieur entre les images de l'authentification et les champs de saisie */
+img[name=cle],img[name=authentification]
+{
+	margin-bottom: 40px;
+}
+
+/* Nom utilisateur , Mot de passe */
+.paddingLeft
+{
+	padding-left: 40px;
+}
+
+/* Bouton de changement de mot de passe */
+#authentification input[name=motdepasse]
+{
+	margin-top: 30px;
+	font-size: 0.9em;
+}
+
+
+/*********************************************************************************
+*************** B2- Interface de changement de mot de passe **********************
+**********************************************************************************/
+
+/* Pour la fonctionnalité de complexité de mdp */
+
+	.indicateur span
+	{
+		border: 1px lightgrey solid;
+		padding-left: 5px;
+		padding-right: 5px;
+		border-radius: 5px;
+		margin-left: 5px;
+	}
+/***********************************************/
+
+/* Bloc pour le changement de mot de passe */
+#authentification #changerMpd
+{
+	width: 700px;
+	margin: auto;
+}
+
+/*********************************************************************************
+************************ B3- Interface d'inscription *****************************
+**********************************************************************************/
+
+/* Formulaire d'inscription */
+#inscription
+{
+	margin: auto;
+}
+
+#inscription td
+{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*********************************************************************************
+******************** C -  Styles communs à tous les modules **********************
+**********************************************************************************/
+
+#module
+{
+	margin: 0px 20px 0px 20px;
+	background-color: white;
+	box-shadow: 1px 1px 12px #555;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
+	padding: 0px;
+}
+
+#module input[type=checkbox]
+{
+	position: relative;
+	top: 3px;
+}
+
+/* Version de phpmylab dans les modules (positionnement différent de celui dans reception.php */
+#version2
+{
+	margin-left: 20px;
+}
+
+/* Version de phpmylab dans les modules (positionnement différent de celui dans reception.php */
+#version2 td
+{
+	color: black;
+	font-size: 0.8em;
+}
+
+/* Mention CNIL */
+#version2 a
+{
+	text-decoration: underline;
+	color: black;
+}
+
+/* Survol de la Mention CNIL */
+#version2 a:hover
+{
+	text-decoration: underline;
+	color: darkgrey;
+}
+
+/* En-tete des modules */
+#header_module
+{
+	background: grey;
+	background:-webkit-gradient(linear, left top, left bottom, from(#444444), to(#828282)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#444444,#828282); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#444444,#828282); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#444444,#828282); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#444444,#828282); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+	/*-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444',endColorstr='#828282', GradientType=0); /* dégradé pour IE 9- */
+	-moz-border-radius: 13px 13px 0px 0px;
+	-ms-border-radius: 13px 13px 0px 0px;
+	-o-border-radius: 13px 13px 0px 0px;
+	border-radius: 13px 13px 0px 0px;
+	border-bottom: solid 5px #444444;
+	box-shadow: 0px 4px 12px grey;
+}
+
+/* L'en-tete prend toute la place dispo en largeur */
+#header_module table
+{
+	width: 100%;
+	color: white;
+}
+
+/* Concerne les cellules de gauche de l'en-tete */
+#header_module .header_module_gauche
+{
+	padding-left: 20px;
+	text-align: left;
+}
+
+/* Concerne les cellules de droite de l'en-tete */
+#header_module .header_module_droit
+{
+	padding-right: 20px;
+	text-align: right;
+}
+
+/* Style de deconnexion */
+#deconnexion a
+{
+	color: #EA6833;
+	border: none;
+}
+
+#deconnexion span
+{
+	position: relative;
+	bottom: 15px;
+}
+
+#deconnexion span:hover
+{
+	text-decoration: underline;
+}
+
+/* Position de l'image miniature du calendrier dans MISSIONS et CONGES */
+.date img
+{
+	position: relative;
+	top: 7px;
+	left: 2px;
+	cursor: pointer;
+}
+
+#lien_admin
+{
+	color: #EA6833;
+}
+
+#lien_admin:hover
+{
+	text-decoration: underline;
+}
+
+/* Onglet de la page courante */
+#barreOnglets #ongletSelectionne
+{
+	text-decoration: underline;
+	background: #969696;
+	background:-webkit-gradient(linear, left top, left bottom, from(#969696), to(#E0E0E0)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#969696,#E0E0E0); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#969696,#E0E0E0); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#969696,#E0E0E0); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#969696,#E0E0E0); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+}
+
+#barreOnglets td
+{
+	font-size:1.2em;
+    height:35px;
+    line-height:7px; 
+    text-align:center;
+    color: black;
+	text-shadow:0px 1px 0px darkgrey;
+    background: #E4E4E4;
+	background:-webkit-gradient(linear, left top, left bottom, from(#F2F2F2), to(#C9C9C9)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#F2F2F2,#C9C9C9); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#F2F2F2,#C9C9C9); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#F2F2F2,#C9C9C9); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#F2F2F2,#C9C9C9); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow:0 0 5px rgba(0,0,0,0.5),
+                       0 -1px 0 rgba(255,255,255,0.4);
+	-moz-box-shadow:0 0 5px rgba(0,0,0,0.5),
+					0 -1px 0 rgba(255,255,255,0.4);
+	-ms-box-shadow:0 0 5px rgba(0,0,0,0.5),
+                       0 -1px 0 rgba(255,255,255,0.4);
+	-o-box-shadow:0 0 5px rgba(0,0,0,0.5),
+                       0 -1px 0 rgba(255,255,255,0.4);
+	box-shadow:0 0 5px rgba(0,0,0,0.5),
+			   0 -1px 0 rgba(255,255,255,0.4);
+	cursor: pointer;
+}
+
+#MISSIONS_ONGLET:hover
+{
+	color: #5FA1E2;
+	text-shadow:0px 1px 0px darkgrey;
+    	background: #C9C9C9;
+	background:-webkit-gradient(linear, left top, left bottom, from(#C9C9C9), to(#F2F2F2)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#C9C9C9,#F2F2F2); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#C9C9C9,#F2F2F2); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#C9C9C9,#F2F2F2); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#C9C9C9,#F2F2F2); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+}
+
+#CONGES_ONGLET:hover
+{
+	color: #48AD34;
+	text-shadow:0px 1px 0px darkgrey;
+   	background: #C9C9C9;
+	background:-webkit-gradient(linear, left top, left bottom, from(#C9C9C9), to(#F2F2F2)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#C9C9C9,#F2F2F2); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#C9C9C9,#F2F2F2); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#C9C9C9,#F2F2F2); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#C9C9C9,#F2F2F2); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+}
+
+#PLANNING_ONGLET:hover
+{
+	color: #3EB1B7;
+	text-shadow:0px 1px 0px darkgrey;
+    	background: #C9C9C9;
+	background:-webkit-gradient(linear, left top, left bottom, from(#C9C9C9), to(#F2F2F2)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#C9C9C9,#F2F2F2); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#C9C9C9,#F2F2F2); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#C9C9C9,#F2F2F2); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#C9C9C9,#F2F2F2); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+
+}
+
+#EXPEDITIONS_ONGLET:hover
+{
+	color: #E5CF24;
+	text-shadow:1px 1px 0px darkgrey;
+    	background: #C9C9C9;
+	background:-webkit-gradient(linear, left top, left bottom, from(#C9C9C9), to(#F2F2F2)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#C9C9C9,#F2F2F2); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#C9C9C9,#F2F2F2); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#C9C9C9,#F2F2F2); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#C9C9C9,#F2F2F2); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+
+}
+
+#INVENTAIRE_ONGLET:hover
+{
+	color: #59686D;
+	text-shadow:1px 1px 0px darkgrey;
+    	background: #C9C9C9;
+	background:-webkit-gradient(linear, left top, left bottom, from(#C9C9C9), to(#F2F2F2)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#C9C9C9,#F2F2F2); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#C9C9C9,#F2F2F2); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#C9C9C9,#F2F2F2); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#C9C9C9,#F2F2F2); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+
+}
+
+#COMMUNITY_ONGLET:hover
+{
+	color: #0F0C6D;
+	text-shadow:1px 1px 0px darkgrey;
+    	background: #C9C9C9;
+	background:-webkit-gradient(linear, left top, left bottom, from(#C9C9C9), to(#F2F2F2)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#C9C9C9,#F2F2F2); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#C9C9C9,#F2F2F2); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#C9C9C9,#F2F2F2); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#C9C9C9,#F2F2F2); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+
+}
+#CALENDRIER_ONGLET:hover
+{
+	color: #FF0000;
+	text-shadow:1px 1px 0px darkgrey;
+    	background: #C9C9C9;
+	background:-webkit-gradient(linear, left top, left bottom, from(#C9C9C9), to(#F2F2F2)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#C9C9C9,#F2F2F2); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#C9C9C9,#F2F2F2); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#C9C9C9,#F2F2F2); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#C9C9C9,#F2F2F2); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+
+}
+#legende li
+{
+	list-style-type: square;
+}
+
+/* Pagination des congés/missions correspondant à la recherche */
+#pagination
+{
+	padding-top: 20px;
+	color: #494949;
+	width: 100%;
+}
+
+/* Congé/mission precedent */
+#pagination #precedent
+{
+	text-align: left;
+	width: 33%;
+	padding-left: 40px;
+}
+
+/* Congé/mission suivant */
+#pagination #suivant
+{
+	text-align: right;
+	width: 33%;
+	padding-right: 40px;
+}
+
+/* Numéro de la page */
+#pagination #page
+{
+	text-align: center;
+	width: 33%;
+}
+
+/* Bandeau pour afficher l'état d'une demande */
+#bandeau_etat
+{
+	float: left;
+	/*width: 150px;*/
+	position: relative;
+	top: -55px;
+	left: -5px;
+}
+
+/*********************************************************************************
+************************** C1-  Module MISSIONS **********************************
+*********************************************************************************/
+
+/* Style pour le nom de module MISSIONS */
+#MISSIONS
+{
+	font-weight: bold;
+	text-shadow:0px 1px 0px lightgrey;
+	color: #238DFF;
+	font-size: 1.3em;
+}
+
+/* "Montrer/Cacher les criteres de recherche" */
+#lien_recherche_missions
+{
+	background-color: #5FA1E2;
+	text-align: center;
+	width: 100%;
+	color: #E3E3E3;
+}	
+
+#lien_recherche_missions a
+{
+	background-color: none;
+	text-align: center;
+	color: #E3E3E3;
+	font-weight: bold;
+}	
+
+/* "Montrer/Cacher les criteres de recherche" */
+#lien_recherche_missions:hover, #lien_recherche_missions a:hover
+{
+	background-color: darkgrey;
+}	
+
+#recherche_missions
+{
+	box-shadow:	inset 0 0 4px #5FA1E2;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/* Formulaire de recherche de missions */
+#recherche_missions table
+{
+	margin: auto;
+}
+
+/* : Recherche (titre de la recherche)*/
+#recherche_missions caption
+{
+	font-size: 1.25em;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#recherche_missions .first_td
+{
+	width: 170px;
+}
+
+/* Boutons "RECHERCHE" et "REINITIALISER" */
+#recherche_missions #boutons_recherches_missions
+{
+	text-align: center;
+	padding-top: 10px;
+}
+
+/* bouton "RECHERCHE" */
+#recherche_missions input[name=rechercher_evol]
+{
+	margin-right: 10px;
+	height: 25px;
+}
+
+/* bouton "REINITIALISER" */
+#recherche_missions input[name=reinitialiser]
+{
+	height: 25px;
+}
+
+
+#DEM_MISSION
+{
+	background-color: #67ADEF;
+	text-align: center;
+	width: 100%;
+	color: #0F0F0F;
+	font-size: 1.3em;
+	border-top: groove 2px black;
+	border-bottom: ridge 2px black;
+	margin-bottom: 20px;
+}
+
+#demande_mission
+{
+	margin: auto;
+}
+
+#aller_retour
+{
+	border: 1px solid #4994de;
+	border-radius: 2px;
+	border-collapse: collapse;
+	margin-top: 30px;
+}
+
+#aller_retour td
+{
+	padding: 3px 5px 3px 5px;
+}
+
+/* Bordure extérieure gauche */
+.marginLeft
+{
+	margin-left: 10px;
+}
+
+/* Bordure extérieure gauche dans la demande d'une mission */
+#demande_mission td
+{
+	padding-top: 5px;
+}
+
+
+/* Centrage des boutons radio */
+#demande_mission input[type=radio]
+{
+	position: relative;
+	top: 5px;
+}
+
+/* Centrage des boutons radio */
+#demande_mission input[type=button]
+{
+    height: 25px; 
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+#demande_mission #choisir_objet
+{
+	width: 180px;
+}
+
+/* En tete du tableau ALLER/RETOUR dans MISSIONS */
+#aller_retour .enteteTabMissions
+{
+	background-color: #5ea0e1;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid #4994de;
+}
+
+/* Bordure du milieu du tableau ALLER/RETOUR dans MISSIONS */
+#aller_retour .bordureCentrale
+{
+	border-right: 1px solid #4994de;
+}
+
+/* Table comportant le tableau des ALLER/RETOUR + le commentaire */
+#aller_retourANDcommentaire
+{
+	margin: auto;
+}
+
+/* Tableau d'affichage des resultats de la recherche de mission (titre)*/
+#res_rech_mission caption
+{
+	margin-top: 30px;
+	text-shadow:1px 0px 0px darkgrey;
+}
+
+/* Tableau d'affichage des resultats de la recherche de mission (titre)*/
+#res_rech_mission
+{
+	border-collapse: collapse;
+	border: 1px solid #4994de;
+}
+
+/* Identifiant du congé*/
+#res_rech_mission a
+{ 
+	color: blue;
+	text-decoration: underline;
+}
+
+/* Identifiant du congé*/
+#res_rech_mission a:hover
+{ 
+	color: black;
+	font-weight: bold;
+}
+
+/* En tete du tableau d'affichage des resultats de la recherche de mission */
+.enteteTabMission
+{
+	background-color: #4994de;
+	color: white;
+	text-align: center;
+}
+
+/* En tete du tableau d'affichage des resultats de la recherche de mission */
+.enteteTabMission td, #res_rech_mission td
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid #4994de;
+	text-align: center;
+}
+
+
+/* Calendrier des missions */
+#calendrier_missions
+{
+	margin: auto;
+}
+
+/* Calendrier des missions */
+#calendrier_missions h4
+{
+	text-indent: 25px;
+}
+
+
+/* Calendrier des missions */
+#calendrier_missions #ferie
+{
+	color: #FFAAAA;
+}
+
+/* Calendrier des missions */
+#calendrier_missions #we
+{
+	color: #777777;
+}
+
+/* Calendrier des missions */
+#calendrier_missions #mission
+{
+	color: #7777FF;
+}
+
+/* Calendrier des missions */
+#calendrier_missions caption
+{
+	margin-top: 20px;
+	font-size: 1.25em;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-shadow:1px 0px 0px darkgrey;
+}
+
+
+/*********************************************************************************
+************************** C2-  Module CONGES ************************************
+*********************************************************************************/
+
+/* Style pour le nom de module CONGES */
+#CONGES
+{
+	font-weight: bold;
+	text-shadow:0px 1px 0px lightgrey;
+	color: #49AD35;
+	font-size: 1.3em;
+}
+
+/* "Montrer/Cacher les criteres de recherche" */
+#lien_recherche_conges
+{
+	background-color: #48ad34;
+	text-align: center;
+	width: 100%;
+	color: #E3E3E3;
+}	
+
+#lien_recherche_conges a
+{
+	background-color: none;
+	text-align: center;
+	color: #E3E3E3;
+	font-weight: bold;
+}	
+
+/* "Montrer/Cacher les criteres de recherche" */
+#lien_recherche_conges:hover, #lien_recherche_conges a:hover
+{
+	background-color: darkgrey;
+}	
+
+/* Formulaire de recherche de conges */
+#recherche_conges
+{
+	box-shadow:	inset 0 0 4px #48ad34;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/* Formulaire de recherche de conges */
+#recherche_conges table
+{
+	margin: auto;
+}
+
+/* : Recherche (titre de la recherche)*/
+#recherche_conges caption
+{
+	font-size: 1.25em;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-shadow:1px 0px 0px darkgrey;
+}
+
+
+/* Boutons "RECHERCHE" et "REINITIALISER" */
+#recherche_conges #boutons_recherches_conges
+{
+	text-align: center;
+	padding-top: 10px;
+}
+
+/* bouton "RECHERCHE" */
+#recherche_conges input[name=rechercher_evol]
+{
+	margin-right: 10px;
+	margin-top: 10px;
+	height: 25px;
+}
+
+#module input[id=date1], #module input[id=date2]
+{
+	text-align: center;
+}
+
+/* bouton "REINITIALISER" */
+#recherche_conges input[name=reinitialiser]
+{
+	height: 25px;
+}
+
+/* Tableau d'affichage des resultats de la recherche de conges (titre)*/
+#res_rech_conges caption
+{
+	margin-top: 30px;
+	text-shadow:1px 0px 0px darkgrey;
+}
+
+/* Tableau d'affichage des resultats de la recherche de conges (titre)*/
+#res_rech_conges
+{
+	border-collapse: collapse;
+	border: 1px solid #82CE44;
+}
+
+/* Identifiant du congé*/
+#res_rech_conges a
+{ 
+	color: #619934;
+	text-decoration: underline;
+}
+
+/* Identifiant du congé*/
+#res_rech_conges a:hover
+{ 
+	color: black;
+	font-weight: bold;
+}
+
+/* En tete du tableau d'affichage des resultats de la recherche de conges */
+.enteteTabConges
+{
+	background-color: #48AD34;
+	color: white;
+	text-align: center;
+}
+
+/* En tete du tableau d'affichage des resultats de la recherche de conges */
+.enteteTabConges td, #res_rech_conges td
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid #82CE44;
+	text-align: center;
+}
+
+/* Ligne foncee du tableau des resultats de la recherche de conges*/
+#res_rech_conges .ligne_foncee
+{
+	background-color: #DBDBDB;
+}
+
+/* Ligne claire du tableau des resultats de la recherche de conges*/
+#res_rech_conges .ligne_claire
+{
+	background-color: #F2F2F2;
+}
+
+/* Calendrier des congés */
+#calendrier_conges
+{
+	margin: auto;
+}
+
+/* Calendrier des congés */
+#calendrier_conges h4
+{
+	text-indent: 25px;
+}
+
+
+/* Calendrier des congés */
+#calendrier_conges #ferie
+{
+	color: #FFAAAA;
+}
+
+/* Calendrier des congés */
+#calendrier_conges #we
+{
+	color: #777777;
+}
+
+/* Calendrier des congés */
+#calendrier_conges #conge
+{
+	color: #77FF77;
+}
+
+/* Calendrier des congés */
+#calendrier_conges caption
+{
+	margin-top: 20px;
+	font-size: 1.25em;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-shadow:1px 0px 0px darkgrey;
+}
+
+#DEMANDE_CONGES
+{
+	background-color: #53C43C;
+	text-align: center;
+	width: 100%;
+	color: #0F0F0F;
+	font-size: 1.3em;
+	border-top: groove 2px black;
+	border-bottom: ridge 2px black;
+	margin-bottom: 20px;
+}
+
+#demande_conge
+{
+	margin: auto;
+
+}
+
+/* Bordure extérieure gauche dans la demande d'une conge */
+#demande_conge td
+{
+	padding-top: 5px;
+	padding-right: 10px;
+}
+
+/* Champs en lecture seule */
+#demande_conge input[readonly]
+{
+	background-color: #E8E8E8;
+}
+
+
+#debut_fin
+{
+	margin-top: 30px;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+#debut_fin label
+{
+	padding-right: 10px;
+}
+
+.bordureLR
+{
+	border-left: 1px solid #82CE44;
+	border-right: 1px solid #82CE44;
+}
+
+.bordureBottom
+{
+	border-bottom: 1px solid #82CE44;
+}
+
+/* Table comportant le tableau des DEBUT/FIN + le commentaire */
+#debut_finANDcommentaire
+{
+	margin: auto;
+	text-align: center;
+}
+
+/* Table comportant le tableau des DEBUT/FIN + le commentaire */
+#debut_finANDcommentaire input[type=submit]
+{
+	margin-top: 10px;
+	margin-right: 5px;
+}
+
+.enteteTabConges td, #debut_fin .bordureComplete
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid #82CE44;
+}
+
+#img_calendrier_conges, #img_calendrier_missions
+{
+	margin-bottom: 10px;
+}
+
+
+
+/*********************************************************************************
+******************** C21-  Fenetre modale pour les conges ************************
+*********************************************************************************/
+
+.voile-noir {
+	position: fixed;
+	display: none;
+	left: 0;
+	top: 0; 
+	width: 100%;
+	height: 100%;
+	opacity: 0.75;
+	background: gray; 
+	z-index: 9999;
+}
+.popup-block{
+	position: fixed;
+	display: none;
+	top: 50%;
+	left: 50%;
+	padding: 20px; 	
+	z-index: 99999;
+	font-size: 1.2em;
+	background: #fff;
+	border: 20px solid #ddd;
+	-webkit-box-shadow: 0px 0px 20px #000;
+	-moz-box-shadow: 0px 0px 20px #000;
+	box-shadow: 0px 0px 20px #000;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.popup p {
+	padding: 5px 10px;
+	margin: 5px 0;
+}
+.popup-btn-close {
+	float: right; 
+	margin: -55px -55px 0 0;
+	cursor: pointer;
+}
+
+#barreFenetreModale 
+{
+	width: 100%;
+}
+
+#barreFenetreModale td
+{
+	width: 100px;
+}
+
+#listeDesCongesAValider 
+{
+	width: auto;
+	height: 400px;
+	overflow: auto;
+}
+
+
+/*********************************************************************************
+************************** C3-  Module PLANNING **********************************
+*********************************************************************************/
+
+/* Style pour le nom de module PLANNING */
+#PLANNING
+{
+	font-weight: bold;
+	text-shadow:0px 1px 0px lightgrey;
+	color: #3EB1B7;
+	font-size: 1.3em;
+}
+
+#recherche_planning
+{
+	width: 100%;
+}
+
+#recherche_planning #titreTabRechPlanning
+{
+	margin-top: 20px;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding-top: 10px;
+	background-color: #3EB1B7;
+	text-shadow:1px 0px 0px #F7F7F7;
+	padding: 0px;
+	text-align: center;
+}
+
+#recherche_planning table
+{
+	margin: auto;
+	margin-top: 20px;
+	padding-bottom: 10px;
+	border-collapse: collapse;
+}
+
+#recherche_planning .borderLR
+{
+	padding: 5px;
+	border-left: 1px solid #3EB1B7;
+	border-right: 1px solid #3EB1B7;
+}
+
+#recherche_planning .borderBottom
+{
+	border-bottom: 1px solid #3EB1B7;
+}
+
+#recherche_planning td
+{
+	padding: 5px;
+}
+
+.paddingRight
+{
+	padding-right: 30px;
+}
+
+#recherche_planning .noBorder
+{
+	border: none;
+}
+
+#afficher_planning, #reset_planning
+{
+	margin-right: 5px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+#img_planning
+{	
+	text-align: center;
+	border: 1px solid #3EB1B7;
+	border-radius: 5px;
+	margin: auto;
+	padding: 10px;
+}
+
+#legende_planning
+{
+	margin: auto;
+	width: 100%;
+}
+
+#legende_planning td
+{
+	width: 33%;
+	text-align: center;
+}
+
+/* Calendrier planning */
+#legende_planning h4
+{
+	text-indent: 25px;
+}
+
+
+/* Calendrier planning */
+#legende_planning #ferie
+{
+	list-style-type: none;
+	background-color: #EE3C42;
+	color: white;
+	padding: 2px;
+	border-radius: 3px;
+	margin-bottom: 2px;
+	width: 160px;
+}
+
+/* Calendrier planning */
+#legende_planning #conge_valide
+{
+	list-style-type: none;
+	background: #2CDD2C;
+	background:-webkit-linear-gradient(left,#00FF08,#003F02)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(left,#00FF08,#003F02); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(left,#00FF08,#003F02); /* pour pour IE 10+ */
+	background:-o-linear-gradient(left,#00FF08,#003F02); /* pour Opera 11.10+ */
+	background:linear-gradient(left,#00FF08,#003F02); 
+	color: white;
+	padding: 2px;
+	border-radius: 3px;
+	margin-bottom: 2px;
+	width: 160px;
+}
+
+/* Calendrier planning */
+#legende_planning #conge_attente
+{
+	list-style-type: none;
+	background: #E0E0E0;
+	color: #268E2B;
+	padding: 2px;
+	border-radius: 3px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	width: 160px;
+}
+
+/* Calendrier planning */
+#legende_planning #mission_valide
+{
+	list-style-type: none;
+	background: #4A61E8;
+	background:-webkit-linear-gradient(left,#02EDF9,#28347F)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(left,#02EDF9,#28347F); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(left,#02EDF9,#28347F); /* pour pour IE 10+ */
+	background:-o-linear-gradient(left,#02EDF9,#28347F); /* pour Opera 11.10+ */
+	background:linear-gradient(left,#02EDF9,#28347F); 
+	color: white;
+	padding: 2px;
+	border-radius: 3px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	width: 160px;
+}
+
+/* Calendrier planning */
+#legende_planning #mission_attente
+{
+	list-style-type: none;
+	background: #E0E0E0;
+	color: #2C3EDD;
+	padding: 2px;
+	border-radius: 3px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	width: 160px;
+}
+
+#legende .libelle_legende
+{
+	width: 180px;
+	text-align: right;
+}
+
+#legende .contenu_legende
+{
+	width: 300px;
+	text-align: left;
+}
+
+img[name=IMPRIME]
+{
+	cursor: pointer;
+}
+
+/* FullCalendar */
+#calendar 
+{
+	width: 75%;
+	margin: 0 auto;
+}
+
+/* changement de vue du planning (globale = ancienne vue) */
+#planning_vue_globale
+{
+	color: white;	
+	position: relative;
+	top: 10px;
+	padding: 4px;
+	border: 1px #444444 solid;
+	border-radius: 3px;
+	background: #757575;
+	background: -webkit-linear-gradient( 
+  	#757575 0%,
+  	#757575 30%,
+	#141617 100%);
+	background: -moz-linear-gradient( 
+  	#757575 0%,
+  	#757575 30%,
+	#141617 100%);
+	background: -ms-linear-gradient( 
+  	#757575 0%,
+  	#757575 30%,
+	#141617 100%);
+	background: -o-linear-gradient( 
+  	#757575 0%,
+  	#757575 30%,
+	#141617 100%);
+	background: linear-gradient( 
+  	#757575 0%,
+  	#757575 30%,
+	#141617 100%);
+}
+
+/* changement de vue du planning (mensuelle par defaut) */
+#planning_vue_mensuelle
+{
+	color: white;	
+	border: 1px #444444 solid;
+	padding: 4px;
+	border-radius: 3px;
+	background: #757575;
+	background: -webkit-linear-gradient( 
+  	#757575 0%,
+  	#757575 30%,
+	#141617 100%);
+	background: -moz-linear-gradient( 
+  	#757575 0%,
+  	#757575 30%,
+	#141617 100%);
+	background: -ms-linear-gradient( 
+  	#757575 0%,
+  	#757575 30%,
+	#141617 100%);
+	background: -o-linear-gradient( 
+  	#757575 0%,
+  	#757575 30%,
+	#141617 100%);
+	background: linear-gradient( 
+  	#757575 0%,
+  	#757575 30%,
+	#141617 100%);
+	float: right;
+	position: relative;
+	top: 25px;
+	right: 50px;
+
+}
+
+#planning_vue_mensuelle:hover, #planning_vue_globale:hover
+{
+	color: lightgrey;
+}
+
+
+/*********************************************************************************
+************************** C4-  Module EXPEDITIONS *******************************
+*********************************************************************************/
+
+/* Style pour le nom de module EXPEDITIONS */
+#EXPEDITIONS
+{
+	font-weight: bold;
+	text-shadow:0px 1px 0px lightgrey;
+	color: #FFE049;
+	font-size: 1.3em;
+}
+
+#DEMANDE_EXPEDITIONS
+{
+	background-color: #FFE049;
+	text-align: center;
+	width: 100%;
+	color: #0F0F0F;
+	font-size: 1.3em;
+	border-top: groove 2px black;
+	border-bottom: ridge 2px black;
+	margin-bottom: 20px;
+}
+
+
+/* "Montrer/Cacher les criteres de recherche" */
+#lien_recherche_expeditions
+{
+	background-color: #FFE049;
+	text-align: center;
+	width: 100%;
+	color: #0F0F0F;
+	border-top: groove 2px black;
+	border-bottom: ridge 2px black;
+}	
+
+#lien_recherche_expeditions a
+{
+	background-color: none;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+}	
+
+/* "Montrer/Cacher les criteres de recherche" */
+#lien_recherche_expeditions:hover, #lien_recherche_expeditions a:hover
+{
+	background-color: darkgrey;
+}
+	
+/* Recherche d'expeditions */
+#recherche_expeditions 
+{
+	box-shadow: inset 0 0 4px #FFE049;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0px;
+}
+
+#recherche_expeditions caption
+{
+	font-size: 1.25em;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-shadow:1px 0px 0px darkgrey;
+}
+
+/* Recherche d'expeditions */
+#recherche_expeditions table
+{
+	margin: auto;
+	text-align: center;
+}
+
+#recherche_expeditions input[type=submit]
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* Resultats de la recherche */
+#res_rech_expedition
+{
+	border-collapse: collapse;
+}
+
+#res_rech_expedition td
+{
+	padding: 5px;
+	border: 1px solid lightgrey;
+}
+
+#res_rech_expedition .enTeteTabExpeditions
+{
+	font-weight: bold;
+	background: #F2D637;
+	background:-webkit-gradient(top,,#F2D637,#FFF02B); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#F2D637,#FFF02B); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#F2D637,#FFF02B); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#F2D637,#FFF02B); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#F2D637,#FFF02B); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */
+}
+
+fieldset
+{
+	width: 75%;
+	border: 2px lightgrey solid;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+fieldset legend
+{
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#demandeur_expeditions table, #destinataire_expeditions table, #colis_expeditions table, #gestionnaires_expeditions table
+{
+	margin: auto;
+	width: 500px;
+}
+
+#commentaire_expeditions table
+{
+	margin: auto;
+}
+
+#expedition_commentaire 
+{
+	width: 500px;
+	height: 100px;
+	margin: auto;
+}
+
+/* Piece jointe (image) */
+#img_piece_jointe
+{
+	max-width: 700px;
+}
+
+/*Trombone devant le lien de la piece jointe */
+#trombone
+{
+	position: relative;
+	top: 3px;
+	left: -3px;
+}
+
+/* Pour corriger le décalage à cause du bandeau */
+.correctionDecalage
+{
+	position: relative;
+	left: -75px;
+}
+
+.widthMax
+{
+	width: 100%;
+}
+
+/* Loupe dans la partie recherche d'expéditions */
+#loupe_recherche
+{
+	position: relative;
+	top: 2px;
+}
+
+/*********************************************************************************
+************************** C5-  Module SHARE/INVENTAIRE **************************
+*********************************************************************************/
+
+/* Bouton pour ajouter une fiche et faire un inventaire */
+#bloc_btn_administration 
+{
+	float: right;
+	position: relative;
+	top: 17px;
+	margin-bottom: 20px;
+	margin-right: 50px;
+}
+
+#bloc_btn_administration input
+{	
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 40px;
+	font-size: 15px;	
+	font-weight: bold;
+	background: #8CBA13;
+	background:-webkit-gradient(linear, left top, left bottom, from(#8CBA13), to(#E7E57C));
+	background:-moz-linear-gradient(top,#8CBA13,#E7E57C); 
+	background:-ms-linear-gradient(top,#8CBA13,#E7E57C); 
+	background:-o-linear-gradient(top,#8CBA13,#E7E57C); 
+	background:linear-gradient(top,#8CBA13,#E7E57C); 
+	border: 2px solid rgba(238,238,143,0.6);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#bloc_btn_administration input:hover
+{	
+	-moz-box-shadow: 1px 1px 5px #888;
+	-webkit-box-shadow: 1px 1px 5px #888;
+	box-shadow: 1px 1px 5px #888;
+	cursor: pointer;
+}
+
+#share_search
+{
+	position: relative;
+	left: -20px;
+	top: 5px;
+	margin-bottom: 40px;
+	margin-left: 120px;
+	width: 600px;
+}
+
+/* Loupe dans le champ de recherche */
+#share_search img, #community_search img
+{
+	height: 20px;
+	position: relative;
+	top: 6px;
+	left: 32px;
+}
+
+#share_search table, #community_search table
+{	
+	border-collapse: collapse;
+}
+
+/* Champ de recherche */
+#share_search input[type=text], #community_search input[type=text]
+{
+	height: 25px;
+	-moz-border-radius: 15px 0px 0px 15px;
+	-webkit-border-radius: 15px 0px 0px 15px;
+	border-radius: 15px 0px 0px 15px;
+	padding-left: 25px;
+	padding-right: 5px;
+	border-color: rgba(51,166,255,0.6) rgba(39,145,225,0.6) rgba(0,12,204,0.6);
+	font-size: 14px;
+}
+
+/* Bouton pour lancer la recherche */
+#share_search input[type=submit]
+{
+	height: 31px;
+	padding: 5px;
+	font-size: 14px;
+	background: #66BDFF;
+	background:-webkit-gradient(linear, left top, left bottom, from(#66BDFF), to(#0D9EFF));
+	background:-moz-linear-gradient(top,#66BDFF,#0D9EFF); 
+	background:-ms-linear-gradient(top,#66BDFF,#0D9EFF); 
+	background:-o-linear-gradient(top,#66BDFF,#0D9EFF); 
+	background:linear-gradient(top,#66BDFF,#0D9EFF); 
+	border-color: rgba(51,166,255,0.6) rgba(39,145,225,0.6) rgba(0,12,204,0.6);
+	color: white; 
+}
+
+/* Bouton pour lancer la recherche */
+#share_search input[type=submit]:hover
+{
+	background: #0D9EFF;
+	background:-webkit-gradient(linear, left top, left bottom, from(#0D9EFF), to(#66BDFF));
+	background:-moz-linear-gradient(top,#0D9EFF,#66BDFF); 
+	background:-ms-linear-gradient(top,#0D9EFF,#66BDFF); 
+	background:-o-linear-gradient(top,#0D9EFF,#66BDFF); 
+	background:linear-gradient(top,#0D9EFF,#66BDFF); 
+}
+
+/* Liste deroulante dans la recherche */
+.select_style
+{
+	border-color: rgba(51,166,255,0.6) rgba(39,145,225,0.6) rgba(0,12,204,0.6);
+	background: #EAEAEA;
+	background:-webkit-gradient(linear, left top, left bottom, from(#EAEAEA), to(#F7F7F7));
+	background:-moz-linear-gradient(top,#EAEAEA,#F7F7F7); 
+	background:-ms-linear-gradient(top,#EAEAEA,#F7F7F7); 
+	background:-o-linear-gradient(top,#EAEAEA,#F7F7F7); 
+	background:linear-gradient(top,#EAEAEA,#F7F7F7); 
+	height: 31px;
+	text-align: center;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-weight: bold;
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+.select_style option
+{
+	text-align: left;
+	font-weight: normal;
+}
+
+/* Nombre de resultats retournés par la recherche */
+#nb_resultats
+{
+	color: grey;
+	margin-left: 25px;
+	font-weight: bold;
+}
+
+/* Style pour chaque fiche remontée par la recherche */
+.fiche_materiel
+{
+	width: 80%;
+	margin: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #F9F9F9;
+	border-bottom: 1px solid lightgrey;
+	-webkit-box-shadow: 1px 1px 5px #888;
+	-moz-box-shadow: 1px 1px 5px #888;
+	box-shadow: 1px 1px 5px #888;
+	min-height: 200px;
+}
+
+.fiche_materiel:hover
+{
+	background-color: #EAEAEA;
+	-webkit-box-shadow: 1px 1px 5px black;
+	-moz-box-shadow: 1px 1px 5px black;
+	box-shadow: 1px 1px 5px black;
+	cursor: pointer;
+}
+
+/* Libellé */
+.fiche_materiel h1
+{
+	font-size: 1.2em;
+	text-shadow: 1px 1px 1px lightgrey;
+}
+
+/* Point de couleur pour la disponibilite */
+.fiche_materiel h1 img
+{
+	position: relative;
+	top: 2px;
+}
+
+/* Libellé */
+.fiche_materiel h3
+{
+	font-size: 0.8em;
+	color: grey;
+	text-indent: 20px;
+}
+
+/* Photo du materiel */
+.fiche_materiel .photo_materiel
+{
+	float: left;
+	max-width: 130px;
+	max-height: 130px;
+	margin-right: 20px;
+}
+
+#miniature_photo
+{
+	max-width: 130px;
+	max-height: 130px;
+}
+
+#materiel_dispo,#materiel_non_dispo
+{
+	position: relative; 
+	top: 3px;
+}
+
+
+
+/*---------- Concerne la consultation de fiche ----------*/
+
+/* Lien de retour à la recherche dans la consultation d'une fiche */
+.btn_gris
+{
+	height: 40px;
+	padding: 7px;
+	font-size: 15px;	
+	font-weight: bold;
+	color: #2D2D2D;
+	background: #BDBDBD;
+	background:-webkit-gradient(linear, left top, left bottom, from(#F4F4F4), to(#DBDBDB));
+	background:-moz-linear-gradient(top,#BDBDBD,#DBDBDB); 
+	background:-ms-linear-gradient(top,#BDBDBD,#DBDBDB); 
+	background:-o-linear-gradient(top,#BDBDBD,#DBDBDB); 
+	background:linear-gradient(top,#BDBDBD,#DBDBDB); 
+	border: 2px solid #F2F2F2;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.btn_gris:hover
+{
+	-webkit-box-shadow: 1px 1px 5px #888;
+	-moz-box-shadow: 1px 1px 5px #888;
+	box-shadow: 1px 1px 5px #888;
+	color: black;
+	cursor: pointer;
+}
+
+.btn_bleu
+{
+	height: 40px;
+	padding: 7px;
+	font-size: 15px;	
+	font-weight: bold;
+	color: white;
+	background: #66BDFF;
+	background:-webkit-gradient(linear, left top, left bottom, from(#66BDFF), to(#0D9EFF));
+	background:-moz-linear-gradient(top,#66BDFF,#0D9EFF); 
+	background:-ms-linear-gradient(top,#66BDFF,#0D9EFF); 
+	background:-o-linear-gradient(top,#66BDFF,#0D9EFF); 
+	background:linear-gradient(top,#66BDFF,#0D9EFF); 
+	border: 2px solid #7AC6FD;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.btn_bleu:hover
+{
+	-webkit-box-shadow: 1px 1px 5px #888;
+	-moz-box-shadow: 1px 1px 5px #888;
+	box-shadow: 1px 1px 5px #888;
+	cursor: pointer;
+}
+
+.btn_vert
+{
+	height: 40px;
+	padding: 7px;
+	font-size: 15px;	
+	font-weight: bold;
+	color: white;
+	background: #04B431;
+	background:-webkit-gradient(linear, left top, left bottom, from(#66BDFF), to(#0D9EFF));
+	background:-moz-linear-gradient(top,#04B431,#088A29); 
+	background:-ms-linear-gradient(top,#04B431,#088A29); 
+	background:-o-linear-gradient(top,#04B431,#088A29); 
+	background:linear-gradient(top,#04B431,#088A29); 
+	border: 2px solid #A4A4A4;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.btn_vert:hover
+{
+	-webkit-box-shadow: 1px 1px 5px #888;
+	-moz-box-shadow: 1px 1px 5px #888;
+	box-shadow: 1px 1px 5px #888;
+	cursor: pointer;
+}
+
+.btn_rouge
+{
+	height: 40px;
+	padding: 7px;
+	font-size: 15px;	
+	font-weight: bold;
+	color: white;
+	background: #FF4949;
+	background:-webkit-gradient(linear, left top, left bottom, from(#FF4949), to(#FF2819));
+	background:-moz-linear-gradient(top,#FF4949,#FF2819); 
+	background:-ms-linear-gradient(top,#FF4949,#FF2819); 
+	background:-o-linear-gradient(top,#FF4949,#FF2819); 
+	background:linear-gradient(top,#FF4949,#FF2819); 
+	border: 2px solid #FF7272;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.btn_rouge:hover
+{
+	-webkit-box-shadow: 1px 1px 5px #888;
+	-moz-box-shadow: 1px 1px 5px #888;
+	box-shadow: 1px 1px 5px #888;
+	cursor: pointer;
+}
+
+
+/* Bouton pour modifier la fiche */
+#btn_modifier_fiche
+{
+	float: right;
+	margin-right: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* Bouton pour modifier la fiche */
+#btn_partager_fiche
+{
+	float: right;
+	margin-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+/* Bouton pour revenir à la recherche */
+#btn_retour_recherche
+{
+	float: left;
+	margin-left: 50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* Bouton pour revenir à la recherche */
+#btn_supprimer_fiche
+{
+	float: right;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 50px;
+	margin-left: 10px;
+}
+
+#consultation_fiche 
+{
+	padding: 20px;
+}
+
+/* Libelle de la fiche */
+.h1_share
+{
+	clear: both;
+	text-align: center;
+	font-size: 1.8em;
+	text-shadow: 1px 1px 1px lightgrey;
+	color: #2B305B;
+}
+
+/* Groupe */
+#consultation_fiche h3
+{
+	text-align: center;
+	font-size: 1em;
+	color: darkgrey;
+}
+
+/*Contenu de la fiche en dessous de la photo */
+#contenu_fiche
+{
+	width: 75%;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/*Photo */
+#consultation_fiche #photo_fiche
+{
+	text-align: center;
+}
+
+#consultation_fiche #photo_fiche img
+{
+	-webkit-box-shadow: 1px 1px 5px #888;
+	-moz-box-shadow: 1px 1px 5px #888;
+	box-shadow: 1px 1px 5px #888;
+	max-width: 600px;
+	max-height: 400px;
+}
+
+
+/*---------- Concerne l'inventaire ----------*/
+
+#share_inventaire
+{
+	clear: both;
+	margin: auto;
+}
+
+
+/*********************************************************************************
+************************** C6-  Module COMMUNITY *********************************
+*********************************************************************************/
+
+
+/* Style pour le nom de module COMMUNITY */
+#COMMUNITY
+{
+	font-weight: bold;
+	text-shadow:1px 1px 5px white;
+	color: #0F1641;
+	font-size: 1.3em;
+}
+
+/* Barre en haut du module contenant le menu */
+#cmty_top_bar
+{
+	width: 100%;
+	background: #0C0A33;
+	background:-webkit-gradient(linear, left top, left bottom, from(#0D0C3A), to(#13244C));
+	background: -moz-linear-gradient(top, #0D0C3A,#13244C); 
+	background:-ms-linear-gradient(top,#0D0C3A,#13244C); 
+	background:-o-linear-gradient(top,#0D0C3A,#13244C); 
+	background:linear-gradient(top,#0D0C3A,#13244C); 
+	height: 35px;
+}
+
+#cmty_top_bar table
+{
+	height: 100%;
+	border-collapse: collapse;
+}
+
+/* Nom du module personnalisé avec l'organisme */
+#cmty_top_bar #cmty_nom_module
+{
+	width: 260px; /* Comme celle du volet gauche + padding */
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+
+/* Menu en haut du module */
+#cmty_top_bar .cmty_top_menu
+{
+	padding-left: 7px;
+	padding-right: 7px;
+	color: lightgrey;
+	cursor: pointer;
+}
+
+/* Menu en haut du module */
+#cmty_top_bar .cmty_top_menu:hover
+{
+	background: rgb(45,45,45);
+	background: rgba(255,255,255,0.1);
+}
+
+/* Sous menu */
+#cmty_sub_menu
+{
+	width: 100%;
+	height: 40px;
+	background: #FFFEFF;
+	background:-webkit-gradient(linear, left top, left bottom, from(#FFFEFF), to(#EDEDED));
+	background: -moz-linear-gradient(top, #FFFEFF,#EDEDED); 
+	background:-ms-linear-gradient(top,#FFFEFF,#EDEDED); 
+	background:-o-linear-gradient(top,#FFFEFF,#EDEDED); 
+	background:linear-gradient(top,#FFFEFF,#EDEDED); 
+	border-bottom: 3px #E2E2E2 solid;
+}
+
+#cmty_sub_menu table
+{
+	height: 100%;
+	font-size: 18px;
+	text-shadow: 1px 1px 1px grey;
+	margin-left: 250px;/* Largeur + padding du volet gauche */
+}
+
+.cmty_menu_selected /* Onglet courant du menu */
+{
+	background-color: white;
+	color: #707070;
+	text-shadow: 1px 1px 1px lightgrey;
+	padding-left: 7px;
+	padding-right: 7px;
+	cursor: pointer;
+	border-top: 2px groove black;
+	border-left: 2px groove black;
+	border-right: 2px ridge black;
+}
+
+/* Volet de gauche */
+#cmty_left_flap
+{
+	height: 600px;
+	background: #F4F5F7;
+	width: 240px;
+	float: left;
+	border-right: 3px #EDEDED solid;
+	border-bottom: 3px #EDEDED solid;
+	border-bottom-right-radius: 4px;
+	padding: 5px;
+}
+
+/* Bloc principal du module */
+#community_bloc_principal
+{
+	margin-left: 253px; /* largeur du volet gauche + bordure*/
+	background: white;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 50px;	
+	padding-right: 50px;
+}
+
+/* Bouton pour remonter vers le haut */
+#btn_up
+{
+	position: fixed;
+	bottom: 15px;
+	right: 25px;
+	cursor: pointer;
+	display: none;
+}
+
+
+/*************** FIL D'ACTUALITES ******************/
+
+
+/* Formulaire d'ajout d'une publication */
+#add_publication
+{
+	width: 700px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background: #EEEFF4;
+	background: -moz-radial-gradient(circle, white, #EEEFF4);
+	background: -webkit-radial-gradient(circle, white, #EEEFF4);
+	background: -ms-radial-gradient(circle, white, #EEEFF4);
+	background: -o-radial-gradient(circle, white, #EEEFF4);
+	background: radial-gradient(circle, white, #EEEFF4);
+	padding: 3px;
+	-webkit-box-shadow: 1px 1px 2px #0D0D3A;
+	-moz-box-shadow: 1px 1px 2px #0D0D3A;
+	box-shadow: 1px 1px 2px #0D0D3A;
+}
+
+/* tableau ajout d'une publication */
+#add_publication table
+{
+	width: 100%;
+}
+
+/* Champ pour le titre de la publication */
+#add_publication input[type=text]
+{
+	width: 100%;
+	font-family: Verdana,Arial,Helvetica,Geneva,sans-serif;
+	font-size: 14px;
+}
+
+/* Bouton publier */
+#add_publication input[type=submit]
+{
+	padding: 5px;
+	background: #1A2D63;
+	background: -webkit-radial-gradient(circle, #1A2D63, #102563);
+	background: -moz-radial-gradient(circle, #1A2D63, #102563);
+	background: -ms-radial-gradient(circle, #1A2D63, #102563);
+	background: -o-radial-gradient(circle, #1A2D63, #102563);
+	background: radial-gradient(circle, #1A2D63, #102563);
+	height: 30px;
+	color: lightgrey;
+	font-weight: bold;	
+	border: 1px solid #0F225B;
+}
+
+#add_publication input[type=submit]:hover
+{
+	-webkit-box-shadow: 1px 1px 5px darkgrey;
+	-moz-box-shadow: 1px 1px 5px darkgrey;
+	box-shadow: 1px 1px 5px darkgrey;
+	color: white;
+	cursor: pointer;
+}
+
+/* Champ pour le contenu de la publication */
+#add_publication textarea
+{
+	width: 100%;
+	min-height: 80px;
+	font-family: Verdana,Arial,Helvetica,Geneva,sans-serif;
+	font-size: 14px;
+	resize: none;
+}
+
+/* Liste déroulante de la categorie de la publication */
+#add_publication select
+{
+	border-color: rgba(51,166,255,0.6) rgba(39,145,225,0.6) rgba(0,12,204,0.6);
+	height: 31px;
+	text-align: center;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-weight: bold;
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+#add_publication select option
+{
+	font-weight: normal;
+	text-align: left;
+}
+
+/* Images : ajout d'image et ajout de video */
+#add_publication img
+{
+	cursor: pointer;
+}
+
+#tr_add_image, #tr_add_video
+{
+	display: none;
+}
+
+/* Publication */
+#publications .publication
+{
+	margin-top: 15px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	/*border-bottom: 3px lightgrey solid;*/
+	width: 100%;
+}
+
+/* Auteur d'une publication (lien) */
+#publications .auteur
+{
+	font-size: 16px;
+	font-weight: bold;
+	color: black;
+}
+
+#publications .auteur:hover
+{
+	color: white;
+}
+
+/* Titre d'une publication */
+#publications .titre
+{
+	font-size: 14px;
+}
+
+#publications .publication .ligne_grise td
+{
+	padding: 10px;	
+}
+
+#publications .publication .ligne_grise
+{
+	background: darkgrey;
+	background:-webkit-gradient(linear, left top, left bottom, from(#FFFEFF), to(#EDEDED));
+	background: -moz-linear-gradient(top, darkgrey,#D3D3D3); 
+	background:-ms-linear-gradient(top,#FFFEFF,#EDEDED); 
+	background:-o-linear-gradient(top,#FFFEFF,#EDEDED); 
+	background:linear-gradient(top,#FFFEFF,#EDEDED); 
+}
+
+/* Image d'une publication */
+#publications .publication .fichier_pub
+{
+	float: left;
+	max-width: 50%;
+	max-height: 400px;
+	margin-right: 15px;
+	margin-bottom: 10px;
+}
+
+#publications .publication p
+{
+	text-align: justify;
+}
+
+/* Btn plus d'une publication */
+#publications .publication .nb_plus
+{
+	font-size: 18px;
+	font-weight: bold;
+	color: #8AE15A;
+	position: relative;
+	top: -5px;
+}
+
+/* Btn moins d'une publication */
+#publications .publication .nb_moins
+{
+	font-size: 18px;
+	font-weight: bold;
+	color: #D40011;
+	position: relative;
+	top: -5px;
+	margin-left: 10px;
+}
+
+/* Date d'une pulbication + categorie d'une publication */
+#publications .publication .date_categ_publ
+{
+	font-size: 14px;
+	color: grey;
+}
+
+/* categorie d'une publication */
+#publications .publication .date_categ_publ a
+{
+	font-size: 14px;
+	color: grey;
+	font-style: italic;
+}
+
+/* categorie d'une publication */
+#publications .publication .date_categ_publ a:hover
+{
+	text-decoration: underline;
+}
+
+/* Reduction de l'opacité lorsque l'utilisateur ne peut pas donner son avis sur une publication */
+#publications .publication .avis_donne
+{
+	opacity: 0.3;
+	cursor: auto;
+}
+
+/* Reduction de l'opacité lorsque l'utilisateur ne peut pas donner son avis sur une publication */
+#publications .publication iframe
+{
+	margin: auto;
+	width: 700px;
+}
+
+/* Bouton pour supprimer une publication */
+#publications .publication .btn_supprimer_pub
+{
+	cursor: pointer;
+	float: right;
+}
+
+/* Bulle : Vous deconseillez */
+#publications .publication .bulle_avis
+{
+	height: 50px;
+	position: relative;
+	top: 12px;
+}
+
+/* New : publication nouvelle (indicateur) */
+#publications .publication .new
+{
+	font-weight: bold;
+	color: red;
+}
+
+/* Bouton pour voir les anciennes publications */
+#anciennes_publications
+{
+	color: #000066;
+	font-size: 15px; 
+	text-align: center;
+}
+
+#anciennes_publications:hover
+{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/* Pagination en bas de page */
+#pagination_community
+{
+	width: 100%;
+}
+
+#pagination_community td
+{
+	width: 33%;
+	color: black;
+}
+
+#pagination_community a
+{
+	color: darkblue;
+}
+
+#pagination_community a:hover
+{
+	font-weight: bold;
+}
+
+/* Notification du module Community */
+#notifications
+{
+	background: red;
+	color: white;
+	position: relative;
+	top: -10px;
+	margin-left: 8px;
+	padding: 4px;
+	border-radius: 8px;
+	-moz-box-shadow: 2px 2px 5px #AAA;
+	-webkit-box-shadow: 2px 2px 5px #AAA;
+	box-shadow: 2px 2px 5px #AAA;
+}
+
+
+/*************** CATEGORIES ******************/
+
+/* Liste des catégories du module Community */
+#categories_community
+{
+	width: 90%;
+	margin: auto;
+}
+
+/* Catégorie du module Community */
+#categories_community .categorie_community
+{
+	background: #EFF1FF;
+	height: 60px;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 6px;
+	-moz-box-shadow: 5px 5px 5px #67676D;
+	-webkit-box-shadow: 5px 5px 5px #67676D;
+	box-shadow: 5px 5px 5px #67676D;
+	text-shadow: 2px 2px 2px lightgrey;
+	text-align: center;
+	cursor: pointer;
+}
+
+#categories_community .categorie_community:hover
+{
+	background: #E8E9EA;
+}
+
+#categories_community .categorie_community:active
+{
+	background: #C2CAEA;
+	color: white;
+}
+
+#categories_community .categorie_community h2
+{
+	display: inline;
+	position: relative;
+	top: 15px;
+}
+
+#categories_community .categorie_community img
+{
+	float: left;
+	max-height: 60px;
+	max-width: 100px;
+}
+
+/*************** PROFILS (liste) ******************/
+
+#community_search
+{
+	position: relative;
+	left: -20px;
+	top: 5px;
+	margin-bottom: 40px;
+	margin-left: 50px;
+
+}
+
+/* Bouton pour lancer la recherche dans les profils (le reste du css pour la recherche est en commun avec share */
+#community_search input[type=submit]
+{
+	height: 31px;
+	padding: 5px;
+	font-size: 14px;
+	background: #000066;
+	background:-webkit-gradient(linear, left top, left bottom, from(#000066), to(#333399));
+	background:-moz-linear-gradient(top,#000066,#333399); 
+	background:-ms-linear-gradient(top,#000066,#333399); 
+	background:-o-linear-gradient(top,#000066,#333399); 
+	background:linear-gradient(top,#000066,#333399); 
+	border-color: rgba(51,166,255,0.6) rgba(39,145,225,0.6) rgba(0,12,204,0.6);
+	color: white; 
+	cursor: pointer;
+}
+
+/* Bouton pour lancer la recherche */
+#community_search input[type=submit]:hover
+{
+	opacity: 0.9;
+}
+
+/* Table des resultats des profils */
+#profils_community
+{
+	width: 90%;
+	margin: auto;
+}
+
+#profils_community td 
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	background: #F9FBFF;
+}
+
+#profils_community td:hover
+{
+	background: #E8E9ED;
+}
+
+/* Photo du profil */
+#profils_community td img
+{
+	height: 32px;
+	width: 24px;
+	margin-right: 10px;
+}
+
+/* Un profil */
+#profils_community td a
+{
+	color: darkblue;
+	position: relative;
+	top: -7px;
+}
+
+/* Une vignette profil */
+#profils_community td a:hover
+{
+	text-decoration: underline;
+}
+
+/*************** PROFIL (consultation) ******************/
+
+/* Bouton : Revenir a la recherche */
+.cmty_btn_bleu
+{
+	height: 40px;
+	padding: 7px;
+	font-size: 15px;	
+	color: white;
+	background: #000066;
+	background:-webkit-gradient(linear, left top, left bottom, from(#000066), to(#333399));
+	background:-moz-linear-gradient(top,#000066,#333399); 
+	background:-ms-linear-gradient(top,#000066,#333399); 
+	background:-o-linear-gradient(top,#000066,#333399); 
+	background:linear-gradient(top,#000066,#333399); 
+	border: 2px solid black;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.cmty_btn_bleu:hover
+{
+	-webkit-box-shadow: 1px 1px 5px #888;
+	-moz-box-shadow: 1px 1px 5px #888;
+	box-shadow: 1px 1px 5px #888;
+	cursor: pointer;
+}
+
+/* Affichage du profil d'un utilisateur */
+#cmty_profil
+{
+	width: 90%;
+	margin: auto;
+	padding: 30px;
+}
+
+#cmty_profil
+{
+	font-size: 1.3em;
+}
+
+/* Image du profil d'un utilisateur */
+#cmty_profil img
+{
+	max-height: 500px;
+	max-width: 600px;
+}
+
+/* Nom du profil d'un utilisateur */
+#cmty_profil h1
+{
+	font-size: 2em;
+	text-shadow: 2px 2px 2px #AAA;
+}
+
+/* mailto: */
+#cmty_profil a
+{
+	color: #091060;
+}
+
+#cmty_profil a:hover
+{
+	text-decoration: underline;
+}
+/*********************************************************************************
+************************** C6-  Module COMMUNITY *********************************
+*********************************************************************************/
+#CALENDRIER
+{
+	font-weight: bold;
+	text-shadow:1px 1px 5px white;
+	color: #FF0000;
+	font-size: 1.3em;
+}
+
+/*********************************************************************************
+************************** C6-  Module Calendar **********************************
+*********************************************************************************/
+.styled-button-calendar {
+	background: #25A6E1;
+	background: -moz-linear-gradient(top,#25A6E1 0%,#188BC0 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#25A6E1),color-stop(100%,#188BC0));
+	background: -webkit-linear-gradient(top,#25A6E1 0%,#188BC0 100%);
+	background: -o-linear-gradient(top,#25A6E1 0%,#188BC0 100%);
+	background: -ms-linear-gradient(top,#25A6E1 0%,#188BC0 100%);
+	background: linear-gradient(top,#25A6E1 0%,#188BC0 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#25A6E1',endColorstr='#188BC0',GradientType=0);
+	padding:5px 6px;
+  margin:5px;
+	color:#fff;
+	font-family:'Helvetica Neue',sans-serif;
+	font-size:14px;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border:1px solid #1A87B9;
+  height:100%;
+  cursor:pointer;
+}
+.styled-button-calendar:hover {
+	background: #25A6E1;
+	background: -moz-linear-gradient(top,#25A6E1 0%,navy 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#25A6E1),color-stop(100%,navy));
+	background: -webkit-linear-gradient(top,#25A6E1 0%,navy 100%);
+	background: -o-linear-gradient(top,#25A6E1 0%,navy 100%);
+	background: -ms-linear-gradient(top,#25A6E1 0%,navy 100%);
+	background: linear-gradient(top,#25A6E1 0%,navy 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#25A6E1',endColorstr='navy',GradientType=0);
+	padding:5px 6px;
+  margin:5px;
+	color:#fff;
+	font-family:'Helvetica Neue',sans-serif;
+	font-size:14px;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border:1px solid #1A87B9;
+  height:100%;
+}
+.delete {	background: black;}
+.delete:hover {	background: red; }
+.notice {
+  position: relative;
+  margin: 1em 4em;
+  background: #F9F9F9;
+  padding: 1em 1em 1em 2em;
+  border-left: 4px solid #DDD;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
+}
+.notice:before {
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  left: -17px;
+  background-color: #DDD;
+  color: #FFF;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  font-family: Georgia;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+.info {
+  border-color: #0074D9;
+}
+.info:before {
+  content: "i";
+  background-color: #0074D9;
+}
+.blue {
+    background-color: #3b8ec2;
+}
+.blue select { color: #fff; }
+.semi-square {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+}
+.styled-select select {
+    background: rgba(0, 0, 0, 0) url("./images/arrow-down.png") no-repeat scroll 96% 0;
+    height: 29px;
+    overflow: hidden;
+    width: 240px;
+}
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+}
