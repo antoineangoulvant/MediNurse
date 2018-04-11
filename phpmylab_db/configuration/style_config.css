@@ -1,0 +1,384 @@
+	/**
+	 * Feuille de style de la procedure de configuration de phpMyLab.
+	 *
+	 * Date de création : 3 Avril 2012<br/>
+	 * Date de dernière modification : 17 Avril 2012
+	 * @version 1.2.0
+	 * @author Cedric Gagnevin <cedric.gagnevin@laposte.net>
+	 * @license http://www.cecill.info/licences/Licence_CeCILL_V2-en.html
+	 * @copyright CNRS (c) 2015
+	 * @package phpMyLab
+	 */
+	
+	/*********************************************************************************
+	 ******************************  PLAN     ****************************************
+	 *********************************************************************************
+	
+		  | - A -  Styles globaux
+		  | - B -  Page d'accueil de la configuration : index.php
+		  | - C -  Etape 1
+		  | - D -  Etape 2
+		  | - E -  Etape 3
+		  | - F -  Etape 4
+		  | - G -  Page de fin de configuration : finConfig.php
+
+
+/*********************************************************************************
+*************************** A-  Styles globaux ***********************************
+**********************************************************************************/
+
+body
+{
+	background-image: url("images/fond.png");
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	height: 100%;
+	width: 100%;
+	font-family: arial,verdana,helvetica,geneva,sans-serif;
+	font-size: 0.9em;
+}
+
+#corps
+{
+	margin: auto;
+	width: 1000px;
+}
+
+#corps h1
+{
+	font-size: 2.2em;
+	text-align: center;
+	color: #180E55;
+	text-shadow:0px 1px 0px lightgrey;
+	margin-bottom: 40px;
+}
+
+#corps h2
+{
+	color: #22476A;
+	text-shadow:0px 1px 0px lightgrey;
+}
+
+.case_bouton
+{
+	width: 100%;	
+}
+
+.case_bouton #etape_precedente 
+{
+	text-align: left;
+	padding-bottom: 30px;
+}
+
+.case_bouton #etape_suivante
+{
+	text-align: right;
+	padding-bottom: 30px;
+}
+
+.bouton
+{
+	text-decoration: none;
+	font-size:1.1em;
+	margin-top: 20px;
+    height:35px;
+    padding:5px; 
+    text-align: center;
+    color: #FF9736;
+    background: #282828;
+	background:-webkit-gradient(linear, left top, left bottom, from(#282828), to(#606060)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#282828,#606060); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#282828,#606060); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#282828,#606060); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#282828,#606060); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+	
+	text-shadow:0px 0.5px 0px lightgrey;
+	-webkit-box-shadow:0 0 5px rgba(0,0,0,0.5),
+                       0 -1px 0 rgba(255,255,255,0.4);
+	-moz-box-shadow:0 0 5px rgba(0,0,0,0.5),
+					0 -1px 0 rgba(255,255,255,0.4);
+	-ms-box-shadow:0 0 5px rgba(0,0,0,0.5),
+                       0 -1px 0 rgba(255,255,255,0.4);
+	-o-box-shadow:0 0 5px rgba(0,0,0,0.5),
+                       0 -1px 0 rgba(255,255,255,0.4);
+	box-shadow:0 0 5px rgba(0,0,0,0.5),
+			   0 -1px 0 rgba(255,255,255,0.4);
+	cursor: pointer;
+}
+
+.bouton:hover
+{
+    color: #FF9736;
+    background: #606060;
+	background:-webkit-gradient(linear, left top, left bottom, from(#606060), to(#282828)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#606060,#282828); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#606060,#282828); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#606060,#282828); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#606060,#282828); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+}
+
+.bouton:active
+{
+    color: #E08331;
+    background: 606060;
+	background:-webkit-gradient(linear, left top, left bottom, from(#606060), to(#282828)); /* pour Chrome 10+ et Safari 5.1+ */
+	background:-moz-linear-gradient(top,#606060,#282828); /* pour Firefox 3.6+ */
+	background:-ms-linear-gradient(top,#606060,#282828); /* pour pour IE 10+ */
+	background:-o-linear-gradient(top,#606060,#282828); /* pour Opera 11.10+ */
+	background:linear-gradient(top,#606060,#282828); /* "vous devez toujours mettre la propriété non préfixée en dernier dans le seul but d’assurer la stabilité de votre design dans les années futures" */	
+
+	-webkit-box-shadow:1px 1px 10px #301C0A inset, 0 1px 0 rgba(255,255,255,0.4);
+	-moz-box-shadow:1px 1px 10px #301C0A inset, 0 1px 0 rgba(255,255,255,0.4);
+	-ms-box-shadow:1px 1px 10px #301C0A inset, 0 1px 0 rgba(255,255,255,0.4);
+	-o-box-shadow:1px 1px 10px #301C0A inset, 0 1px 0 rgba(255,255,255,0.4);
+	box-shadow:1px 1px 10px black #301C0A, 0 1px 0 rgba(255,255,255,0.4);
+}
+
+
+#corps fieldset
+{
+	border: 2px #DBDBDB solid;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	margin-top: 20px;
+}
+
+#corps fieldset legend
+{
+	color: #160C53;
+	text-shadow:0px 0.5px 0px lightgrey;
+	font-weight: bold;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#tab_etape1, #tab_etape2, #tab_etape4
+{
+	margin: auto;
+}
+
+label[for]
+{
+	cursor: pointer;
+}
+
+.paddingL30
+{
+	padding-left: 30px;
+}
+
+.rouge
+{
+	font-weight: bold;
+	color: red;
+}
+
+.vert
+{
+	font-weight: bold;
+	color: #2EDB2E;
+}
+
+.centrer
+{
+	text-align:center;
+}
+
+.gras
+{
+	font-weight: bold;
+}
+
+.indication
+{
+    color: grey;
+    font-style: italic;
+	text-indent: 10px;
+}
+
+.opacityMin
+{
+    opacity: 0.5;
+}
+
+.obligatoire
+{
+	font-weight: bold;
+	color: red;
+}
+
+input[readonly]
+{
+	background-color: #E2E2E2;
+}
+
+/*********************************************************************************
+*************** B -  Page d'accueil de la configuration : index.php **************
+**********************************************************************************/
+
+#compatibilites 
+{
+	margin: auto;
+}
+
+#compatibilites ul li
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	list-style-image: url("images/puce.png");
+}	
+
+#compatibilites a
+{
+	color: black;
+	text-decoration: none;
+	border: none;
+}	
+
+#compatibilites a:hover
+{
+	color: darkgrey;
+}	
+
+#compatibilites li img
+{
+	position: relative;
+	top: 5px;
+	margin-right: 10px;
+	border: none;
+}
+
+#compatibilites td
+{
+	vertical-align: top;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.noscript
+{
+	margin: auto;
+	background-image: url("images/background_noscript.png");
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px 2px 8px 8px;
+	border: 2px black solid;
+}
+
+.noscript p
+{
+	color: red;
+	font-weight: bold;
+	position: relative;
+	bottom: 15px;
+}
+
+.noscript img, .noscript p
+{
+	display: inline;
+}
+/*********************************************************************************
+********************************* C -  Etape 1 ***********************************
+**********************************************************************************/
+
+
+
+/*********************************************************************************
+********************************* D -  Etape 2 ***********************************
+**********************************************************************************/
+
+
+
+/*********************************************************************************
+********************************* E -  Etape 3 ***********************************
+**********************************************************************************/
+
+#modules_dispo 
+{
+	padding-left: 15px;
+}
+
+#modules_dispo td
+{
+	padding-right: 15px;
+}
+
+#modules_dispo h3
+{
+	color: #160C53;
+	text-shadow:0px 0.5px 0px lightgrey;
+	font-weight: bold;
+	font-size: 1.05em;
+	text-decoration: underline;
+}
+
+.btn_plus
+{
+	height: 16px;
+	position: relative;
+	top: 3px;
+	left: 5px;
+	cursor: pointer;
+}
+
+#bloc_conges table td
+{
+	vertical-align: top;
+}
+
+#congesAvecSolde caption
+{
+	text-align: left;
+	text-indent: 60px;
+}
+
+#type_conge_avec_solde4, label[for="type_conge_avec_solde4"]
+{
+	position: relative;
+	bottom: 11px;
+}
+
+#fleche
+{
+	position: relative;
+	bottom: 3px;
+}
+
+#congesSansSolde, #indic
+{
+	position: relative;
+	top: 50px;
+}
+
+
+/*********************************************************************************
+********************************* F -  Etape 4 ***********************************
+**********************************************************************************/
+
+
+/*********************************************************************************
+************ G - Page de fin de configuration : finConfig.php ********************
+**********************************************************************************/
+
+#boutons_finConfig
+{
+	width: 100%;
+	text-align: center;
+}
+
+
+
+
+

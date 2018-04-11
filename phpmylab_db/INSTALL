@@ -1,0 +1,50 @@
+
+- Sur un serveur web (port HTTPS ouvert), installez Apache, PHP (+ bibliothèque GD), MySQL.
+- Extraire le fichier "phpmylab.tar" dans un (sous-)répertoire de www. Placez-vous dans le répertoire extrait et connectez-vous au client mysql (avec l'utilisateur mysql root par exemple).
+
+Depuis la version 1.2.0, une installation automatisée est disponible:
+- Ouvrez index.php à la racine du logiciel avec un navigateur web pour lancer l'installation automatique.
+- A la fin de la procédure, il est recommandé de changer des droits d'accès du répertoire racine "phpmylab_db". Pour cela, se placer au dessus du répertoire racine et faire la commande :
+	- [root@clrweb2 intra] chmod 755 phpmylab_db
+
+Installation manuelle:
+
+[root@clrweb2 intra] tar -vxf phpmylab.tar
+[root@clrweb2 intra] mv phpmylab_db phpmylab
+[root@clrweb2 intra] cd phpmylab/configuration
+[root@clrweb2 configuration] mysql -u root -p
+
+- Avec la fonction "source" du client mysql, exécutez les requêtes du script SQL pour la création de la base et du jeu de test:
+
+mysql> create database phpmylabdb;
+mysql> use phpmylabdb
+mysql> source script.sql
+mysql> exit
+
+- Modifiez le contenu de la variable $mysql_location par votre nom de serveur WEB et modifiez le contenu de la variable $mysql_password par votre mot de passe. Par précaution, déplacez le fichier contenant les identifiants de connection en dehors de la zone vue par Apache.
+
+[root@clrweb2 phpmylab] vi connectionPHPMYLABDB.php
+[root@clrweb2 phpmylab] mv connectionPHPMYLABDB.php ../../ 
+[root@clrweb2 phpmylab] vi config_manuelle.php
+[root@clrweb2 phpmylab] mv config_manuelle.php config.php
+
+Puis, modifiez les variables de configuration (fichier config.php).
+En particulier, la variable $domaine permet l'envoie de mail. Par exemple, l'adresse mail logindeladmin@domaine.fr doit etre une adresse valide.
+
+Il est recommandé de changer des droits d'accès du répertoire racine "phpmylab_db". Pour cela, se placer au dessus du répertoire racine et faire la commande :
+	- [root@clrweb2 intra] chmod 755 phpmylab_db
+
+Il faut également réduire les droits d'accès au fichier "connectionPHPMYLABDB.php" :
+	- [root@clrweb2 intra] chmod 744 phpmylab_db/connectionPHPMYLABDB.php
+
+NB : En cas de problème de visualisation des pièces jointes du module EXPEDITIONS, vérifier "expedition_attachments/.htaccess" afin que le chemin indiqué corresponde parfaitement au chemin absolu vers le fichier "expeditions.php" sur votre serveur.
+
+Un jeu test est fournit avec le fichier "script.sql".
+Pour remplir la base avec les utilisateurs et les groupes, utiliser le panneau d'administration accessible par un lien en bas à gauche de la page après s'etre connecter avec l'identifiant suivant:
+
+login: logindeladmin
+mot de passe: mdp!
+
+Des warnings peuvent s'afficher lors de l'utilisation du logiciel, il est donc recommandé de modifier votre php.ini (notamment en production) :
+  - error_reporting(0) permet de désactiver le rapport d'erreurs
+Pour plus d'information sur les erreurs, se reporter à la documentation de php : http://php.net/manual/fr/function.error-reporting.php
