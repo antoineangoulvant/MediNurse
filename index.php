@@ -26,9 +26,9 @@
                 <!-- Breadcrumbs-->
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                        <a href="#">Dashboard</a>
+                        <a href="index.php">Dashboard</a>
                     </li>
-                    <li class="breadcrumb-item active">My Dashboard</li>
+                    <li class="breadcrumb-item active"><?php echo $page ?></li>
                 </ol>
             </div>
 
