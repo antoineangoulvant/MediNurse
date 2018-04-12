@@ -15,4 +15,6 @@
     <link href="css/sb-admin.css" rel="stylesheet">
     <!-- icone de la page -->
     <link rel="icon" type="image/png" href="res/logo.png" />
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
