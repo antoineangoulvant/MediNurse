@@ -1,4 +1,10 @@
 <?php
+    session_start();
+    if( !isset($_SESSION['id']) ){
+        header( 'Location: login.php');
+
+    }
+
     $page = 'accueil';
     if( isset($_GET['page'])) $page = $_GET['page'];
 
@@ -38,7 +44,6 @@
                         include 'inscription.php';
                         break;
                 }
-
             ?>
 
         </div>
@@ -68,7 +73,7 @@
                     <div class="modal-body">Selectionner "Déconnexion" pour fermer votre session</div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Annuler</button>
-                        <a class="btn btn-primary" href="login.php">Déconnexion</a>
+                        <a class="btn btn-primary" href="deconnexion.php">Déconnexion</a>
                     </div>
                 </div>
             </div>
