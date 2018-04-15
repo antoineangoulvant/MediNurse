@@ -45,23 +45,21 @@
                 </tr>
                 </tfoot>
                 <tbody>
+                    <?php
+                        while ($donnees = $rep->fetch()){
+                            echo '<tr>';
+                            echo '<td>'.$donnees['id_utilisateur'].'</td>';
+                            echo '<td>'.$donnees['prenom'].'</td>';
+                            echo '<td>'.$donnees['nom'].'</td>';
+                            echo '<td>'.'A voir'.'</td>';
+                            echo '<td>'.'A voir'.'</td>';
+                            echo '<td>'.'<a href="#" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-user"></span> Fiche utilisateur</a>'.'</td>';
+                            echo '</tr>';
 
-                <?php
-                    while ($donnees = $rep->fetch()){
-                        echo '<tr>';
-                        echo '<td>'.$donnees['id_utilisateur'].'</td>';
-                        echo '<td>'.$donnees['prenom'].'</td>';
-                        echo '<td>'.$donnees['nom'].'</td>';
-                        echo '<td>'.'A voir'.'</td>';
-                        echo '<td>'.'A voir'.'</td>';
-                        echo '<td>'.'<a href="#" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-user"></span> Fiche utilisateur</a>'.'</td>';
-                        echo '</tr>';
+                        }
 
-                    }
-
-                    $rep->closeCursor();
-                ?>
-
+                        $rep->closeCursor();
+                    ?>
                 </tbody>
             </table>
         </div>

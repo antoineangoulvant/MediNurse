@@ -24,7 +24,7 @@
             $pass = $_POST['passwordUtilisateur'];
 
             //  Récupération de l'utilisateur et de son pass hashé
-            $req = $bdd->prepare('SELECT id_utilisateur, motdepasse FROM utilisateur WHERE id_utilisateur = :id');
+            $req = $bdd->prepare('SELECT id_utilisateur, motdepasse, nom, prenom FROM utilisateur WHERE id_utilisateur = :id');
             $req->execute(array('id' => $id));
             $resultat = $req->fetch();
 
@@ -33,6 +33,7 @@
             if ($isPasswordCorrect) {
                 session_start();
                 $_SESSION['id'] = $id;
+                $_SESSION['utilisateur'] = $resultat['prenom'].' '.$resultat['nom'];
                 echo 'Vous êtes connecté !';
                 header('Location: index.php');
             }
