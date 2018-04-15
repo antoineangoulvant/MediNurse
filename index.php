@@ -11,10 +11,13 @@
     $titre = 'MediNurse - Accueil';
     switch ($page){
         case 'inscription':
-            $titre = 'MediNurse - Inscription';
+            $titre = 'Inscription';
+            break;
+        case 'listeutilisateurs' :
+            $titre = 'Liste des utilisateurs';
             break;
         default:
-            $titre = 'MediNurse - Accueil';
+            $titre = 'Accueil';
     }
 ?>
 
@@ -34,7 +37,7 @@
                     <li class="breadcrumb-item">
                         <a href="index.php">Dashboard</a>
                     </li>
-                    <li class="breadcrumb-item active"><?php echo $page ?></li>
+                    <li class="breadcrumb-item active"><?php echo $titre ?></li>
                 </ol>
             </div>
 
@@ -42,6 +45,9 @@
                 switch ($page){
                     case 'inscription':
                         include 'inscription.php';
+                        break;
+                    case 'listeutilisateurs':
+                        include 'liste_utilisateurs.php';
                         break;
                 }
             ?>

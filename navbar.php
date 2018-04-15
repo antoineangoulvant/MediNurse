@@ -104,6 +104,9 @@
                         <a href="index.php?page=inscription">Inscription</a>
                     </li>
                     <li>
+                        <a href="index.php?page=listeutilisateurs">Liste des utilisateurs</a>
+                    </li>
+                    <li>
                         <a href="cards.php">Cards</a>
                     </li>
                 </ul>
