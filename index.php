@@ -12,8 +12,11 @@
         case 'inscription':
             $titre = 'Inscription';
             break;
-        case 'listeutilisateurs' :
+        case 'listeutilisateurs':
             $titre = 'Liste des utilisateurs';
+            break;
+        case 'utilisateur':
+            $titre = 'Utilisateur';
             break;
         default:
             $titre = 'Accueil';
@@ -47,6 +50,9 @@
                         break;
                     case 'listeutilisateurs':
                         include 'liste_utilisateurs.php';
+                        break;
+                    case 'utilisateur':
+                        include 'utilisateur.php';
                         break;
                 }
             ?>
