@@ -83,9 +83,9 @@
                 <div class="form-group">
                     <label for="genre">Genre<span class="obligatoire">*</span> :</label>
                     <select id="genre" name="genre" class="form-control">
-                        <option value="1">Mr</option>
-                        <option value="2">Mme</option>
-                        <option value="3">Autre</option>
+                        <option<?php if($resultat['genre'] == 1) echo ' selected'; ?> value="1">Mr</option>
+                        <option<?php if($resultat['genre'] == 2) echo ' selected'; ?> value="2">Mme</option>
+                        <option<?php if($resultat['genre'] == 3) echo ' selected'; ?> value="3">Autre</option>
                     </select>
                 </div>
             </div>
@@ -117,7 +117,7 @@
             </div>
             <div class="col-lg-4">
                 <label for="mdp">Mot de passe<span class="obligatoire">*</span> :</label>
-                <input type="password" class="form-control" id="mdp" placeholder="Mot de passe" name="mdp" disabled>
+                <a href="#" class="btn btn-primary btn-danger center-block">Modification du mot de passe</a>
             </div>
         </div>
         <div class="row margininscription">
