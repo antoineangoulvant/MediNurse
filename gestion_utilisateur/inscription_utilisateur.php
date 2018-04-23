@@ -81,7 +81,7 @@
             <h1 class="text-center">Page d'inscription</h1>
         </div>
     </div>
-    <form method="post" action="index.php?page=inscription">
+    <form method="post" action="../index.php?page=inscription">
         <div class="row margininscription">
             <div class="col-lg-2">
                 <div class="form-group">
@@ -89,7 +89,6 @@
                     <select id="genre" name="genre" class="form-control">
                         <option value="1">Mr</option>
                         <option value="2">Mme</option>
-                        <option value="3">Autre</option>
                     </select>
                 </div>
             </div>

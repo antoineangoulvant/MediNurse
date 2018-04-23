@@ -94,6 +94,25 @@
                 </a>
             </li>
 
+            <!-- Gestion des patients -->
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#ongletPatient" data-parent="#exampleAccordion">
+                    <i class="fa fa-fw fa-user"></i>
+                    <span class="nav-link-text">Gestion des patients</span>
+                </a>
+                <ul class="sidenav-second-level collapse" id="ongletPatient">
+                    <li>
+                        <a href="index.php?page=inscription_patient">Saisie d'un patient</a>
+                    </li>
+                    <li>
+                        <a href="index.php?page=listeutilisateurs">Liste des patients</a>
+                    </li>
+                    <li>
+                        <a href="cards.php">Cards</a>
+                    </li>
+                </ul>
+            </li>
+
             <!-- Panel admin -->
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
                 <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#ongletAdmin" data-parent="#exampleAccordion">

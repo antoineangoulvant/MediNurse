@@ -77,7 +77,7 @@
             <h1 class="text-center">Utilisateur <?php echo $resultat['id_utilisateur']; ?></h1>
         </div>
     </div>
-    <form method="post" action="index.php?page=utilisateur&id=<?php echo $_GET['id']; ?>">
+    <form method="post" action="../index.php?page=utilisateur&id=<?php echo $_GET['id']; ?>">
         <div class="row margininscription">
             <div class="col-lg-2">
                 <div class="form-group">
@@ -85,7 +85,6 @@
                     <select id="genre" name="genre" class="form-control">
                         <option<?php if($resultat['genre'] == 1) echo ' selected'; ?> value="1">Mr</option>
                         <option<?php if($resultat['genre'] == 2) echo ' selected'; ?> value="2">Mme</option>
-                        <option<?php if($resultat['genre'] == 3) echo ' selected'; ?> value="3">Autre</option>
                     </select>
                 </div>
             </div>

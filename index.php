@@ -18,6 +18,9 @@
         case 'utilisateur':
             $titre = 'Utilisateur';
             break;
+        case 'inscription_patient':
+            $titre = 'Saisie d\'un patient';
+            break;
         default:
             $titre = 'Accueil';
     }
@@ -46,13 +49,16 @@
             <?php
                 switch ($page){
                     case 'inscription':
-                        include 'inscription.php';
+                        include 'gestion_utilisateur/inscription_utilisateur.php';
                         break;
                     case 'listeutilisateurs':
-                        include 'liste_utilisateurs.php';
+                        include 'gestion_utilisateur/liste_utilisateurs.php';
                         break;
                     case 'utilisateur':
-                        include 'utilisateur.php';
+                        include 'gestion_utilisateur/utilisateur.php';
+                        break;
+                    case 'inscription_patient':
+                        include 'inscription_patient.php';
                         break;
                 }
             ?>
