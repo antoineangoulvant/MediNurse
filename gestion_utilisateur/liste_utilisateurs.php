@@ -53,7 +53,7 @@
                             echo '<td>'.$donnees['nom'].'</td>';
                             echo '<td>'.'A voir'.'</td>';
                             echo '<td>'.'A voir'.'</td>';
-                            echo '<td>'.'<a href="../index.php?page=utilisateur&id='.$donnees['id_utilisateur'].'" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-user"></span> Fiche utilisateur</a>'.'</td>';
+                            echo '<td>'.'<a href="index.php?page=utilisateur&id='.$donnees['id_utilisateur'].'" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-user"></span> Fiche utilisateur</a>'.'</td>';
                             echo '</tr>';
 
                         }

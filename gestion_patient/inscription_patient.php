@@ -77,7 +77,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <h1 class="text-center">Saisie d'un nouveau patient</h1>
         </div>
     </div>
-    <form method="post" action="index.php?page=inscription_patient">
+    <form method="post" action="../index.php?page=inscription_patient">
         <div class="row margininscription">
             <div class="col-lg-2">
                 <div class="form-group">

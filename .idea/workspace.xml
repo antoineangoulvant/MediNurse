@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54d426cc-4c4a-48bc-8683-f2ff73858824" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/inscription_patient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestion_patient/liste_patients.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestion_patient/patient.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestion_utilisateur/liste_utilisateurs.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_utilisateur/liste_utilisateurs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestion_utilisateur/utilisateur.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_utilisateur/utilisateur.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/inscription_utilisateur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscription_patient.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_patient/inscription_patient.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traitement_inscription.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilisateur.php" beforeDir="false" afterPath="$PROJECT_DIR$/utilisateur.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,29 +39,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="59" column="38" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+            <state relative-caret-position="510">
+              <caret line="73" column="30" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="liste_patients.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestion_patient/liste_patients.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="515">
+              <caret line="55" column="184" selection-start-line="55" selection-start-column="184" selection-end-line="55" selection-end-column="184" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="patient.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestion_patient/patient.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1173">
+              <caret line="76" column="52" lean-forward="true" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="52" />
+              <folding>
+                <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="liste_utilisateurs.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/liste_utilisateurs.php">
+        <entry file="file://$PROJECT_DIR$/gestion_utilisateur/liste_utilisateurs.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="53" column="57" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
+            <state relative-caret-position="529">
+              <caret line="55" column="50" selection-end-line="67" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="utilisateur.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utilisateur.php">
+        <entry file="file://$PROJECT_DIR$/gestion_utilisateur/utilisateur.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1462">
-              <caret line="87" selection-start-line="87" selection-end-line="87" />
+            <state relative-caret-position="665">
+              <caret line="172" column="14" lean-forward="true" selection-end-line="176" selection-end-column="6" />
+              <folding>
+                <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,29 +95,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="forgot-password.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forgot-password.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deconnexion.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deconnexion.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" selection-start-column="5" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="28" selection-end-column="38" />
+            <state relative-caret-position="425">
+              <caret line="25" column="66" lean-forward="true" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
               </folding>
@@ -101,7 +108,7 @@
         </entry>
       </file>
       <file leaf-file-name="inscription_utilisateur.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inscription_utilisateur.php">
+        <entry file="file://$PROJECT_DIR$/gestion_utilisateur/inscription_utilisateur.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="680">
               <caret line="91" selection-start-line="91" selection-end-line="91" />
@@ -112,17 +119,17 @@
       <file leaf-file-name="navbar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/navbar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="102" column="74" lean-forward="true" selection-start-line="102" selection-start-column="74" selection-end-line="102" selection-end-column="74" />
+            <state relative-caret-position="345">
+              <caret line="107" column="62" selection-start-line="107" selection-start-column="62" selection-end-line="107" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inscription_patient.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/inscription_patient.php">
+      <file leaf-file-name="inscription_patient.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestion_patient/inscription_patient.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="714">
-              <caret line="79" column="66" selection-start-line="79" selection-start-column="66" selection-end-line="79" selection-end-column="66" />
+              <caret line="79" column="69" selection-start-line="79" selection-start-column="69" selection-end-line="79" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -193,9 +200,13 @@
         <option value="$PROJECT_DIR$/password_reset.php" />
         <option value="$PROJECT_DIR$/inscription_utilisateur.php" />
         <option value="$PROJECT_DIR$/utilisateur.php" />
-        <option value="$PROJECT_DIR$/navbar.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/inscription_patient.php" />
+        <option value="$PROJECT_DIR$/gestion_utilisateur/liste_utilisateurs.php" />
+        <option value="$PROJECT_DIR$/navbar.php" />
+        <option value="$PROJECT_DIR$/gestion_patient/liste_patients.php" />
+        <option value="$PROJECT_DIR$/gestion_utilisateur/utilisateur.php" />
+        <option value="$PROJECT_DIR$/gestion_patient/patient.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -253,6 +264,16 @@
               <item name="medinurse" type="b2602c69:ProjectViewProjectNode" />
               <item name="medinurse" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="medinurse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medinurse" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="gestion_patient" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="medinurse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medinurse" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="gestion_utilisateur" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -269,6 +290,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\medinurse\gestion_patient" />
+      <recent name="C:\wamp\www\medinurse\gestion_utilisateur" />
       <recent name="C:\wamp64\www\medinurse\admin" />
       <recent name="C:\wamp64\www\medinurse" />
     </key>
@@ -305,7 +328,7 @@
       <workItem from="1523533011150" duration="20526000" />
       <workItem from="1523725511841" duration="12637000" />
       <workItem from="1524429559785" duration="1717000" />
-      <workItem from="1524474611041" duration="3158000" />
+      <workItem from="1524474611041" duration="4503000" />
     </task>
     <task id="LOCAL-00001" summary="Création des fichiers">
       <created>1519217355877</created>
@@ -391,26 +414,34 @@
       <option name="project" value="LOCAL" />
       <updated>1523809257505</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Début gestion patients">
+      <created>1524481973953</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1524481973953</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64033000" />
+    <option name="totallyTimeSpent" value="65378000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.13489583" />
       <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.496875" visible="true" weight="0.21451104" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.503125" side_tool="true" weight="0.21451104" />
-      <window_info anchor="right" id="Database" order="0" visible="true" weight="0.14166667" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Run" order="8" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.13489583" />
+      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="0" visible="true" weight="0.14166667" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -418,7 +449,6 @@
       <window_info anchor="bottom" id="PHP-CGI Server" order="13" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.496875" visible="true" weight="0.21451104" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32948583" />
@@ -442,7 +472,8 @@
     <MESSAGE value="Gestion des sessions" />
     <MESSAGE value="Création de la liste des utilisateurs" />
     <MESSAGE value="Correction erreur package-lock.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correction erreur package-lock.json" />
+    <MESSAGE value="Début gestion patients" />
+    <option name="LAST_COMMIT_MESSAGE" value="Début gestion patients" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -450,20 +481,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/utilisateur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2958">
-          <caret line="174" column="91" selection-start-line="174" selection-start-column="91" selection-end-line="174" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="833">
@@ -621,24 +638,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/liste_utilisateurs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="57" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa4092.46443/contactlist.php" />
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="28" selection-end-column="38" />
-          <folding>
-            <element signature="e#6#87#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/forgot-password.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -656,38 +656,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inscription_utilisateur.php">
+    <entry file="file://$PROJECT_DIR$/gestion_utilisateur/inscription_utilisateur.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="91" selection-start-line="91" selection-end-line="91" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utilisateur.php">
+    <entry file="file://$PROJECT_DIR$/gestion_patient/inscription_patient.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
+        <state relative-caret-position="714">
+          <caret line="79" column="69" selection-start-line="79" selection-start-column="69" selection-end-line="79" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="66" lean-forward="true" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_utilisateur/liste_utilisateurs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="55" column="50" selection-end-line="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="102" column="74" lean-forward="true" selection-start-line="102" selection-start-column="74" selection-end-line="102" selection-end-column="74" />
+        <state relative-caret-position="345">
+          <caret line="107" column="62" selection-start-line="107" selection-start-column="62" selection-end-line="107" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_utilisateur/utilisateur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="172" column="14" lean-forward="true" selection-end-line="176" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_patient/patient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="76" column="52" lean-forward="true" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_patient/liste_patients.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="55" column="184" selection-start-line="55" selection-start-column="184" selection-end-line="55" selection-end-column="184" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" column="38" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inscription_patient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="79" column="66" selection-start-line="79" selection-start-column="66" selection-end-line="79" selection-end-column="66" />
+        <state relative-caret-position="510">
+          <caret line="73" column="30" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
         </state>
       </provider>
     </entry>

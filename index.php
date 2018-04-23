@@ -21,6 +21,12 @@
         case 'inscription_patient':
             $titre = 'Saisie d\'un patient';
             break;
+        case 'liste_patients':
+            $titre = 'Liste des patients';
+            break;
+        case 'patient':
+            $titre = 'Fiche patient';
+            break;
         default:
             $titre = 'Accueil';
     }
@@ -58,7 +64,13 @@
                         include 'gestion_utilisateur/utilisateur.php';
                         break;
                     case 'inscription_patient':
-                        include 'inscription_patient.php';
+                        include 'gestion_patient/inscription_patient.php';
+                        break;
+                    case 'liste_patients':
+                        include 'gestion_patient/liste_patients.php';
+                        break;
+                    case 'patient':
+                        include 'gestion_patient/patient.php';
                         break;
                 }
             ?>

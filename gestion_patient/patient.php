@@ -1,80 +1,80 @@
 
 <?php
-    //Empêche l'insertion dans la bdd si il y a une erreur
-    $formulaire_valide = true;
-    //Permet l'affichage d'un message d'envoi
-    $envoye = false;
+//Empêche l'insertion dans la bdd si il y a une erreur
+$formulaire_valide = true;
+//Permet l'affichage d'un message d'envoi
+$envoye = false;
 
-    try
-    {
+try
+{
     $bdd = new PDO('mysql:host=e88487-mysql.services.easyname.eu;dbname=u139724db1;charset=utf8', 'u139724db1', 'pp5959he');
-    }
-    catch (Exception $e)
-    {
+}
+catch (Exception $e)
+{
     die('Erreur : ' . $e->getMessage());
+}
+
+$req = $bdd->prepare('SELECT * FROM patient WHERE id_patient = :id');
+$req->execute(array('id' => $_GET['id']));
+$resultat = $req->fetch();
+
+//Test des champs et creation d'une erreur si champs non rempli
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    $erreur=[];
+
+    if( $_POST['nom'] == '' ){
+        $erreur['nom'] = 'Le champs nom est obligatoire';
+        $formulaire_valide = false;
     }
 
-    $req = $bdd->prepare('SELECT * FROM utilisateur WHERE id_utilisateur = :id');
-    $req->execute(array('id' => $_GET['id']));
-    $resultat = $req->fetch();
-
-    //Test des champs et creation d'une erreur si champs non rempli
-    if($_SERVER["REQUEST_METHOD"] == "POST"){
-        $erreur=[];
-
-        if( $_POST['nom'] == '' ){
-            $erreur['nom'] = 'Le champs nom est obligatoire';
-            $formulaire_valide = false;
-        }
-
-        if( $_POST['prenom'] == '' ){
-            $erreur['prenom'] = 'Le champs prénom est obligatoire';
-            $formulaire_valide = false;
-        }
-
-        if( $_POST['mail'] == '' ){
-            $erreur['mail'] = 'Le champs mail est obligatoire';
-            $formulaire_valide = false;
-        }
-
-        if( $_POST['datenaissance'] == '' ){
-            $erreur['datenaissance'] = 'Le champs date de naissance est obligatoire';
-            $formulaire_valide = false;
-        }
-
-        if( empty($_POST['adresse']) ){
-            $erreur['adresse'] = 'Le champs adresse est obligatoire';
-            $formulaire_valide = false;
-        }
-
-        if( empty($_POST['codepostal']) ){
-            $erreur['codepostal'] = 'Le champs code postal est obligatoire';
-            $formulaire_valide = false;
-        }
-
-        if( empty($_POST['ville']) ){
-            $erreur['ville'] = 'Le champs ville est obligatoire';
-            $formulaire_valide = false;
-        }
-
-        if( empty($_POST['pays']) ){
-            $erreur['pays'] = 'Le champs pays est obligatoire';
-            $formulaire_valide = false;
-        }
-
-        //Insertion dans la base
-        if( $formulaire_valide ) {
-            $req = $bdd->prepare('UPDATE utilisateur SET nom=?,prenom=?,genre=?,datenaissance=?,adresse1=?,adresse2=?,codepostal=?,ville=?,pays=?,teldom=?,teltrav=?,telport=?,mail=? WHERE id_utilisateur=?');
-            $req->execute(array($_POST['nom'], $_POST['prenom'], $_POST['genre'], $_POST['datenaissance'], $_POST['adresse'], $_POST['adressecomp'], $_POST['codepostal'], $_POST['ville'], $_POST['pays'], $_POST['teldom'], $_POST['teltrav'], $_POST['telport'], $_POST['mail'], $_GET['id']));
-            $envoye = true;
-        }
+    if( $_POST['prenom'] == '' ){
+        $erreur['prenom'] = 'Le champs prénom est obligatoire';
+        $formulaire_valide = false;
     }
+
+    if( $_POST['mail'] == '' ){
+        $erreur['mail'] = 'Le champs mail est obligatoire';
+        $formulaire_valide = false;
+    }
+
+    if( $_POST['datenaissance'] == '' ){
+        $erreur['datenaissance'] = 'Le champs date de naissance est obligatoire';
+        $formulaire_valide = false;
+    }
+
+    if( empty($_POST['adresse']) ){
+        $erreur['adresse'] = 'Le champs adresse est obligatoire';
+        $formulaire_valide = false;
+    }
+
+    if( empty($_POST['codepostal']) ){
+        $erreur['codepostal'] = 'Le champs code postal est obligatoire';
+        $formulaire_valide = false;
+    }
+
+    if( empty($_POST['ville']) ){
+        $erreur['ville'] = 'Le champs ville est obligatoire';
+        $formulaire_valide = false;
+    }
+
+    if( empty($_POST['pays']) ){
+        $erreur['pays'] = 'Le champs pays est obligatoire';
+        $formulaire_valide = false;
+    }
+
+    //Insertion dans la base
+    if( $formulaire_valide ) {
+        $req = $bdd->prepare('UPDATE utilisateur SET nom=?,prenom=?,genre=?,datenaissance=?,adresse1=?,adresse2=?,codepostal=?,ville=?,pays=?,teldom=?,teltrav=?,telport=?,mail=? WHERE id_utilisateur=?');
+        $req->execute(array($_POST['nom'], $_POST['prenom'], $_POST['genre'], $_POST['datenaissance'], $_POST['adresse'], $_POST['adressecomp'], $_POST['codepostal'], $_POST['ville'], $_POST['pays'], $_POST['teldom'], $_POST['teltrav'], $_POST['telport'], $_POST['mail'], $_GET['id']));
+        $envoye = true;
+    }
+}
 ?>
 
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="text-center">Utilisateur <?php echo $resultat['id_utilisateur']; ?></h1>
+            <h1 class="text-center">Patient n°<?php echo $resultat['id_patient']; ?></h1>
         </div>
     </div>
     <form method="post" action="index.php?page=utilisateur&id=<?php echo $_GET['id']; ?>">

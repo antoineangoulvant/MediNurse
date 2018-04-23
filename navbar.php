@@ -105,7 +105,7 @@
                         <a href="index.php?page=inscription_patient">Saisie d'un patient</a>
                     </li>
                     <li>
-                        <a href="index.php?page=listeutilisateurs">Liste des patients</a>
+                        <a href="index.php?page=liste_patients">Liste des patients</a>
                     </li>
                     <li>
                         <a href="cards.php">Cards</a>
