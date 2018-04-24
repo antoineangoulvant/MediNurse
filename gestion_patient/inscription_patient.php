@@ -64,8 +64,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     //Insertion dans la base
     if( $formulaire_valide ) {
-        $req = $bdd->prepare('INSERT INTO patient(nom,prenom,genre,datenaissance,adresse1,adresse2,codepostal,ville,pays,teldom,teltrav,telport,mail,ins) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
-        $req->execute(array($_POST['nom'], $_POST['prenom'], $_POST['genre'], $_POST['datenaissance'], $_POST['adresse'], $_POST['adressecomp'], $_POST['codepostal'], $_POST['ville'], $_POST['pays'], $_POST['teldom'], $_POST['teltrav'], $_POST['telport'], $_POST['mail'], $_POST['ins']));
+        $req = $bdd->prepare('INSERT INTO patient(nom,prenom,genre,datenaissance,adresse1,adresse2,codepostal,ville,pays,teldom,teltrav,telport,mail,ins,service) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+        $req->execute(array($_POST['nom'], $_POST['prenom'], $_POST['genre'], $_POST['datenaissance'], $_POST['adresse'], $_POST['adressecomp'], $_POST['codepostal'], $_POST['ville'], $_POST['pays'], $_POST['teldom'], $_POST['teltrav'], $_POST['telport'], $_POST['mail'], $_POST['ins'], $_POST['service']));
         $envoye = true;
     }
 }
@@ -77,7 +77,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <h1 class="text-center">Saisie d'un nouveau patient</h1>
         </div>
     </div>
-    <form method="post" action="../index.php?page=inscription_patient">
+    <form method="post" action="index.php?page=inscription_patient">
         <div class="row margininscription">
             <div class="col-lg-2">
                 <div class="form-group">
@@ -169,6 +169,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     <label for="telport">Téléphone portable<span class="obligatoire">*</span> :</label>
                     <input type="tel" class="form-control" id="telport" placeholder="Saisissez le numéro" name="telport">
                     <?php if(isset($erreur['telport'])) echo '<div class="alert alert-danger">'.$erreur['telport'].'</div>'; ?>
+                </div>
+            </div>
+        </div>
+        <div class="row margininscription">
+            <div class="col-lg-3">
+                <div class="form-group">
+                    <label for="service">Service<span class="obligatoire">*</span> :</label>
+                    <select id="service" name="service" class="form-control">
+                        <?php
+                        $reqservice = $bdd->query('SELECT * FROM service');
+                        while ($donnees = $reqservice->fetch()){
+                            echo '<option value="'.$donnees['id_service'].'">'.$donnees['libelle'].'</option>';
+                        }
+                        ?>
+                    </select>
                 </div>
             </div>
         </div>

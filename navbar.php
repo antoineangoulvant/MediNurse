@@ -107,9 +107,6 @@
                     <li>
                         <a href="index.php?page=liste_patients">Liste des patients</a>
                     </li>
-                    <li>
-                        <a href="cards.php">Cards</a>
-                    </li>
                 </ul>
             </li>
 

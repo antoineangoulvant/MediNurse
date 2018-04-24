@@ -64,8 +64,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     //Insertion dans la base
     if( $formulaire_valide ) {
-        $req = $bdd->prepare('UPDATE utilisateur SET nom=?,prenom=?,genre=?,datenaissance=?,adresse1=?,adresse2=?,codepostal=?,ville=?,pays=?,teldom=?,teltrav=?,telport=?,mail=? WHERE id_utilisateur=?');
-        $req->execute(array($_POST['nom'], $_POST['prenom'], $_POST['genre'], $_POST['datenaissance'], $_POST['adresse'], $_POST['adressecomp'], $_POST['codepostal'], $_POST['ville'], $_POST['pays'], $_POST['teldom'], $_POST['teltrav'], $_POST['telport'], $_POST['mail'], $_GET['id']));
+        $req = $bdd->prepare('UPDATE patient SET nom=?,prenom=?,genre=?,datenaissance=?,adresse1=?,adresse2=?,codepostal=?,ville=?,pays=?,teldom=?,teltrav=?,telport=?,mail=?,service=? WHERE id_patient=?');
+        $req->execute(array($_POST['nom'], $_POST['prenom'], $_POST['genre'], $_POST['datenaissance'], $_POST['adresse'], $_POST['adressecomp'], $_POST['codepostal'], $_POST['ville'], $_POST['pays'], $_POST['teldom'], $_POST['teltrav'], $_POST['telport'], $_POST['mail'], $_POST['service'], $_GET['id']));
         $envoye = true;
     }
 }
@@ -77,7 +77,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <h1 class="text-center">Patient n°<?php echo $resultat['id_patient']; ?></h1>
         </div>
     </div>
-    <form method="post" action="index.php?page=utilisateur&id=<?php echo $_GET['id']; ?>">
+    <form method="post" action="index.php?page=patient&id=<?php echo $_GET['id']; ?>">
         <div class="row margininscription">
             <div class="col-lg-2">
                 <div class="form-group">
@@ -168,6 +168,25 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     <label for="telport">Téléphone portable<span class="obligatoire">*</span> :</label>
                     <input type="tel" class="form-control" id="telport" value="<?php echo $resultat['telport']; ?>" name="telport">
                     <?php if(isset($erreur['telport'])) echo '<div class="alert alert-danger">'.$erreur['telport'].'</div>'; ?>
+                </div>
+            </div>
+        </div>
+        <div class="row margininscription">
+            <div class="col-lg-3">
+                <div class="form-group">
+                    <label for="service">Service<span class="obligatoire">*</span> :</label>
+                    <select id="service" name="service" class="form-control">
+                        <?php
+                        $reqservice = $bdd->query('SELECT * FROM service');
+                        while ($donnees = $reqservice->fetch()){
+                            $selected = '';
+                            if( $resultat['service'] == $donnees['id_service'] ){
+                                $selected = ' selected';
+                            }
+                            echo '<option'.$selected.' value="'.$donnees['id_service'].'">'.$donnees['libelle'].'</option>';
+                        }
+                        ?>
+                    </select>
                 </div>
             </div>
         </div>

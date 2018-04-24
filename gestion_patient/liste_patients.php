@@ -29,8 +29,7 @@ $rep = $bdd->query('SELECT * FROM patient');
                     <th>ID</th>
                     <th>Prénom</th>
                     <th>Nom</th>
-                    <th>Age</th>
-                    <th>Start date</th>
+                    <th>Service</th>
                     <th>En savoir plus</th>
                 </tr>
                 </thead>
@@ -39,8 +38,7 @@ $rep = $bdd->query('SELECT * FROM patient');
                     <th>ID</th>
                     <th>Prénom</th>
                     <th>Nom</th>
-                    <th>Age</th>
-                    <th>Start date</th>
+                    <th>Service</th>
                     <th>En savoir plus</th>
                 </tr>
                 </tfoot>
@@ -51,8 +49,12 @@ $rep = $bdd->query('SELECT * FROM patient');
                     echo '<td>'.$donnees['id_patient'].'</td>';
                     echo '<td>'.$donnees['prenom'].'</td>';
                     echo '<td>'.$donnees['nom'].'</td>';
-                    echo '<td>'.'A voir'.'</td>';
-                    echo '<td>'.'A voir'.'</td>';
+
+                    $reqservice = $bdd->prepare('SELECT libelle FROM service WHERE id_service = :id');
+                    $reqservice->execute(array('id' => $donnees['service']));
+                    $libservice = $reqservice->fetch();
+                    echo '<td>'.$libservice['libelle'].'</td>';
+
                     echo '<td>'.'<a href="index.php?page=patient&id='.$donnees['id_patient'].'" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-user"></span> Fiche patient</a>'.'</td>';
                     echo '</tr>';
 

@@ -68,8 +68,8 @@
         if( $formulaire_valide ) {
             $pass_hache = password_hash($pass, PASSWORD_DEFAULT);
 
-            $req = $bdd->prepare('INSERT INTO utilisateur(nom,prenom,genre,datenaissance,adresse1,adresse2,codepostal,ville,pays,teldom,teltrav,telport,mail,motdepasse) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
-            $req->execute(array($_POST['nom'], $_POST['prenom'], $_POST['genre'], $_POST['datenaissance'], $_POST['adresse'], $_POST['adressecomp'], $_POST['codepostal'], $_POST['ville'], $_POST['pays'], $_POST['teldom'], $_POST['teltrav'], $_POST['telport'], $_POST['mail'], $pass_hache));
+            $req = $bdd->prepare('INSERT INTO utilisateur(nom,prenom,genre,datenaissance,adresse1,adresse2,codepostal,ville,pays,teldom,teltrav,telport,mail,motdepasse,service) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+            $req->execute(array($_POST['nom'], $_POST['prenom'], $_POST['genre'], $_POST['datenaissance'], $_POST['adresse'], $_POST['adressecomp'], $_POST['codepostal'], $_POST['ville'], $_POST['pays'], $_POST['teldom'], $_POST['teltrav'], $_POST['telport'], $_POST['mail'], $pass_hache, $_POST['service']));
             $envoye = true;
         }
     }
@@ -81,7 +81,7 @@
             <h1 class="text-center">Page d'inscription</h1>
         </div>
     </div>
-    <form method="post" action="../index.php?page=inscription">
+    <form method="post" action="index.php?page=inscription">
         <div class="row margininscription">
             <div class="col-lg-2">
                 <div class="form-group">
@@ -173,6 +173,21 @@
                     <label for="telport">Téléphone portable<span class="obligatoire">*</span> :</label>
                     <input type="tel" class="form-control" id="telport" placeholder="Saisissez le numéro" name="telport">
                     <?php if(isset($erreur['telport'])) echo '<div class="alert alert-danger">'.$erreur['telport'].'</div>'; ?>
+                </div>
+            </div>
+        </div>
+        <div class="row margininscription">
+            <div class="col-lg-3">
+                <div class="form-group">
+                    <label for="service">Service<span class="obligatoire">*</span> :</label>
+                    <select id="service" name="service" class="form-control">
+                    <?php
+                        $reqservice = $bdd->query('SELECT * FROM service');
+                        while ($donnees = $reqservice->fetch()){
+                            echo '<option value="'.$donnees['id_service'].'">'.$donnees['libelle'].'</option>';
+                        }
+                    ?>
+                    </select>
                 </div>
             </div>
         </div>

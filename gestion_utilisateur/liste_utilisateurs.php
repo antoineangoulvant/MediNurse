@@ -29,8 +29,7 @@
                     <th>ID</th>
                     <th>Prénom</th>
                     <th>Nom</th>
-                    <th>Age</th>
-                    <th>Start date</th>
+                    <th>Service</th>
                     <th>En savoir plus</th>
                 </tr>
                 </thead>
@@ -39,8 +38,7 @@
                     <th>ID</th>
                     <th>Prénom</th>
                     <th>Nom</th>
-                    <th>Age</th>
-                    <th>Start date</th>
+                    <th>Service</th>
                     <th>En savoir plus</th>
                 </tr>
                 </tfoot>
@@ -51,13 +49,16 @@
                             echo '<td>'.$donnees['id_utilisateur'].'</td>';
                             echo '<td>'.$donnees['prenom'].'</td>';
                             echo '<td>'.$donnees['nom'].'</td>';
-                            echo '<td>'.'A voir'.'</td>';
-                            echo '<td>'.'A voir'.'</td>';
+
+                            $reqservice = $bdd->prepare('SELECT libelle FROM service WHERE id_service = :id');
+                            $reqservice->execute(array('id' => $donnees['service']));
+                            $libservice = $reqservice->fetch();
+                            echo '<td>'.$libservice['libelle'].'</td>';
+
                             echo '<td>'.'<a href="index.php?page=utilisateur&id='.$donnees['id_utilisateur'].'" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-user"></span> Fiche utilisateur</a>'.'</td>';
                             echo '</tr>';
 
                         }
-
                         $rep->closeCursor();
                     ?>
                 </tbody>
