@@ -30,6 +30,7 @@ $rep = $bdd->query('SELECT * FROM patient');
                     <th>Prénom</th>
                     <th>Nom</th>
                     <th>Service</th>
+                    <th>Chambre</th>
                     <th>En savoir plus</th>
                 </tr>
                 </thead>
@@ -39,6 +40,7 @@ $rep = $bdd->query('SELECT * FROM patient');
                     <th>Prénom</th>
                     <th>Nom</th>
                     <th>Service</th>
+                    <th>Chambre</th>
                     <th>En savoir plus</th>
                 </tr>
                 </tfoot>
@@ -54,6 +56,11 @@ $rep = $bdd->query('SELECT * FROM patient');
                     $reqservice->execute(array('id' => $donnees['service']));
                     $libservice = $reqservice->fetch();
                     echo '<td>'.$libservice['libelle'].'</td>';
+
+                    $reqchambre = $bdd->prepare('SELECT numero FROM chambre c, lit l WHERE l.numero_chambre = c.numero AND l.id_patient = :id_patient');
+                    $reqchambre->execute(array('id_patient' => $donnees['id_patient']));
+                    $libchambre = $reqchambre->fetch();
+                    echo '<td>'.$libchambre['numero'].'</td>';
 
                     echo '<td>'.'<a href="index.php?page=patient&id='.$donnees['id_patient'].'" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-user"></span> Fiche patient</a>'.'</td>';
                     echo '</tr>';
