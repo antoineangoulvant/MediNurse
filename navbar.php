@@ -124,8 +124,17 @@
                         <a href="index.php?page=listeutilisateurs">Liste des utilisateurs</a>
                     </li>
                     <li>
-                        <a href="cards.php">Cards</a>
+                        <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#gestionetab">Gestion établissement</a>
+                        <ul class="sidenav-third-level collapse" id="gestionetab">
+                            <li>
+                                <a href="index.php?page=gestionchambre">Gestion des chambres</a>
+                            </li>
+                            <li>
+                                <a href="index.php?page=gestionlit">Gestion des lits</a>
+                            </li>
+                        </ul>
                     </li>
+
                 </ul>
             </li>
         </ul>

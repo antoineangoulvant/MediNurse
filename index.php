@@ -27,6 +27,12 @@
         case 'patient':
             $titre = 'Fiche patient';
             break;
+        case 'gestionchambre':
+            $titre = 'Gestion des chambres';
+            break;
+        case 'gestionlit':
+            $titre = 'Gestion des lits';
+            break;
         default:
             $titre = 'Accueil';
     }
@@ -71,6 +77,12 @@
                         break;
                     case 'patient':
                         include 'gestion_patient/patient.php';
+                        break;
+                    case 'gestionchambre':
+                        include 'gestion_chambre.php';
+                        break;
+                    case 'gestionlit':
+                        include 'gestion_lit.php';
                         break;
                 }
             ?>
