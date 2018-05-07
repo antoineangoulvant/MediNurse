@@ -33,6 +33,9 @@
         case 'gestionlit':
             $titre = 'Gestion des lits';
             break;
+        case 'lecturepatient':
+            $titre = 'Lecture patient';
+            break;
         default:
             $titre = 'Accueil';
     }
@@ -84,9 +87,11 @@
                     case 'gestionlit':
                         include 'gestion_lit.php';
                         break;
+                    case 'lecturepatient':
+                        include 'gestion_patient/lecture_patient.php';
+                        break;
                 }
             ?>
-
         </div>
         <!-- /.container-fluid-->
         <!-- /.content-wrapper-->

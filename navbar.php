@@ -109,6 +109,12 @@
                     </li>
                 </ul>
             </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Lecture patient">
+                <a class="nav-link" href="index.php?page=lecturepatient">
+                    <i class="fa fa-fw fa-link"></i>
+                    <span class="nav-link-text">Lecture patient</span>
+                </a>
+            </li>
 
             <!-- Panel admin -->
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
@@ -134,7 +140,6 @@
                             </li>
                         </ul>
                     </li>
-
                 </ul>
             </li>
         </ul>
