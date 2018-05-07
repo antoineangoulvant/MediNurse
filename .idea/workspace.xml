@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d426cc-4c4a-48bc-8683-f2ff73858824" name="Default" comment="Liste patient et affichage des fiches patients, modifications de l'architecture">
-      <change afterPath="$PROJECT_DIR$/gestion_patient/action_list.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gestion_patient/lecture_patient.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion_utilisateur/liste_utilisateurs.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_utilisateur/liste_utilisateurs.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/navbar.php" afterDir="false" />
+    <list default="true" id="54d426cc-4c4a-48bc-8683-f2ff73858824" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/gestion_patient/action_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_patient/action_list.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -90,20 +84,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lecture_patient.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="lecture_patient.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gestion_patient/lecture_patient.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
+            <state relative-caret-position="-85">
               <caret line="40" column="64" lean-forward="true" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a656afcd-61bb-46ec-b282-60de99f0b377/console.sql">
+      <file leaf-file-name="action_list.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gestion_patient/action_list.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="48" selection-start-column="48" selection-end-column="48" />
+            <state relative-caret-position="289">
+              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -111,8 +105,8 @@
       <file leaf-file-name="inscription_patient.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gestion_patient/inscription_patient.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="180" selection-start-line="180" selection-end-line="184" selection-end-column="26" />
+            <state relative-caret-position="87">
+              <caret line="171" column="22" lean-forward="true" selection-start-line="171" selection-start-column="22" selection-end-line="171" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -143,8 +137,8 @@
       <find>admin</find>
       <find>$page</find>
       <find>envoye</find>
-      <find>fetch</find>
       <find>lecture</find>
+      <find>fetch</find>
     </findStrings>
     <replaceStrings>
       <replace>index.php</replace>
@@ -200,11 +194,11 @@
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/navbar.php" />
-        <option value="$PROJECT_DIR$/gestion_patient/action_list.php" />
         <option value="$PROJECT_DIR$/gestion_patient/liste_patients.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a656afcd-61bb-46ec-b282-60de99f0b377/console.sql" />
         <option value="$PROJECT_DIR$/gestion_patient/delete_liste.php" />
         <option value="$PROJECT_DIR$/gestion_patient/lecture_patient.php" />
+        <option value="$PROJECT_DIR$/gestion_patient/action_list.php" />
       </list>
     </option>
   </component>
@@ -330,7 +324,7 @@
       <workItem from="1525368098914" duration="6000" />
       <workItem from="1525387049493" duration="999000" />
       <workItem from="1525702873329" duration="6512000" />
-      <workItem from="1525713634750" duration="12402000" />
+      <workItem from="1525713634750" duration="12509000" />
     </task>
     <task id="LOCAL-00001" summary="Création des fichiers">
       <created>1519217355877</created>
@@ -430,24 +424,31 @@
       <option name="project" value="LOCAL" />
       <updated>1524483379971</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Afficahge ToDoListe pour Patient ID donner + Ajout en Menu">
+      <created>1525733862168</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1525733862168</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90287000" />
+    <option name="totallyTimeSpent" value="90394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info active="true" anchor="bottom" id="Messages" order="1" sideWeight="0.496875" visible="true" weight="0.21451104" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.503125" side_tool="true" weight="0.21451104" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Run" order="8" />
       <window_info anchor="bottom" id="Terminal" order="4" />
-      <window_info anchor="bottom" id="Database Console" order="14" visible="true" weight="0.32912722" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.15677084" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32912722" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15677084" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" visible="true" weight="0.15260416" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32948583" />
@@ -459,7 +460,6 @@
       <window_info anchor="bottom" id="PHP-CGI Server" order="13" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Messages" order="1" sideWeight="0.496875" visible="true" weight="0.21451104" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
     </layout>
@@ -484,7 +484,8 @@
     <MESSAGE value="Correction erreur package-lock.json" />
     <MESSAGE value="Début gestion patients" />
     <MESSAGE value="Liste patient et affichage des fiches patients, modifications de l'architecture" />
-    <option name="LAST_COMMIT_MESSAGE" value="Liste patient et affichage des fiches patients, modifications de l'architecture" />
+    <MESSAGE value="Afficahge ToDoListe pour Patient ID donner + Ajout en Menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Afficahge ToDoListe pour Patient ID donner + Ajout en Menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -620,6 +621,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-165">
           <caret line="30" column="86" selection-start-line="30" selection-start-column="86" selection-end-line="30" selection-end-column="86" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -668,13 +672,6 @@
     <entry file="file://$PROJECT_DIR$/traitement_chambre.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_patient/action_list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gestion_utilisateur/liste_utilisateurs.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -696,20 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_patient/inscription_patient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="180" selection-start-line="180" selection-end-line="184" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a656afcd-61bb-46ec-b282-60de99f0b377/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="48" selection-start-column="48" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gestion_patient/liste_patients.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
@@ -724,10 +707,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a656afcd-61bb-46ec-b282-60de99f0b377/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="48" selection-start-column="48" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_patient/inscription_patient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="171" column="22" lean-forward="true" selection-start-line="171" selection-start-column="22" selection-end-line="171" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gestion_patient/lecture_patient.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
+        <state relative-caret-position="-85">
           <caret line="40" column="64" lean-forward="true" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_patient/action_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
         </state>
       </provider>
     </entry>
