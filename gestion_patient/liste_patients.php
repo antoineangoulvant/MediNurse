@@ -16,7 +16,6 @@ catch (Exception $e)
 
 $rep = $bdd->query('SELECT * FROM patient');
 ?>
-
 <!-- Example DataTables Card-->
 <div class="card mb-3">
     <div class="card-header">
@@ -32,6 +31,7 @@ $rep = $bdd->query('SELECT * FROM patient');
                     <th>Service</th>
                     <th>Chambre</th>
                     <th>En savoir plus</th>
+                    <th>ToDoList</th>
                 </tr>
                 </thead>
                 <tfoot>
@@ -42,6 +42,7 @@ $rep = $bdd->query('SELECT * FROM patient');
                     <th>Service</th>
                     <th>Chambre</th>
                     <th>En savoir plus</th>
+                    <th>ToDoList</th>
                 </tr>
                 </tfoot>
                 <tbody>
@@ -63,10 +64,55 @@ $rep = $bdd->query('SELECT * FROM patient');
                     echo '<td>'.$libchambre['numero'].'</td>';
 
                     echo '<td>'.'<a href="index.php?page=patient&id='.$donnees['id_patient'].'" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-user"></span> Fiche patient</a>'.'</td>';
+                    echo '<td>'.'<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalAdd">Ajouter tâche</button>'. '<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalView">Voir liste</button>';
                     echo '</tr>';
+                    ?>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modalView" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">ToDoList</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <?php
 
+                                    ?>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Ajouter</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal Add-->
+                    <div class="modal fade" id="modalAdd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Ajout d'une tâche</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <?php
+
+                                    ?>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Ajouter</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php
                 }
-
                 $rep->closeCursor();
                 ?>
                 </tbody>
