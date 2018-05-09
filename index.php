@@ -36,6 +36,12 @@
         case 'lecturepatient':
             $titre = 'Lecture patient';
             break;
+        case 'ajouter':
+            $titre = 'Ajout ToDoList';
+            break;
+        case 'voirliste':
+            $titre = 'Voir ToDoList';
+            break;
         default:
             $titre = 'Accueil';
     }
@@ -90,6 +96,10 @@
                     case 'lecturepatient':
                         include 'gestion_patient/lecture_patient.php';
                         break;
+                    case 'voirliste':
+                        include 'gestion_patient/voirliste.php';
+                    case 'ajouter':
+                        include 'gestion_patient/ajoutertache.php';
                 }
             ?>
         </div>

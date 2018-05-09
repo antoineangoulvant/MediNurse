@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54d426cc-4c4a-48bc-8683-f2ff73858824" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/gestion_patient/ajoutertache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestion_patient/voirliste.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestion_patient/liste_patients.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_patient/liste_patients.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,30 +57,35 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+            <state relative-caret-position="748">
+              <caret line="101" column="61" selection-start-line="101" selection-start-column="49" selection-end-line="101" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbar.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/navbar.php">
+      <file leaf-file-name="ajoutertache.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestion_patient/ajoutertache.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2">
-              <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+            <state relative-caret-position="323">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="liste_patients.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gestion_patient/liste_patients.php">
+      <file leaf-file-name="voirliste.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gestion_patient/voirliste.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="88" column="34" lean-forward="true" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
-              <folding>
-                <element signature="e#3371#3378#1#HTML" expanded="true" />
-                <element signature="e#5510#5517#1#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="591">
+              <caret line="68" column="22" lean-forward="true" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="patient.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestion_patient/patient.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="73" selection-start-line="73" selection-end-line="195" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -85,8 +93,8 @@
       <file leaf-file-name="lecture_patient.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gestion_patient/lecture_patient.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="78" column="85" lean-forward="true" selection-start-line="76" selection-start-column="20" selection-end-line="78" selection-end-column="85" />
+            <state relative-caret-position="812">
+              <caret line="103" column="14" lean-forward="true" selection-start-line="56" selection-start-column="8" selection-end-line="103" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -94,7 +102,7 @@
       <file leaf-file-name="inscription_patient.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gestion_patient/inscription_patient.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
+            <state relative-caret-position="2907">
               <caret line="171" column="22" selection-start-line="171" selection-start-column="22" selection-end-line="171" selection-end-column="22" />
             </state>
           </provider>
@@ -128,6 +136,7 @@
       <find>envoye</find>
       <find>lecture</find>
       <find>fetch</find>
+      <find>modalView</find>
     </findStrings>
     <replaceStrings>
       <replace>index.php</replace>
@@ -186,8 +195,11 @@
         <option value="$PROJECT_DIR$/gestion_patient/delete_liste.php" />
         <option value="$PROJECT_DIR$/gestion_patient/action_list.php" />
         <option value="$PROJECT_DIR$/gestion_patient/lecture_patient.php" />
-        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/gestion_patient/test.php" />
         <option value="$PROJECT_DIR$/gestion_patient/liste_patients.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/gestion_patient/ajoutertache.php" />
+        <option value="$PROJECT_DIR$/gestion_patient/voirliste.php" />
       </list>
     </option>
   </component>
@@ -236,6 +248,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -257,7 +270,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -315,7 +327,8 @@
       <workItem from="1525702873329" duration="6512000" />
       <workItem from="1525713634750" duration="12509000" />
       <workItem from="1525733923723" duration="235000" />
-      <workItem from="1525780310087" duration="8801000" />
+      <workItem from="1525780310087" duration="8885000" />
+      <workItem from="1525867435148" duration="7795000" />
     </task>
     <task id="LOCAL-00001" summary="Création des fichiers">
       <created>1519217355877</created>
@@ -436,21 +449,28 @@
       <option name="project" value="LOCAL" />
       <updated>1525805980451</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Ajout de Modal (Voir liste et Ajout tache) TODO">
+      <created>1525810235582</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1525810235582</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99548000" />
+    <option name="totallyTimeSpent" value="107427000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.13020833" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.12953092" />
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.503125" side_tool="true" weight="0.21451104" />
-      <window_info anchor="right" id="Database" order="0" visible="true" weight="0.15260416" />
+      <window_info active="true" anchor="right" id="Database" order="0" visible="true" weight="0.15245202" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Run" order="8" />
@@ -469,6 +489,30 @@
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32912722" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32948583" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="8" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1296875" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="0" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="13" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32948583" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="right" id="Database" order="0" visible="true" weight="0.15260416" />
+      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.503125" side_tool="true" weight="0.21451104" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32912722" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info active="true" anchor="bottom" id="Messages" order="1" sideWeight="0.496875" visible="true" weight="0.21451104" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -492,7 +536,8 @@
     <MESSAGE value="Liste patient et affichage des fiches patients, modifications de l'architecture" />
     <MESSAGE value="Afficahge ToDoListe pour Patient ID donner + Ajout en Menu" />
     <MESSAGE value="Suppression d'une tâche" />
-    <option name="LAST_COMMIT_MESSAGE" value="Suppression d'une tâche" />
+    <MESSAGE value="Ajout de Modal (Voir liste et Ajout tache) TODO" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de Modal (Voir liste et Ajout tache) TODO" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -500,8 +545,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bootstrap/css/bootstrap.css" />
-    <entry file="file://$PROJECT_DIR$/footer.php" />
     <entry file="file://$PROJECT_DIR$/header.php" />
     <entry file="file://$PROJECT_DIR$/connexion.php" />
     <entry file="file://$PROJECT_DIR$/index.html" />
@@ -652,13 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_patient/patient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="66" column="200" selection-start-line="66" selection-start-column="200" selection-end-line="66" selection-end-column="200" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/charts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="668">
@@ -691,43 +727,68 @@
     <entry file="file://$PROJECT_DIR$/gestion_patient/action_list.php" />
     <entry file="file://$PROJECT_DIR$/gestion_patient/inscription_patient.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
+        <state relative-caret-position="2907">
           <caret line="171" column="22" selection-start-line="171" selection-start-column="22" selection-end-line="171" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_patient/crudlist.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/gestion_patient/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+        <state relative-caret-position="561">
+          <caret line="33" column="80" lean-forward="true" selection-start-line="33" selection-start-column="80" selection-end-line="33" selection-end-column="80" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
+        <state relative-caret-position="17">
           <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_patient/lecture_patient.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="78" column="85" lean-forward="true" selection-start-line="76" selection-start-column="20" selection-end-line="78" selection-end-column="85" />
+        <state relative-caret-position="748">
+          <caret line="101" column="61" selection-start-line="101" selection-start-column="49" selection-end-line="101" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_patient/ajoutertache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gestion_patient/liste_patients.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="88" column="34" lean-forward="true" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
+        <state relative-caret-position="40">
+          <caret line="69" column="66" selection-start-line="69" selection-start-column="57" selection-end-line="69" selection-end-column="66" />
           <folding>
-            <element signature="e#3371#3378#1#HTML" expanded="true" />
-            <element signature="e#5510#5517#1#HTML" expanded="true" />
+            <element signature="e#724#731#1" expanded="true" />
+            <element signature="e#5254#5261#1#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_patient/lecture_patient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="103" column="14" lean-forward="true" selection-start-line="56" selection-start-column="8" selection-end-line="103" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_patient/patient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="73" selection-start-line="73" selection-end-line="195" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_patient/voirliste.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="68" column="22" lean-forward="true" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
         </state>
       </provider>
     </entry>
