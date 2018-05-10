@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54d426cc-4c4a-48bc-8683-f2ff73858824" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/gestion_patient/ajoutertache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gestion_patient/voirliste.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestion_patient/liste_patients.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_patient/liste_patients.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestion_patient/voirliste.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_patient/voirliste.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,53 +55,35 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="101" column="61" selection-start-line="101" selection-start-column="49" selection-end-line="101" selection-end-column="61" />
+            <state relative-caret-position="853">
+              <caret line="103" column="33" lean-forward="true" selection-start-line="103" selection-start-column="33" selection-end-line="103" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajoutertache.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gestion_patient/ajoutertache.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="voirliste.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gestion_patient/voirliste.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="68" column="22" lean-forward="true" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="patient.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gestion_patient/patient.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="73" selection-start-line="73" selection-end-line="195" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lecture_patient.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="lecture_patient.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gestion_patient/lecture_patient.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="812">
-              <caret line="103" column="14" lean-forward="true" selection-start-line="56" selection-start-column="8" selection-end-line="103" selection-end-column="14" />
+            <state relative-caret-position="438">
+              <caret line="51" column="27" lean-forward="true" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inscription_patient.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gestion_patient/inscription_patient.php">
+      <file leaf-file-name="liste_patients.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestion_patient/liste_patients.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2907">
-              <caret line="171" column="22" selection-start-line="171" selection-start-column="22" selection-end-line="171" selection-end-column="22" />
+            <state relative-caret-position="764">
+              <caret line="77" column="18" lean-forward="true" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="voirliste.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestion_patient/voirliste.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1007">
+              <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -137,6 +117,9 @@
       <find>lecture</find>
       <find>fetch</find>
       <find>modalView</find>
+      <find>modal ti</find>
+      <find>Form</find>
+      <find>tache</find>
     </findStrings>
     <replaceStrings>
       <replace>index.php</replace>
@@ -188,18 +171,18 @@
         <option value="$PROJECT_DIR$/gestion_patient/inscription_patient.php" />
         <option value="$PROJECT_DIR$/gestion_patient/patient.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/58a5b635-0e73-443f-bbcc-ec67b9aeb49a/console.sql" />
-        <option value="$PROJECT_DIR$/gestion_utilisateur/liste_utilisateurs.php" />
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/navbar.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a656afcd-61bb-46ec-b282-60de99f0b377/console.sql" />
         <option value="$PROJECT_DIR$/gestion_patient/delete_liste.php" />
         <option value="$PROJECT_DIR$/gestion_patient/action_list.php" />
-        <option value="$PROJECT_DIR$/gestion_patient/lecture_patient.php" />
         <option value="$PROJECT_DIR$/gestion_patient/test.php" />
-        <option value="$PROJECT_DIR$/gestion_patient/liste_patients.php" />
-        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/gestion_utilisateur/liste_utilisateurs.php" />
         <option value="$PROJECT_DIR$/gestion_patient/ajoutertache.php" />
+        <option value="$PROJECT_DIR$/gestion_patient/lecture_patient.php" />
+        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/gestion_patient/voirliste.php" />
+        <option value="$PROJECT_DIR$/gestion_patient/liste_patients.php" />
       </list>
     </option>
   </component>
@@ -248,7 +231,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -270,6 +252,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -328,7 +311,8 @@
       <workItem from="1525713634750" duration="12509000" />
       <workItem from="1525733923723" duration="235000" />
       <workItem from="1525780310087" duration="8885000" />
-      <workItem from="1525867435148" duration="7795000" />
+      <workItem from="1525867435148" duration="10732000" />
+      <workItem from="1525956604047" duration="12080000" />
     </task>
     <task id="LOCAL-00001" summary="Création des fichiers">
       <created>1519217355877</created>
@@ -456,26 +440,48 @@
       <option name="project" value="LOCAL" />
       <updated>1525810235582</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Read Liste by Docteur (Depuis liste des patients)">
+      <created>1525882263783</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1525882263783</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Add modal pour Ajouter Tache via liste patient">
+      <created>1525888073103</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1525888073103</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Modal Ajout tache / Delete / Lecture Liste&#10;CREATE / READ / Update (Usuless / DELETE">
+      <created>1525967873148</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1525967873148</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107427000" />
+    <option name="totallyTimeSpent" value="122444000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.12953092" />
       <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.503125" side_tool="true" weight="0.21451104" />
-      <window_info active="true" anchor="right" id="Database" order="0" visible="true" weight="0.15245202" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Run" order="8" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.13059701" />
+      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="0" visible="true" weight="0.15245202" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.3286638" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -487,26 +493,25 @@
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32912722" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.32948583" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="8" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1296875" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="13" />
+      <window_info anchor="bottom" id="Run" order="8" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32948583" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="right" id="Database" order="0" visible="true" weight="0.15260416" />
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.503125" side_tool="true" weight="0.21451104" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32912722" />
       <window_info anchor="bottom" id="Message" order="6" />
@@ -537,7 +542,10 @@
     <MESSAGE value="Afficahge ToDoListe pour Patient ID donner + Ajout en Menu" />
     <MESSAGE value="Suppression d'une tâche" />
     <MESSAGE value="Ajout de Modal (Voir liste et Ajout tache) TODO" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de Modal (Voir liste et Ajout tache) TODO" />
+    <MESSAGE value="Read Liste by Docteur (Depuis liste des patients)" />
+    <MESSAGE value="Add modal pour Ajouter Tache via liste patient" />
+    <MESSAGE value="Modal Ajout tache / Delete / Lecture Liste&#10;CREATE / READ / Update (Usuless / DELETE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modal Ajout tache / Delete / Lecture Liste&#10;CREATE / READ / Update (Usuless / DELETE" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -646,13 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_utilisateur/utilisateur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3094">
-          <caret line="182" column="52" lean-forward="true" selection-start-line="182" selection-start-column="52" selection-end-line="182" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gestion_chambre.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -702,20 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_utilisateur/liste_utilisateurs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="31" column="36" lean-forward="true" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_utilisateur/inscription_utilisateur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="899">
-          <caret line="183" selection-start-line="183" selection-end-line="188" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gestion_patient/delete_liste.php" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a656afcd-61bb-46ec-b282-60de99f0b377/console.sql">
       <provider selected="true" editor-type-id="text-editor">
@@ -725,20 +712,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gestion_patient/action_list.php" />
-    <entry file="file://$PROJECT_DIR$/gestion_patient/inscription_patient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2907">
-          <caret line="171" column="22" selection-start-line="171" selection-start-column="22" selection-end-line="171" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_patient/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="80" lean-forward="true" selection-start-line="33" selection-start-column="80" selection-end-line="33" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_patient/test.php" />
     <entry file="file://$PROJECT_DIR$/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -746,49 +720,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/gestion_utilisateur/utilisateur.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="101" column="61" selection-start-line="101" selection-start-column="49" selection-end-line="101" selection-end-column="61" />
+        <state relative-caret-position="2221">
+          <caret line="182" column="52" lean-forward="true" selection-start-line="182" selection-start-column="52" selection-end-line="182" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_utilisateur/liste_utilisateurs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="85" lean-forward="true" selection-start-line="53" selection-start-column="85" selection-end-line="53" selection-end-column="85" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gestion_patient/ajoutertache.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="272">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_patient/liste_patients.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="69" column="66" selection-start-line="69" selection-start-column="57" selection-end-line="69" selection-end-column="66" />
-          <folding>
-            <element signature="e#724#731#1" expanded="true" />
-            <element signature="e#5254#5261#1#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="853">
+          <caret line="103" column="33" lean-forward="true" selection-start-line="103" selection-start-column="33" selection-end-line="103" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_patient/lecture_patient.php">
+    <entry file="file://$PROJECT_DIR$/gestion_utilisateur/inscription_utilisateur.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
-          <caret line="103" column="14" lean-forward="true" selection-start-line="56" selection-start-column="8" selection-end-line="103" selection-end-column="14" />
+        <state relative-caret-position="833">
+          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="52" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_patient/patient.php">
+    <entry file="file://$PROJECT_DIR$/gestion_patient/inscription_patient.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="73" selection-start-line="73" selection-end-line="195" selection-end-column="6" />
+        <state relative-caret-position="564">
+          <caret line="171" column="22" selection-start-line="171" selection-start-column="22" selection-end-line="171" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gestion_patient/voirliste.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="68" column="22" lean-forward="true" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+        <state relative-caret-position="-1007">
+          <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_patient/patient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1157">
+          <caret line="82" column="40" lean-forward="true" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_patient/liste_patients.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="764">
+          <caret line="77" column="18" lean-forward="true" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_patient/lecture_patient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="51" column="27" lean-forward="true" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
         </state>
       </provider>
     </entry>

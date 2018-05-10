@@ -34,6 +34,12 @@ if(isset($_POST['submit'])) {
     $req = $bdd->prepare('INSERT INTO liste(idPatient, nom, commentaire, statut) VALUES (?,?,?,?)');
     $req->execute(array($_POST['id'], $_POST['tache'], $_POST['commentaire'], 0));
 }
+
+if (isset($_POST['edit'])){
+    $req = $bdd->prepare('UPDATE liste SET nom=?, commentaire=? WHERE idTache=?');
+    $req->execute((array($_POST['tache'], $_POST['commentaire'], $_POST['id'])));
+}
+
 ?>
 <div class="container">
     <div class="row">
@@ -44,6 +50,7 @@ if(isset($_POST['submit'])) {
     <h2 method="post" action="index.php?page=voirliste&id=<?php echo $_GET['id']; ?>" </h2>
     <button type="button" class="btn btn-primary center-block" data-toggle="modal" data-target="#ajouter">Ajouter tache</button>
 </div>
+<!-- SQUELETTE AFFICHAGE -->
 <div class="card-body">
     <div class="table-responsive" id="tachetab">
         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -65,6 +72,7 @@ if(isset($_POST['submit'])) {
             </tfoot>
             <tbody>
             <?php
+            //AFFICAHGE DES DONNEES
             $idPat = $_GET['id'];
             $rep = $bdd->query("SELECT * FROM liste Where idPatient=$idPat");
             while ($donnees = $rep->fetch()) {
@@ -76,43 +84,83 @@ if(isset($_POST['submit'])) {
                 <form method="post" action="">
                     <input type="hidden" name="id" value="<?php echo $donnees['idTache']; ?>">
                     <button type="delete" name="delete" class="btn btn-danger delete">Supprimer</button>
+                <form
+                    <input type="hidden" name="idTache" value="<?php echo $donnees['idTache']; ?>">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit">Edit</button>
                 </form>
-                    <div class="modal fade" id="ajouter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Ajout d'un tâche</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                        <form method="post" action="" id="addtask">
-                                            <input type="hidden" name="id" value="<?php echo $idPat; ?>">
-                                            <div class="row margininscription">
-                                                <div class="">
-                                                    <div class="form-group">
-                                                        <label for="genre">Nom tache<span class="obligatoire">*</span> :</label>
-                                                        <input type="text" class="form-control" id="tache" placeholder="Saisissez la tache" name="tache">
-                                                        <?php if(isset($erreur['tache'])) echo '<div class="alert alert-danger">'.$erreur['tache'].'</div>'; ?>
-                                                    </div>
-                                                </div>
-                                                <div class="">
-                                                    <div class="form-group">
-                                                        <label for="commentaire">Commentaire<span class="obligatoire"></span> :</label>
-                                                        <input type="text" class="form-control" id="commentaire" placeholder="Saisissez le commentaire" name="commentaire">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                <button type="submit" name="submit" class="btn btn-danger submit">Ajouter</button>
-                                            </div>
-                                        </form>
+                <!-- MODAL AJOUTER TACHE -->
+                <div class="modal fade" id="ajouter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Ajout d'un tâche</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
+                            <div class="modal-body">
+                                <form method="post" action="" id="addtask">
+                                    <input type="hidden" name="id" value="<?php echo $idPat; ?>">
+                                    <div class="row margininscription">
+                                        <div class="">
+                                            <div class="form-group">
+                                                <label for="genre">Nom tache<span class="obligatoire">*</span> :</label>
+                                                <input type="text" class="form-control" id="tache" placeholder="Saisissez la tache" name="tache">
+                                                <?php if(isset($erreur['tache'])) echo '<div class="alert alert-danger">'.$erreur['tache'].'</div>'; ?>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div class="form-group">
+                                                <label for="commentaire">Commentaire<span class="obligatoire"></span> :</label>
+                                                <input type="text" class="form-control" id="commentaire" placeholder="Saisissez le commentaire" name="commentaire">
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="submit" name="submit" class="btn btn-danger submit">Ajouter</button>
+                            </div>
+                            </form>
                         </div>
                     </div>
+                </div>
+                <!-- MODAL EDIT TACHE -->
+                <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Edit d'une tâche</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form method="post" action="" id="edit">
+                                    <input type="hidden" name="id" value="<?php echo $donnees['idTache']; ?>">
+                                    <div class="row margininscription">
+                                        <div class="">
+                                            <div class="form-group">
+                                                <label for="genre">Nom tache<span class="obligatoire">*</span> :</label>
+                                                <input type="text" class="form-control" id="tache" value="<?php echo $donnees['nom']; ?>" name="tache">
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div class="form-group">
+                                                <label for="commentaire">Commentaire</span> :</label>
+                                                <input type="text" class="form-control" id="commentaire" value="<?php echo $donnees['commentaire']; ?>" name="commentaire">
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="edit" name="edit" class="btn btn-danger edit">Edit</button>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
                 <?php
             }
             $rep->closeCursor();
