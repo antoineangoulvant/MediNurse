@@ -98,8 +98,6 @@
                         break;
                     case 'voirliste':
                         include 'gestion_patient/voirliste.php';
-                    case 'ajouter':
-                        include 'gestion_patient/ajoutertache.php';
                 }
             ?>
         </div>

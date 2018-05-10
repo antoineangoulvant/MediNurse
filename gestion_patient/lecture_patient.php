@@ -1,5 +1,6 @@
 <?php
 
+
 try
 {
     $bdd = new PDO('mysql:host=e88487-mysql.services.easyname.eu;dbname=u139724db1;charset=utf8', 'u139724db1', 'pp5959he');
@@ -31,7 +32,6 @@ if (isset($_POST['delete'])) {
     }
 }
 ?>
-
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
@@ -47,7 +47,6 @@ if (isset($_POST['delete'])) {
                 <?php if (isset($erreur['idpatient'])) echo '<div class="alert alert-danger">' . $erreur['idpatient'] . '</div>'; ?>
             </div>
         </div>
-
         <button type="submit" class="btn btn-primary center-block" style="margin-bottom: 30px;">Récupérer Liste</button>
     </form>
     <div class="card mb-3">
@@ -55,52 +54,45 @@ if (isset($_POST['delete'])) {
             <i class="fa fa-table"></i>Service à effectuer
         </div>
         <div class="card-body">
-            <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                    <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Nom</th>
-                        <th>Commentaire</th>
-                        <th>Statut</th>
-                    </tr>
-                    </thead>
-                    <tfoot>
-                    <tr>
-                        <th>ID</th>
-                        <th>Nom</th>
-                        <th>Commentaire</th>
-                        <th>Statut</th>
-                    </tr>
-                    </tfoot>
-                    <tbody>
+        <div class="table-responsive" id="tachetab">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nom</th>
+                    <th>Commentaire</th>
+                    <th>Statut</th>
+                </tr>
+                </thead>
+                <tfoot>
+                <tr>
+                    <th>ID</th>
+                    <th>Nom</th>
+                    <th>Commentaire</th>
+                    <th>Statut</th>
+                </tr>
+                </tfoot>
+                <tbody>
+                <?php
+                if (isset($_POST['idpatient'])){
+                $idPat = $_POST['idpatient'];
+                $rep = $bdd->query("SELECT * FROM liste Where idPatient=$idPat");
+                while ($donnees = $rep->fetch()) {
+                    echo '<tr>';
+                    echo '<td>' . $donnees['idTache'];
+                    echo '<td>' . $donnees['nom'];
+                    echo '<td>' . $donnees['commentaire'];
+                    echo '<td>' . $donnees['statut']; ?>
+                    <form method="post" action="">
+                        <input type="hidden" name="id" value="<?php echo $donnees['idTache']; ?>">
+                        <button type="delete" name="delete" class="btn btn-danger delete">Supprimer</button>
+                    </form>
                     <?php
-                    $idPat = $_POST['idpatient'];
-                    $rep = $bdd->query("SELECT * FROM liste Where idPatient=$idPat");
-                    while ($donnees = $rep->fetch()) {
-                        echo '<tr>';
-                        echo '<td>' . $donnees['idTache'];
-                        echo '<td>' . $donnees['nom'];
-                        echo '<td>' . $donnees['commentaire'];
-                        echo $donnees['statut'];
-                        echo '<td>' ?>
-                        <input name="statut" type="checkbox" <?php
-                        if ($donnees['statut'] = 0) {
-                            echo " checked";
-                        } else {
-                            echo "";
-                        } ?> >
-                        <form method="post" action="">
-                            <input type="hidden" name="id" value="<?php echo $donnees['idTache']; ?>">
-                            <button type="delete" name="delete" class="btn btn-danger">Supprimer</button>
-                        </form>
-                        <?php
-                    }
-                    $rep->closeCursor();
-                    ?>
-                    </tbody>
-                </table>
-            </div>
+                }
+                $rep->closeCursor();
+                }?>
+                </tbody>
+            </table>
         </div>
     </div>
-</div>
+
