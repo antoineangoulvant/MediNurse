@@ -45,6 +45,32 @@
         default:
             $titre = 'Accueil';
     }
+
+try
+{
+    $bdd = new PDO('mysql:host=e88487-mysql.services.easyname.eu;dbname=u139724db1;charset=utf8', 'u139724db1', 'pp5959he');
+}
+catch (Exception $e)
+{
+    die('Erreur : ' . $e->getMessage());
+}
+
+    $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $rep = $bdd->query("Select count(*) as nbPatient from patient");
+    $donnes = $rep->fetch();
+
+    $rap = $bdd->query('SELECT * FROM patient');
+
+    $nbDoc = $bdd->query("Select count(*) as nbDocteur from utilisateur Where role =1");
+    $doc = $nbDoc->fetch();
+
+    $docAll = $bdd->query("SELECT * FROM utilisateur WHERE role = 1");
+
+    $nbPS = $bdd->query("SELECT count(*) as nbPS from utilisateur Where role=2 OR role =3");
+    $nbAS = $nbPS->fetch();
+
+    $psAll = $bdd->query("SELECT * from utilisateur Where role=2 OR role=3");
 ?>
 
 <!DOCTYPE html>
@@ -66,9 +92,11 @@
                     <li class="breadcrumb-item active"><?php echo $titre ?></li>
                 </ol>
             </div>
-
             <?php
                 switch ($page){
+                    case 'accueil':
+                        include 'accueil.php';
+                        break;
                     case 'inscription':
                         include 'gestion_utilisateur/inscription_utilisateur.php';
                         break;
@@ -101,6 +129,7 @@
                 }
             ?>
         </div>
+
         <!-- /.container-fluid-->
         <!-- /.content-wrapper-->
         <footer class="sticky-footer">
