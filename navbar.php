@@ -94,6 +94,14 @@
                 </a>
             </li>
 
+            <!-- planning -->
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Lecture patient">
+                <a class="nav-link" href="index.php?page=planning">
+                    <i class="fa fa-fw fa-calendar"></i>
+                    <span class="nav-link-text">Planning</span>
+                </a>
+            </li>
+
             <!-- Gestion des patients -->
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
                 <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#ongletPatient" data-parent="#exampleAccordion">
@@ -109,6 +117,8 @@
                     </li>
                 </ul>
             </li>
+
+            <!-- Lecture patient -->
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Lecture patient">
                 <a class="nav-link" href="index.php?page=lecturepatient">
                     <i class="fa fa-fw fa-link"></i>

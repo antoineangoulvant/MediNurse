@@ -16,5 +16,11 @@
     <!-- icone de la page -->
     <link rel="icon" type="image/png" href="res/logo.png" />
 
+    <link href='fullcalendar/fullcalendar.min.css' rel='stylesheet' />
+    <link href='fullcalendar/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+    <script src='fullcalendar/lib/moment.min.js'></script>
+    <script src='fullcalendar/lib/jquery.min.js'></script>
+    <script src='fullcalendar/fullcalendar.min.js'></script>
+
     <link rel="stylesheet" href="css/style.css">
 </head>

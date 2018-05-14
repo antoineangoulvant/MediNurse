@@ -42,6 +42,9 @@
         case 'voirliste':
             $titre = 'Voir ToDoList';
             break;
+        case 'planning':
+            $titre = 'Planning';
+            break;
         default:
             $titre = 'Accueil';
     }
@@ -126,6 +129,12 @@ catch (Exception $e)
                         break;
                     case 'voirliste':
                         include 'gestion_patient/voirliste.php';
+                        break;
+                    case 'planning':
+                        include 'planning.php';
+                        break;
+                    default:
+                        include "accueil.php";
                 }
             ?>
         </div>
