@@ -96,7 +96,7 @@
 
             <!-- planning -->
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Lecture patient">
-                <a class="nav-link" href="index.php?page=planning">
+                <a class="nav-link" href="planning.php">
                     <i class="fa fa-fw fa-calendar"></i>
                     <span class="nav-link-text">Planning</span>
                 </a>

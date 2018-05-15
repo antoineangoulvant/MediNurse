@@ -42,8 +42,7 @@ if (isset($_POST['delete'])) {
         <div class="col-lg-4">
             <div class="form-group">
                 <label for="idpat">Identifiant du patient:</label>
-                <input type="number" class="form-control" id="idpatient" placeholder="Saisissez l'identifiant"
-                       name="idpatient">
+                <input type="number" class="form-control" id="idpatient" placeholder="Saisissez l'identifiant" name="idpatient">
                 <?php if (isset($erreur['idpatient'])) echo '<div class="alert alert-danger">' . $erreur['idpatient'] . '</div>'; ?>
             </div>
         </div>
@@ -85,7 +84,7 @@ if (isset($_POST['delete'])) {
                     echo '<td>' . $donnees['statut']; ?>
                     <form method="post" action="">
                         <input type="hidden" name="id" value="<?php echo $donnees['idTache']; ?>">
-                        <button type="delete" name="delete" class="btn btn-danger delete">Supprimer</button>
+                        <button name="delete" class="btn btn-danger delete">Supprimer</button>
                     </form>
                     <?php
                 }

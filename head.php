@@ -22,5 +22,32 @@
     <script src='fullcalendar/lib/jquery.min.js'></script>
     <script src='fullcalendar/fullcalendar.min.js'></script>
 
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $('#calendar').fullCalendar({
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,agendaWeek,agendaDay,listWeek'
+                },
+                defaultDate: '2018-03-12',
+                editable: true,
+                navLinks: true, // can click day/week names to navigate views
+                eventLimit: true, // allow "more" link when too many events
+                events: {
+                    url: 'get-events.php',
+                    error: function() {
+                        $('#script-warning').show();
+                    }
+                },
+                loading: function(bool) {
+                    $('#loading').toggle(bool);
+                }
+            });
+
+        });
+    </script>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
