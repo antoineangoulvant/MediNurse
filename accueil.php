@@ -30,7 +30,7 @@
                     </tbody>
                     </table>
                 </div>
-                    <div class="col-6 col-md-4">
+                    <div class="col-12 col-md-4">
                         <h4>Docteur présent à l'hopital</h4>
                         Il y a actuellement <?php echo $doc['nbDocteur']; ?> docteur(s)
                         <table class="table">

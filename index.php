@@ -63,17 +63,17 @@ catch (Exception $e)
     $rep = $bdd->query("Select count(*) as nbPatient from patient");
     $donnes = $rep->fetch();
 
-    $rap = $bdd->query('SELECT * FROM patient');
+    $rap = $bdd->query('SELECT * FROM patient LIMIT 5');
 
     $nbDoc = $bdd->query("Select count(*) as nbDocteur from utilisateur Where role =1");
     $doc = $nbDoc->fetch();
 
-    $docAll = $bdd->query("SELECT * FROM utilisateur WHERE role = 1");
+    $docAll = $bdd->query("SELECT * FROM utilisateur WHERE role = 1 LIMIT 5");
 
     $nbPS = $bdd->query("SELECT count(*) as nbPS from utilisateur Where role=2 OR role =3");
     $nbAS = $nbPS->fetch();
 
-    $psAll = $bdd->query("SELECT * from utilisateur Where role=2 OR role=3");
+    $psAll = $bdd->query("SELECT * from utilisateur Where role=2 OR role=3 LIMIT 5");
 ?>
 
 <!DOCTYPE html>
