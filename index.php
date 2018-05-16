@@ -45,6 +45,9 @@
         case 'planning':
             $titre = 'Planning';
             break;
+        case 'dossiermedical':
+            $titre = 'Dossier Médical';
+            break;
         default:
             $titre = 'Accueil';
     }
@@ -136,6 +139,9 @@ catch (Exception $e)
                     case 'infomedicale':
                         include 'gestion_patient/informationmedicale.php';
                     break;
+                    case 'dossiermedical':
+                        include "gestion_patient/dossiermedicale.php";
+                        break;
                     default:
                         include "accueil.php";
                 }

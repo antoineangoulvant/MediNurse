@@ -9,10 +9,9 @@
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
                 <a class="nav-link" href="index.php">
                     <i class="fa fa-fw fa-dashboard"></i>
-                    <span class="nav-link-text">Accueil</span>
+                    <span class="nav-link-text">Dashboard</span>
                 </a>
             </li>
-
             <!-- planning -->
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Lecture patient">
                 <a class="nav-link" href="planning.php">
@@ -35,6 +34,14 @@
                         <a href="index.php?page=liste_patients">Liste des patients</a>
                     </li>
                 </ul>
+            </li>
+
+            <!-- Dossier medical -->
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dossier médical">
+                <a class="nav-link" href="index.php?page=dossiermedical">
+                    <i class="fa fa-fw fa-link"></i>
+                    <span class="nav-link-text">Dossier médical</span>
+                </a>
             </li>
 
             <!-- Lecture patient -->
@@ -79,8 +86,6 @@
                 </a>
             </li>
         </ul>
-
-
         <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

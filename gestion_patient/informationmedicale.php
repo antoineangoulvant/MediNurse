@@ -20,16 +20,17 @@ catch (Exception $e)
 }
 
 if(isset($_POST['submitAnteHopi'])) {
-    $req = $bdd->prepare('INSERT INTO acte_antecedent(idPatient,nomSoigneur, prenom,nom,commentaire,date,nomHopital,adresseHopital,codePostal,ville, pays) VALUES(?, ?,  ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+    $pet = $bdd->prepare('INSERT INTO acte_antecedent(idPatient, nomSoigneur, prenom, nom, commentaire, date, nomHopital, adresseHopital, codePostal, ville, pays) VALUES(?, ?, ?,  ?, ?, ?, ?, ?, ?, ?, ?)');
     $id = $_GET['id'];
-    $req->execute(array($id, $_POST['nomSoigneur'], $_POST['prenomSoigneur'], $_POST['nomActe'], $_POST['commentaireActe'], $_POST['dateAntecedent'], $_POST['antecedentHopitalNom'], $_POST['adresseHopital'], $_POST['codepostaHopital'], $_POST['villeHopital'], $_POST['paysHopital']));
+    $pet->execute(array($id, $_POST['nomSoigneur'], $_POST['prenomSoigneur'], $_POST['nomActeAnte'], $_POST['commentaireActe'], $_POST['dateAntecedent'], $_POST['antecedentHopitalNom'], $_POST['adresseHopital'], $_POST['codepostaHopital'], $_POST['villeHopital'], $_POST['paysHopital']));
     $envoye=true;
 }
 
 if (isset($_POST['submitActe'])){
-    $reqActe =$bdd->prepare('INSERT INTO acte(idPatient, idSoignant, nom, commentaire, date) VALUES (? , ? ,? ,? ,?)');
+    $reqActe =$bdd->prepare('INSERT INTO acte(idPatient, idSoignant, nomActe, commentaire, date) VALUES (? , ? ,? ,? ,?)');
     $id = $_GET['id'];
     $reqActe->execute(array($id, $_POST['doctorActe'], $_POST['nomActe'], $_POST['commentaireActeNew'], $_POST['dateActe']));
+    $envoyeActe = true;
 }
 
 if (isset($_POST['submitLit'])){
@@ -144,8 +145,8 @@ if (isset($_POST['submitAllergie'])){
                         <input type="text" class="form-control" id="antecedentHopitalNom"  placeholder="Entrer le nom de l'hopital anciennement prestataire" name="antecedentHopitalNom">
                     </div>
                     <div class="col-lg-6">
-                        <label for="nomActe">Nom acte :</label>
-                        <input type="text" class="form-control" id="nomActe" placeholder="Saisissez l'acte" name="nomActe">
+                        <label for="nomActeAnte">Nom acte :</label>
+                        <input type="text" class="form-control" id="nomActeAnte" placeholder="Saisissez l'acte" name="nomActeAnte">
                     </div>
                 </div>
                 <div class="row margininscription">
