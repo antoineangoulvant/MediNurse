@@ -9,7 +9,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 .col-md-8">
-                        <h4>Patient pris en charge</h4>
+                        <h4>Patients pris en charge</h4>
                         Il y a actuellement <?php echo $donnes['nbPatient']; ?> patients dans l'hopital
                         <table class="table col-6">
                             <thead>
@@ -31,7 +31,7 @@
                     </table>
                 </div>
                     <div class="col-12 col-md-4">
-                        <h4>Docteur présent à l'hopital</h4>
+                        <h4>Docteurs présent à l'hopital</h4>
                         Il y a actuellement <?php echo $doc['nbDocteur']; ?> docteur(s)
                         <table class="table">
                             <thead>
@@ -53,7 +53,7 @@
                     </table>
                     </div>
             <div class="col-12 col-md-8">
-                <h4>Personnel soignant à l'hopital</h4>
+                <h4>Personnels soignant à l'hopital</h4>
                 Il y a actuellement <?php echo $nbAS['nbPS']; ?> personnel soignant à l'hopital
                 <table class="table">
                     <thead>

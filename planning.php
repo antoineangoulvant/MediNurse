@@ -52,13 +52,13 @@
                     right: 'month,agendaWeek,agendaDay,listWeek'
                 },
                 defaultDate: '2018-05-14',
-                editable: true,
-                navLinks: true, // can click day/week names to navigate views
+                editable: false,
+                navLinks: false, // can click day/week names to navigate views
                 eventLimit: true, // allow "more" link when too many events
                 events: <?php echo $events; ?>,
-                selectable: true,
-                selectHelper: true,
-                select: function(start, end, allDay) {
+                selectable: false,
+                selectHelper: false,
+                /*select: function(start, end, allDay) {
                     var title = prompt('Event Title:');
                     if (title) {
                         start = $.fullCalendar.formatDate(start, "yyyy-MM-dd HH:mm:ss");
@@ -106,7 +106,7 @@
                             alert("OK");
                         }
                     });
-                },
+                },*/
                 loading: function(bool) {
                     $('#loading').toggle(bool);
                 }
@@ -154,6 +154,7 @@
             margin-right: auto;
             display: block;
             width: 200px;
+            margin-bottom: 50px;
         }
 
     </style>

@@ -39,7 +39,7 @@ if (isset($_POST['delete'])) {
         </div>
     </div>
     <form method="post" action="">
-        <div class="col-lg-4">
+        <div class="offset-4 col-4 col-lg-4 offset-4">
             <div class="form-group">
                 <label for="idpat">Identifiant du patient:</label>
                 <input type="number" class="form-control" id="idpatient" placeholder="Saisissez l'identifiant" name="idpatient">
@@ -50,7 +50,7 @@ if (isset($_POST['delete'])) {
     </form>
     <div class="card mb-3">
         <div class="card-header">
-            <i class="fa fa-table"></i>Service à effectuer
+            <i class="fa fa-table"></i> Services à effectuer
         </div>
         <div class="card-body">
         <div class="table-responsive" id="tachetab">
