@@ -31,7 +31,8 @@ $rep = $bdd->query('SELECT * FROM patient');
                     <th>Nom</th>
                     <th>Service</th>
                     <th>Chambre</th>
-                    <th>En savoir plus</th>
+                    <th>Fiche patient</th>
+                    <th>Informations médicales</th>
                     <th>ToDoList</th>
                 </tr>
                 </thead>
@@ -42,7 +43,8 @@ $rep = $bdd->query('SELECT * FROM patient');
                     <th>Nom</th>
                     <th>Service</th>
                     <th>Chambre</th>
-                    <th>En savoir plus</th>
+                    <th>Fiche patient</th>
+                    <th>Informations médicales</th>
                     <th>ToDoList</th>
                 </tr>
                 </tfoot>
@@ -65,8 +67,8 @@ $rep = $bdd->query('SELECT * FROM patient');
                     $libchambre = $reqchambre->fetch();
                     echo '<td>'.$libchambre['numero'].'</td>';
 
-                    echo '<td>'.'<a href="index.php?page=patient&id='.$donnees['id_patient'].'" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-user"></span> Fiche patient</a>'
-                    .'<a style="margin-left: 15px;" href="index.php?page=infomedicale&id='.$donnees['id_patient'].'" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-user"></span> Informations médicales</a>'.'</td>';
+                    echo '<td>'.'<a href="index.php?page=patient&id='.$donnees['id_patient'].'" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-user"></span> Fiche patient</a>'.'</td>';
+                    echo '<td>'.'<a href="index.php?page=infomedicale&id='.$donnees['id_patient'].'" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-user"></span> Informations médicales</a>'.'</td>';
                     echo '<td>'. '<a href="index.php?page=voirliste&id='.$donnees['id_patient'].'" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-user"></span>Voir Liste</a>'.'</td>';
                         //'<button type="button" id="" class="btn btn-primary" data-toggle="modal" data-target="#modalAdd">Ajouter</button>'.
                         //'<button type="button" value="<?php echo $donnees[\'idTache\']; //" class="btn btn-warning modalView" data-toggle="modal" data-target="#modalView">Voir liste</button>';
