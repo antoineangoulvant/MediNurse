@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54d426cc-4c4a-48bc-8683-f2ff73858824" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/add_events.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/get_events.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestion_patient/informationmedicale.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion_patient/lecture_patient.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_patient/lecture_patient.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_planning.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planning.php" beforeDir="false" afterPath="$PROJECT_DIR$/planning.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestion_patient/inscription_patient.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_patient/inscription_patient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestion_patient/liste_patients.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_patient/liste_patients.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,93 +32,92 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="u139724db1@e88487-mysql.services.easyname.eu" type="feb32156:DbDataSourceImpl" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="u139724db1@e88487-mysql.services.easyname.eu" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="u139724db1@e88487-mysql.services.easyname.eu" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="u139724db1: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="u139724db1@e88487-mysql.services.easyname.eu" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="u139724db1: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="comments: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="u139724db1@e88487-mysql.services.easyname.eu" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="u139724db1: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="typeAllergie: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="141" selection-start-line="141" selection-end-line="185" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LICENSE" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LICENSE">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="planning.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/planning.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="169" column="35" selection-start-line="169" selection-start-column="35" selection-end-line="169" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="12" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fullcalendar/demos/default.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="4" selection-start-line="4" selection-end-line="8" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add_events.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/add_events.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="get_events.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/get_events.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="29" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navbar.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="navbar.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/navbar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1666">
-              <caret line="98" column="54" selection-start-line="98" selection-start-column="54" selection-end-line="98" selection-end-column="54" />
+            <state relative-caret-position="506">
+              <caret line="238" column="22" lean-forward="true" selection-start-line="238" selection-start-column="22" selection-end-line="238" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login.php">
+      <file leaf-file-name="liste_patients.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestion_patient/liste_patients.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state relative-caret-position="289">
+              <caret line="53" column="48" lean-forward="true" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="head.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/head.php">
+      <file leaf-file-name="informationmedicale.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestion_patient/informationmedicale.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="10" selection-end-column="73" />
+            <state relative-caret-position="442">
+              <caret line="29" selection-start-line="29" selection-end-line="31" selection-end-column="125" />
+              <folding>
+                <element signature="n#div#0;n#div#1;n#div#0;n#!!top" />
+                <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#!!top" />
+                <element signature="n#form#0;n#div#1;n#div#1;n#div#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#!!top" />
+                <element signature="n#style#0;n#button#0;n#form#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#form#0;n#div#3;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#form#0;n#div#4;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lecture_patient.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestion_patient/lecture_patient.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1308">
+              <caret line="85" column="98" lean-forward="true" selection-start-line="85" selection-start-column="98" selection-end-line="85" selection-end-column="98" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="voirliste.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestion_patient/voirliste.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="128" />
+              <folding>
+                <element signature="e#3837#3844#1#HTML" expanded="true" />
+                <element signature="e#6516#6523#1#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -159,6 +155,8 @@
       <find>modal ti</find>
       <find>Form</find>
       <find>tache</find>
+      <find>antecedentHopitalNom</find>
+      <find>fa fa-fw fa-envelope</find>
     </findStrings>
     <replaceStrings>
       <replace>index.php</replace>
@@ -179,12 +177,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/deconnexion.php" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/tables.php" />
-        <option value="$PROJECT_DIR$/register.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/blank.php" />
         <option value="$PROJECT_DIR$/cards.php" />
         <option value="$PROJECT_DIR$/charts.php" />
         <option value="$PROJECT_DIR$/forgot-password.php" />
@@ -205,7 +198,6 @@
         <option value="$PROJECT_DIR$/inscription_patient.php" />
         <option value="$PROJECT_DIR$/gestion_utilisateur/inscription_utilisateur.php" />
         <option value="$PROJECT_DIR$/gestion_utilisateur/utilisateur.php" />
-        <option value="$PROJECT_DIR$/gestion_patient/inscription_patient.php" />
         <option value="$PROJECT_DIR$/gestion_patient/patient.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/58a5b635-0e73-443f-bbcc-ec67b9aeb49a/console.sql" />
         <option value="$PROJECT_DIR$/login.php" />
@@ -215,10 +207,8 @@
         <option value="$PROJECT_DIR$/gestion_patient/test.php" />
         <option value="$PROJECT_DIR$/gestion_utilisateur/liste_utilisateurs.php" />
         <option value="$PROJECT_DIR$/gestion_patient/ajoutertache.php" />
-        <option value="$PROJECT_DIR$/gestion_patient/liste_patients.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a656afcd-61bb-46ec-b282-60de99f0b377/console_1.sql" />
         <option value="$PROJECT_DIR$/accueil.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/test_planning.html" />
         <option value="$PROJECT_DIR$/add_events.php" />
         <option value="$PROJECT_DIR$/gestion_patient/voirliste.php" />
@@ -228,8 +218,16 @@
         <option value="$PROJECT_DIR$/get_events.php" />
         <option value="$PROJECT_DIR$/head.php" />
         <option value="$PROJECT_DIR$/test_planning.php" />
-        <option value="$PROJECT_DIR$/navbar.php" />
         <option value="$PROJECT_DIR$/planning.php" />
+        <option value="$PROJECT_DIR$/gestion_patient/liste_patients.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a656afcd-61bb-46ec-b282-60de99f0b377/console_2.sql" />
+        <option value="$PROJECT_DIR$/gestion_patient/inscription_patient.php" />
+        <option value="$PROJECT_DIR$/gestion_patient/informationmedicale.php" />
+        <option value="$PROJECT_DIR$/blank.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/comment_form.php" />
+        <option value="$PROJECT_DIR$/notification.php" />
+        <option value="$PROJECT_DIR$/navbar.php" />
       </list>
     </option>
   </component>
@@ -248,10 +246,10 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="x" value="146" />
+    <option name="y" value="-18" />
+    <option name="width" value="1918" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -278,34 +276,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="medinurse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="medinurse" type="462c0819:PsiDirectoryNode" />
+              <item name="MediNurse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MediNurse" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="medinurse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="medinurse" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="MediNurse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MediNurse" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="gestion_patient" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="medinurse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="medinurse" type="462c0819:PsiDirectoryNode" />
-              <item name="fullcalendar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="medinurse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="medinurse" type="462c0819:PsiDirectoryNode" />
-              <item name="fullcalendar" type="462c0819:PsiDirectoryNode" />
-              <item name="demos" type="462c0819:PsiDirectoryNode" />
+              <item name="MediNurse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MediNurse" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="gestion_utilisateur" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -325,6 +317,228 @@
       <recent name="C:\wamp64\www\medinurse\admin" />
       <recent name="C:\wamp64\www\medinurse" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/style.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/gestion_patient/lecture_patient.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/head.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/index.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/navbar.php</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/add_events.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/CHANGELOG.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/CONTRIBUTING.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/LICENSE.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/demos/agenda-views.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/demos/background-events.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/demos/basic-views.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/demos/default.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/demos/external-dragging.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/demos/gcal.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/demos/js/theme-chooser.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/demos/json.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/demos/json/events.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/demos/list-views.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/demos/locales.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/demos/php/get-events.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/demos/php/get-timezones.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/demos/php/utils.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/demos/selectable.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/demos/themes.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/demos/timezones.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/demos/week-numbers.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/fullcalendar.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/fullcalendar.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/fullcalendar.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/fullcalendar.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/fullcalendar.print.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/fullcalendar.print.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/gcal.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/gcal.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/lib/jquery-ui.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/lib/jquery.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/lib/moment.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale-all.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/af.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/ar-dz.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/ar-kw.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/ar-ly.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/ar-ma.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/ar-sa.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/ar-tn.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/ar.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/bg.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/bs.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/ca.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/cs.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/da.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/de-at.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/de-ch.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/de.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/el.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/en-au.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/en-ca.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/en-gb.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/en-ie.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/en-nz.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/es-do.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/es-us.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/es.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/et.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/eu.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/fa.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/fi.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/fr-ca.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/fr-ch.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/fr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/gl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/he.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/hi.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/hr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/hu.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/id.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/is.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/it.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/ja.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/ka.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/kk.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/ko.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/lb.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/lt.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/lv.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/mk.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/ms-my.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/ms.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/nb.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/nl-be.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/nl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/nn.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/pl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/pt-br.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/pt.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/ro.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/ru.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/sk.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/sl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/sq.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/sr-cyrl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/sr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/sv.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/th.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/tr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/uk.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/vi.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/zh-cn.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/fullcalendar/locale/zh-tw.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/get_events.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/planning.php</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -543,7 +757,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147876000" />
+    <option name="totallyTimeSpent" value="165950000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -558,51 +772,63 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="12" visible="true" weight="0.25236592" />
-      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.496875" weight="0.21451104" />
+      <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.503125" side_tool="true" weight="0.21451104" />
-      <window_info anchor="bottom" id="Database Changes" order="0" />
+      <window_info anchor="bottom" id="Database Changes" order="0" weight="0.3297414" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Run" order="8" />
       <window_info anchor="bottom" id="Terminal" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.13125" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.25323275" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.114072494" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="0" visible="true" weight="0.15208334" />
+      <window_info active="true" anchor="right" id="Database" order="0" visible="true" weight="0.195629" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.3286638" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="PHP-CGI Server" order="13" />
-      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="14" visible="true" weight="0.3286638" />
-    </layout>
-    <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1296875" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="13" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.13125" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="bottom" id="PHP-CGI Server" order="13" />
-      <window_info anchor="bottom" id="Run" order="8" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.32948583" />
-      <window_info anchor="right" id="Database" order="0" visible="true" weight="0.15260416" />
-      <window_info anchor="bottom" id="Terminal" order="4" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Database Changes" order="0" />
+      <window_info anchor="bottom" id="TODO" order="12" visible="true" weight="0.25236592" />
       <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.503125" side_tool="true" weight="0.21451104" />
-      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32912722" />
+      <window_info anchor="bottom" id="Run" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="0" />
+      <window_info anchor="right" id="Database" order="0" visible="true" weight="0.15208334" />
+      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.496875" weight="0.21451104" />
       <window_info anchor="bottom" id="Message" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="1" sideWeight="0.496875" visible="true" weight="0.21451104" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.503125" side_tool="true" weight="0.21451104" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Database Console" order="14" visible="true" weight="0.25323275" />
+      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="8" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.13125" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="12" visible="true" weight="0.25236592" />
+      <window_info anchor="bottom" id="Database Changes" order="0" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="13" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.3286638" />
+      <window_info anchor="right" id="Database" order="0" visible="true" weight="0.15208334" />
+      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.503125" side_tool="true" weight="0.21451104" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.496875" weight="0.21451104" />
       <window_info id="Favorites" order="0" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -643,8 +869,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa1528.47875/contact.php" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa1528.14460/contact.php" />
     <entry file="file://$PROJECT_DIR$/test.php" />
     <entry file="file://$PROJECT_DIR$/css/sb-admin.min.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -695,13 +919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blank.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="841">
-          <caret line="263" column="54" selection-start-line="263" selection-start-column="54" selection-end-line="263" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cards.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3542">
@@ -726,20 +943,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gestion_patient/action_list.php" />
     <entry file="file://$PROJECT_DIR$/gestion_patient/test.php" />
-    <entry file="file://$PROJECT_DIR$/gestion_utilisateur/utilisateur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2221">
-          <caret line="182" column="52" lean-forward="true" selection-start-line="182" selection-start-column="52" selection-end-line="182" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_utilisateur/liste_utilisateurs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gestion_patient/ajoutertache.php" />
     <entry file="file://$PROJECT_DIR$/gestion_utilisateur/inscription_utilisateur.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -748,35 +951,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_patient/inscription_patient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="28" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_patient/patient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3060">
-          <caret line="180" column="64" selection-start-line="180" selection-start-column="64" selection-end-line="180" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a656afcd-61bb-46ec-b282-60de99f0b377/console_1.sql" />
-    <entry file="file://$PROJECT_DIR$/accueil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quickstart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/quickstart.php" />
     <entry file="file://$PROJECT_DIR$/traitement_chambre.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -788,13 +964,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="18" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_patient/liste_patients.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -812,35 +981,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_patient/lecture_patient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="36" lean-forward="true" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_patient/voirliste.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="50" column="96" selection-start-line="50" selection-start-column="96" selection-end-line="50" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fullcalendar/demos/json.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="11" selection-start-line="11" selection-end-line="34" selection-end-column="5" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/planning.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -870,13 +1016,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="141" selection-start-line="141" selection-end-line="185" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -891,17 +1030,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/navbar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1666">
-          <caret line="98" column="54" selection-start-line="98" selection-start-column="54" selection-end-line="98" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/planning.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="169" column="35" selection-start-line="169" selection-start-column="35" selection-end-line="169" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_utilisateur/utilisateur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a656afcd-61bb-46ec-b282-60de99f0b377/console_2.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_patient/lecture_patient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1308">
+          <caret line="85" column="98" lean-forward="true" selection-start-line="85" selection-start-column="98" selection-end-line="85" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accueil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment_form.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2380">
+          <caret line="149" column="115" selection-start-line="149" selection-start-column="115" selection-end-line="149" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_patient/inscription_patient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1245">
+          <caret line="73" column="23" lean-forward="true" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_utilisateur/liste_utilisateurs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-361">
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_patient/voirliste.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="128" />
+          <folding>
+            <element signature="e#3837#3844#1#HTML" expanded="true" />
+            <element signature="e#6516#6523#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notification.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" selection-start-line="8" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_patient/patient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-595">
+          <caret line="7" selection-start-line="7" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blank.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-644">
+          <caret line="185" column="21" lean-forward="true" selection-start-line="185" selection-start-column="21" selection-end-line="185" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_patient/liste_patients.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="53" column="48" lean-forward="true" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_patient/informationmedicale.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="29" selection-start-line="29" selection-end-line="31" selection-end-column="125" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#div#0;n#!!top" />
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#!!top" />
+            <element signature="n#form#0;n#div#1;n#div#1;n#div#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#!!top" />
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#3;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#4;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="238" column="22" lean-forward="true" selection-start-line="238" selection-start-column="22" selection-end-line="238" selection-end-column="22" />
         </state>
       </provider>
     </entry>

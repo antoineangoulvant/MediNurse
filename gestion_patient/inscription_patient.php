@@ -62,7 +62,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $formulaire_valide = false;
     }
 
-    //Insertion dans la base
+    //Insertion dans la base pour les informations basiques
     if( $formulaire_valide ) {
         $req = $bdd->prepare('INSERT INTO patient(nom,prenom,genre,datenaissance,adresse1,adresse2,codepostal,ville,pays,teldom,teltrav,telport,mail,ins,service) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
         $req->execute(array($_POST['nom'], $_POST['prenom'], $_POST['genre'], $_POST['datenaissance'], $_POST['adresse'], $_POST['adressecomp'], $_POST['codepostal'], $_POST['ville'], $_POST['pays'], $_POST['teldom'], $_POST['teltrav'], $_POST['telport'], $_POST['mail'], $_POST['ins'], $_POST['service']));

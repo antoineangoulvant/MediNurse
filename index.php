@@ -133,6 +133,9 @@ catch (Exception $e)
                     case 'planning':
                         include 'planning.php';
                         break;
+                    case 'infomedicale':
+                        include 'gestion_patient/informationmedicale.php';
+                    break;
                     default:
                         include "accueil.php";
                 }
