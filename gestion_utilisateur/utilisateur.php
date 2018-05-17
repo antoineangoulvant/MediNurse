@@ -116,7 +116,7 @@
             </div>
             <div class="col-lg-4">
                 <label for="mdp">Mot de passe<span class="obligatoire">*</span> :</label>
-                <a href="#" class="btn btn-primary btn-danger center-block">Modification du mot de passe</a>
+                <button style="width: 100%;" type="button" class="btn btn-primary btn-danger" data-toggle="modal" data-target="#changemdp">Modification du mot de passe</button>
             </div>
         </div>
         <div class="row margininscription">
@@ -193,4 +193,35 @@
         <?php if($envoye) echo '<div class="alert alert-success">Modifications enregistrées !</div>'; ?>
         <button type="submit" class="btn btn-primary center-block" style="margin-bottom: 30px;">Enregistrer</button>
     </form>
+</div>
+
+<!-- MODAL MDP -->
+<div class="modal fade" id="changemdp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modification du mot de passe</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="gestion_utilisateur/traitement_mdp.php" id="altermdp">
+                    <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
+                    <div class="row margininscription">
+                        <div class="">
+                            <div class="form-group">
+                                <label for="newmdp">Nouveau mot de passe<span class="obligatoire">*</span> :</label>
+                                <input type="password" class="form-control" id="newmdp" placeholder="Saisissez le mot de passe" name="newmdp">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                <button type="submit" name="submit" class="btn btn-danger submit">Confirmer</button>
+            </div>
+            </form>
+        </div>
+    </div>
 </div>

@@ -38,7 +38,7 @@
                 header('Location: index.php');
             }
             else {
-                echo 'Mauvais identifiant ou mot de passe !';
+                $erreur = 'Mauvais identifiant ou mot de passe !';
             }
         }
         else{

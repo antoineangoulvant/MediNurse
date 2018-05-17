@@ -115,8 +115,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <?php if(isset($erreur['mail'])) echo '<div class="alert alert-danger">'.$erreur['mail'].'</div>'; ?>
             </div>
             <div class="col-lg-4">
-                <label for="mdp">Mot de passe<span class="obligatoire">*</span> :</label>
-                <a href="#" class="btn btn-primary btn-danger center-block">Modification du mot de passe</a>
+                <label for="ins">Identifiant National de Santé :<span class="obligatoire">*</span> :</label>
+                <input type="text" class="form-control" id="ins" value="<?php echo $resultat['ins']; ?>" name="ins">
+                <?php if(isset($erreur['ins'])) echo '<div class="alert alert-danger">'.$erreur['ins'].'</div>'; ?>
             </div>
         </div>
         <div class="row margininscription">

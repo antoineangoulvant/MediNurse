@@ -2,11 +2,286 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd248376-680a-4d66-87d5-d1b3ee7c18fb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/gestion_patient/saisieclinique.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestion_utilisateur/traitement_mdp.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion_patient/informationmedicale.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_patient/informationmedicale.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestion_patient/patient.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_patient/patient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestion_patient/voirliste.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_patient/voirliste.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestion_utilisateur/utilisateur.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_utilisateur/utilisateur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/AJAX/ajax_calcNbJours.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/AJAX/ajax_charger_anciennes_publications.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/AJAX/ajax_deconseiller_publication.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/AJAX/ajax_recommander_publication.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/AJAX/ajax_supprimer_publication.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/AJAX/ajax_valid_multi_conges.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/AJAX/changer_disponibilite_inventaire.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/AuthenticationException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/Autoload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/Client.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/CookieJar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/Exception.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/GracefullTerminationException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/InvalidArgumentException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/Languages/Catalan.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/Languages/English.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/Languages/French.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/Languages/German.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/Languages/Greek.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/Languages/Japanese.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/Languages/LanguageInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/Languages/Spanish.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/OutOfSequenceException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/PGTStorage/AbstractStorage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/PGTStorage/Db.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/PGTStorage/File.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/ProxiedService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/ProxiedService/Abstract.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/ProxiedService/Exception.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/ProxiedService/Http.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/ProxiedService/Http/Abstract.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/ProxiedService/Http/Get.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/ProxiedService/Http/Post.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/ProxiedService/Imap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/ProxiedService/Testable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/ProxyChain.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/ProxyChain/AllowedList.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/ProxyChain/Any.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/ProxyChain/Interface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/ProxyChain/Trusted.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/ProxyTicketException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/Request/AbstractRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/Request/CurlMultiRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/Request/CurlRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/Request/Exception.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/Request/MultiRequestInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/CAS/Request/RequestInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/NOTICE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/Building" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/ChangeLog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/Upgrading" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/examples/config.example.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/examples/create_pgt_storage_db_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/examples/example.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/examples/example_advanced_saml11.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/examples/example_custom_urls.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/examples/example_gateway.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/examples/example_html.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/examples/example_lang.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/examples/example_logout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/examples/example_pgt_storage_db.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/examples/example_pgt_storage_file.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/examples/example_proxy_GET.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/examples/example_proxy_POST.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/examples/example_proxy_rebroadcast.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/examples/example_proxy_serviceWeb.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/examples/example_proxy_serviceWeb_chaining.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/examples/example_service.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/examples/example_service_POST.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/examples/example_service_that_proxies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/examples/example_simple.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/examples/script_info.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/images/esup-portail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/images/jasig.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/images/phpcas.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/identification.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/CAS/package.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/INSTALL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/absences_globales_imprimable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/absences_imprimable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/administration.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/administration_imprimable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/calendrier_absences.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/calendrier_conges.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/calendrier_imprimable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/calendrier_missions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/calendrier_variables.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/community.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/community_files/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/community_files/photos_utilisateurs/galpier_cyril.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/config_manuelle.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/etape1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/etape2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/etape3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/etape4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/finConfig.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/images/aide.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/images/apache.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/images/attention.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/images/background_noscript.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/images/btn_plus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/images/check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/images/chrome.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/images/croix.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/images/firefox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/images/fleche.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/images/fond.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/images/ie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/images/js.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/images/mysql.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/images/opera.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/images/php.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/images/phpmylab.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/images/puce.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/images/safari.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/script.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/configuration/style_config.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/conges.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/en_tete.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/expeditions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/aide.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/ajouter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/arrow-down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/authentification.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/bandeau_-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/bandeau_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/bandeau_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/bandeau_nouvelle_demande.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/btn_moins.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/btn_plus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/cle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/close_pop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/croix_rouge.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/deconseil.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/degrade_haut_module.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/enregistrer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/fleche_up_cmty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/fleche_verte.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/icone_img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/icone_video.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/imprimer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/logout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/logout2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/loupe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/no_photo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/point_rouge.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/point_vert.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/poubelle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/recommandation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/refresh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/share.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/trombone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/images/undo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/inventaire.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/inventaire/inventaire_partage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/inventaire/inventaire_partage_ficheById.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/inventaire/inventaire_set_dispo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/inventaire/inventaire_set_partage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/inventaire/inventaire_unset_partage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/inventaire/inventaire_update_partage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/inventaire_pictures/49DHh7qLJy1AXi1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/javascript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/css/ui-lightness/images/calendar-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/css/ui-lightness/images/ui-bg_diagonals-thick_18_b81900_40x40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/css/ui-lightness/images/ui-bg_diagonals-thick_20_666666_40x40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/css/ui-lightness/images/ui-bg_flat_10_000000_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/css/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/css/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/css/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/css/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/css/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/css/ui-lightness/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/css/ui-lightness/images/ui-icons_222222_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/css/ui-lightness/images/ui-icons_228ef1_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/css/ui-lightness/images/ui-icons_ef8c08_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/css/ui-lightness/images/ui-icons_ffd27a_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/css/ui-lightness/images/ui-icons_ffffff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/css/ui-lightness/jquery-ui-1.8.18.custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/add_event_ref.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/add_events.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/add_group.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/add_mois_type.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/add_semaine_type.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/add_user.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/admin_rights.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/calendar_custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/calendar_imprimable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/commun_function.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/delete_event.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/delete_event_ref.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/events.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/events_ref.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/fullcalendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/fullcalendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/fullcalendar.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/fullcalendar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/fullcalendar.print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/gcal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/get_autorisations.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/get_etudiants_tuteur.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/jours_feries_events.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/lang-all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/license.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/notification_mail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/session.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/set_etudiants_tuteur.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/update_calendar_name.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/update_event_ref.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/fullcalendar/update_events.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/external/jquery/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/images/ui-bg_diagonals-thick_18_b81900_40x40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/images/ui-bg_diagonals-thick_20_666666_40x40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/images/ui-bg_flat_10_000000_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/images/ui-bg_glass_100_f6f6f6_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/images/ui-bg_glass_100_fdf5ce_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/images/ui-bg_glass_65_ffffff_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/images/ui-bg_gloss-wave_35_f6a828_500x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/images/ui-icons_222222_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/images/ui-icons_228ef1_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/images/ui-icons_ef8c08_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/images/ui-icons_ffd27a_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/images/ui-icons_ffffff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/jquery-ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/jquery-ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/jquery-ui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/jquery-ui.structure.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/jquery-ui.structure.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/jquery-ui.theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/jquery-ui.theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/jquery.elastic.source.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/jquery.simplecolorpicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/jquery.simplecolorpicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/moment.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/1.11.2/semaine_type.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/cupertino/images/animated-overlay.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/cupertino/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/cupertino/images/ui-bg_flat_15_cd0a0a_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/cupertino/images/ui-bg_glass_100_e4f1fb_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/cupertino/images/ui-bg_glass_50_3baae3_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/cupertino/images/ui-bg_glass_80_d7ebf9_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/cupertino/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/cupertino/images/ui-bg_highlight-hard_70_000000_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/cupertino/images/ui-bg_highlight-soft_100_deedf7_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/cupertino/images/ui-bg_highlight-soft_25_ffef8f_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/cupertino/images/ui-icons_2694e8_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/cupertino/images/ui-icons_2e83ff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/cupertino/images/ui-icons_3d80b3_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/cupertino/images/ui-icons_72a7cf_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/cupertino/images/ui-icons_ffffff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/jquery-ui/js/cupertino/jquery-ui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/mdp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/missions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/phpmylab.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/pied_page.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/planning.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/planning_fullcalendar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/planning_global.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/reception.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/securitecode.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpmylab_db/style.css" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,91 +317,16 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="u139724db1: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="u139724db1@e88487-mysql.services.easyname.eu" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="u139724db1: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="rythmeC: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="u139724db1@e88487-mysql.services.easyname.eu" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="u139724db1: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="temperature: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="u139724db1@e88487-mysql.services.easyname.eu" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="u139724db1: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="tension: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="navbar.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/navbar.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="informationmedicale.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gestion_patient/informationmedicale.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="389" column="21" lean-forward="true" selection-start-line="389" selection-start-column="21" selection-end-line="389" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="liste_patients.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gestion_patient/liste_patients.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="24" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="804">
-              <caret line="148" column="69" lean-forward="true" selection-start-line="148" selection-start-column="69" selection-end-line="148" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dossiermedicale.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gestion_patient/dossiermedicale.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="console_2.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a656afcd-61bb-46ec-b282-60de99f0b377/console_2.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="39" selection-start-column="39" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getuser.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/getuser.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
-              <caret line="81" column="58" selection-start-line="81" selection-start-column="58" selection-end-line="81" selection-end-column="58" />
+            <state relative-caret-position="-612">
+              <caret line="86" column="64" selection-start-line="86" selection-start-column="64" selection-end-line="86" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -134,8 +334,38 @@
       <file leaf-file-name="voirliste.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gestion_patient/voirliste.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1207">
-              <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+            <state relative-caret-position="561">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utilisateur.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestion_utilisateur/utilisateur.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="14" selection-end-column="5" />
+              <folding>
+                <element signature="n#style#0;n#button#0;n#div#1;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="traitement_mdp.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gestion_utilisateur/traitement_mdp.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inscription_utilisateur.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestion_utilisateur/inscription_utilisateur.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="68" column="12" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -143,11 +373,44 @@
       <file leaf-file-name="lecture_patient.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gestion_patient/lecture_patient.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="42" column="34" lean-forward="true" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
-              <folding>
-                <element signature="n#style#0;n#button#0;n#form#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="-85">
+              <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="liste_patients.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestion_patient/liste_patients.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="563">
+              <caret line="72" column="130" selection-start-line="72" selection-start-column="123" selection-end-line="72" selection-end-column="130" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dossiermedicale.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestion_patient/dossiermedicale.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="patient.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestion_patient/patient.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="413">
+              <caret line="118" column="100" selection-start-line="118" selection-start-column="100" selection-end-line="118" selection-end-column="100" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inscription_patient.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestion_patient/inscription_patient.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="447">
+              <caret line="117" column="104" selection-start-line="117" selection-start-column="104" selection-end-line="117" selection-end-column="104" />
             </state>
           </provider>
         </entry>
@@ -164,8 +427,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>logout</find>
       <find>index.html</find>
-      <find>start bo</find>
+      <find />
       <find>html</find>
       <find>cop</find>
       <find>sear</find>
@@ -181,19 +445,18 @@
       <find>lecture</find>
       <find>fetch</find>
       <find>modalView</find>
-      <find>modal ti</find>
+      <find />
       <find>Form</find>
       <find>tache</find>
       <find>antecedentHopitalNom</find>
-      <find>fa fa-fw fa-envelope</find>
+      <find />
       <find>comment_form</find>
-      <find>nom Doc</find>
+      <find />
       <find>submitAnteHopi</find>
-      <find>ajouter</find>
       <find>hidden</find>
       <find>supprimer</find>
-      <find>$rep</find>
-      <find>nom ho</find>
+      <find>ajouter</find>
+      <find />
     </findStrings>
     <replaceStrings>
       <replace>index.php</replace>
@@ -226,8 +489,6 @@
         <option value="$PROJECT_DIR$/utilisateur.php" />
         <option value="$PROJECT_DIR$/inscription_patient.php" />
         <option value="$PROJECT_DIR$/gestion_utilisateur/inscription_utilisateur.php" />
-        <option value="$PROJECT_DIR$/gestion_utilisateur/utilisateur.php" />
-        <option value="$PROJECT_DIR$/gestion_patient/patient.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/58a5b635-0e73-443f-bbcc-ec67b9aeb49a/console.sql" />
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a656afcd-61bb-46ec-b282-60de99f0b377/console.sql" />
@@ -252,19 +513,21 @@
         <option value="$PROJECT_DIR$/fetch.php" />
         <option value="$PROJECT_DIR$/insert.php" />
         <option value="$PROJECT_DIR$/gestion_patient/liste_patients.php" />
+        <option value="$PROJECT_DIR$/navbar.php" />
+        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/accueil.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a656afcd-61bb-46ec-b282-60de99f0b377/console_3.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a656afcd-61bb-46ec-b282-60de99f0b377/console_4.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a656afcd-61bb-46ec-b282-60de99f0b377/console_5.sql" />
         <option value="$PROJECT_DIR$/gestion_patient/dossiermedicale.php" />
         <option value="$PROJECT_DIR$/getuser.php" />
-        <option value="$PROJECT_DIR$/gestion_patient/voirliste.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/gestion_patient/saisieclinique.php" />
-        <option value="$PROJECT_DIR$/navbar.php" />
         <option value="$PROJECT_DIR$/gestion_patient/lecture_patient.php" />
-        <option value="$PROJECT_DIR$/gestion_patient/informationmedicale.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a656afcd-61bb-46ec-b282-60de99f0b377/console_2.sql" />
+        <option value="$PROJECT_DIR$/gestion_patient/informationmedicale.php" />
+        <option value="$PROJECT_DIR$/gestion_patient/patient.php" />
+        <option value="$PROJECT_DIR$/gestion_patient/voirliste.php" />
+        <option value="$PROJECT_DIR$/gestion_utilisateur/utilisateur.php" />
+        <option value="$PROJECT_DIR$/gestion_utilisateur/traitement_mdp.php" />
       </list>
     </option>
   </component>
@@ -283,8 +546,8 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="224" />
+    <option name="y" value="-20" />
     <option name="width" value="1918" />
     <option name="height" value="1048" />
   </component>
@@ -313,28 +576,33 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="MediNurse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediNurse" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="medinurse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medinurse" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MediNurse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediNurse" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="gestion_patient" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="medinurse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medinurse" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MediNurse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediNurse" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="gestion_utilisateur" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="medinurse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medinurse" type="462c0819:PsiDirectoryNode" />
+              <item name="gestion_patient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="medinurse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medinurse" type="462c0819:PsiDirectoryNode" />
+              <item name="gestion_utilisateur" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -402,8 +670,7 @@
       <workItem from="1526474231291" duration="14825000" />
       <workItem from="1526515909245" duration="1904000" />
       <workItem from="1526564014517" duration="2758000" />
-      <workItem from="1526571437750" duration="599000" />
-      <workItem from="1526596638633" duration="3756000" />
+      <workItem from="1526571437750" duration="483000" />
     </task>
     <task id="LOCAL-00001" summary="Création des fichiers">
       <created>1519217355877</created>
@@ -594,18 +861,11 @@
       <option name="project" value="LOCAL" />
       <updated>1526565081524</updated>
     </task>
-    <task id="LOCAL-00028" summary="Correction bug affeectation LIT">
-      <created>1526571942995</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1526571942995</updated>
-    </task>
-    <option name="localTasksCounter" value="29" />
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191661000" />
+    <option name="totallyTimeSpent" value="190883000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -620,53 +880,41 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.119791664" />
       <window_info anchor="bottom" id="TODO" order="12" weight="0.25215518" />
+      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.503125" side_tool="true" weight="0.21451104" />
+      <window_info anchor="right" id="Database" order="0" visible="true" weight="0.22604166" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
-      <window_info anchor="bottom" id="Run" order="8" />
       <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Run" order="8" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="13" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.122068234" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="12" weight="0.25215518" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Run" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="0" />
+      <window_info anchor="right" id="Database" order="0" visible="true" weight="0.22654584" />
+      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.496875" weight="0.21451104" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.503125" side_tool="true" weight="0.21451104" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info active="true" anchor="bottom" id="Database Console" order="14" visible="true" weight="0.25431034" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.12313433" />
-      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="0" visible="true" weight="0.14765458" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="PHP-CGI Server" order="13" />
-      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.496875" weight="0.21451104" />
-      <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.3286638" />
-    </layout>
-    <layout-to-restore>
-      <window_info anchor="bottom" id="Database Console" order="14" visible="true" weight="0.25323275" />
-      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="8" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.13125" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" order="0" />
-      <window_info anchor="bottom" id="PHP-CGI Server" order="13" />
-      <window_info anchor="bottom" id="TODO" order="12" visible="true" weight="0.25236592" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.3286638" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
-      <window_info anchor="right" id="Database" order="0" visible="true" weight="0.15208334" />
       <window_info anchor="bottom" id="Terminal" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.503125" side_tool="true" weight="0.21451104" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.496875" weight="0.21451104" />
       <window_info id="Favorites" order="0" side_tool="true" />
-    </layout-to-restore>
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -675,6 +923,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Création des fichiers" />
     <MESSAGE value="Conversion en PHP" />
     <MESSAGE value="Mise en place de la connexion avec un identifiant" />
     <MESSAGE value="Conversion de tous les fichiers en php" />
@@ -699,8 +948,7 @@
     <MESSAGE value="Saisie des informations médicales" />
     <MESSAGE value="Refactor LIT" />
     <MESSAGE value="Correction bug mineur" />
-    <MESSAGE value="Correction bug affeectation LIT" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correction bug affeectation LIT" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction bug mineur" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -759,13 +1007,6 @@
     <entry file="file://$PROJECT_DIR$/gestion_patient/action_list.php" />
     <entry file="file://$PROJECT_DIR$/gestion_patient/test.php" />
     <entry file="file://$PROJECT_DIR$/gestion_patient/ajoutertache.php" />
-    <entry file="file://$PROJECT_DIR$/gestion_utilisateur/inscription_utilisateur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="52" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a656afcd-61bb-46ec-b282-60de99f0b377/console_1.sql" />
     <entry file="file://$PROJECT_DIR$/quickstart.php" />
     <entry file="file://$PROJECT_DIR$/traitement_chambre.php">
@@ -841,28 +1082,14 @@
     <entry file="file://$PROJECT_DIR$/head.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="10" selection-end-column="73" />
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="10" selection-end-column="73" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/planning.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="169" column="35" selection-start-line="169" selection-start-column="35" selection-end-line="169" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_utilisateur/utilisateur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="44" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_patient/inscription_patient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1245">
-          <caret line="73" column="23" lean-forward="true" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
+        <state relative-caret-position="918">
+          <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -870,13 +1097,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-361">
           <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_patient/patient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-595">
-          <caret line="7" selection-start-line="7" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -889,34 +1109,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fetch.php" />
     <entry file="file://$PROJECT_DIR$/insert.php" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a656afcd-61bb-46ec-b282-60de99f0b377/console_3.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="44" selection-start-column="44" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a656afcd-61bb-46ec-b282-60de99f0b377/console_4.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a656afcd-61bb-46ec-b282-60de99f0b377/console_3.sql" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a656afcd-61bb-46ec-b282-60de99f0b377/console_4.sql" />
     <entry file="file://$PROJECT_DIR$/accueil.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="56" lean-forward="true" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
+        <state relative-caret-position="850">
+          <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a656afcd-61bb-46ec-b282-60de99f0b377/console_5.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a656afcd-61bb-46ec-b282-60de99f0b377/console_5.sql" />
     <entry file="file://$PROJECT_DIR$/getuser.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1377">
@@ -924,69 +1126,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_patient/voirliste.php">
+    <entry file="file://$PROJECT_DIR$/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+        <state relative-caret-position="1479">
+          <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a656afcd-61bb-46ec-b282-60de99f0b377/console_2.sql" />
+    <entry file="file://$PROJECT_DIR$/gestion_patient/informationmedicale.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="804">
-          <caret line="148" column="69" lean-forward="true" selection-start-line="148" selection-start-column="69" selection-end-line="148" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_patient/saisieclinique.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_patient/lecture_patient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="42" column="34" lean-forward="true" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#form#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/navbar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+        <state relative-caret-position="-612">
+          <caret line="86" column="64" selection-start-line="86" selection-start-column="64" selection-end-line="86" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gestion_patient/liste_patients.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="24" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a656afcd-61bb-46ec-b282-60de99f0b377/console_2.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="39" selection-start-column="39" selection-end-column="39" />
+        <state relative-caret-position="563">
+          <caret line="72" column="130" selection-start-line="72" selection-start-column="123" selection-end-line="72" selection-end-column="130" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gestion_patient/dossiermedicale.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+        <state relative-caret-position="274">
+          <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_patient/informationmedicale.php">
+    <entry file="file://$PROJECT_DIR$/gestion_patient/patient.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="389" column="21" lean-forward="true" selection-start-line="389" selection-start-column="21" selection-end-line="389" selection-end-column="21" />
+        <state relative-caret-position="413">
+          <caret line="118" column="100" selection-start-line="118" selection-start-column="100" selection-end-line="118" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_patient/inscription_patient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="117" column="104" selection-start-line="117" selection-start-column="104" selection-end-line="117" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_patient/lecture_patient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_utilisateur/inscription_utilisateur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="68" column="12" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_patient/voirliste.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_utilisateur/utilisateur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#div#1;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_utilisateur/traitement_mdp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
         </state>
       </provider>
     </entry>
