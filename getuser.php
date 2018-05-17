@@ -22,6 +22,9 @@ $resTr = $bdd->query("SELECT * FROM traitement, medicament WHERE traitement.idMe
 $repAllergie = $bdd->query("SELECT * FROM typeAllergie, allergie WHERE allergie.idAllergie = typeAllergie.idTypeA HAVING allergie.idPatient = $q");
 $repAnte = $bdd->query("SELECT * FROM acte_antecedent WHERE idPatient=$q");
 
+$reqchambre = $bdd->query("Select * from chambre, lit,service Where chambre.numero=lit.numero_chambre having id_patient=$q AND service.id_service=chambre.id_service;");
+
+
 ?>
 
 <div class="container">
@@ -42,6 +45,7 @@ $repAnte = $bdd->query("SELECT * FROM acte_antecedent WHERE idPatient=$q");
                 </tr>
                 </thead>
         </div>
+    </div>
             <tbody>
             <?php
             while ($donnees = $rep->fetch()){
@@ -58,9 +62,33 @@ $repAnte = $bdd->query("SELECT * FROM acte_antecedent WHERE idPatient=$q");
             ?>
             </tbody>
         </table>
+</div>
+        <div class="col-12 .col-md-8">
+            <h4>Information du patient</h4>
+            <table class="table col-6">
+                <thead>
+                <tr>
+                    <th>Chambre</th>
+                    <th>Lit</th>
+                    <th>Service</th>
+                </tr>
+                </thead>
+        </div>
+        <tbody>
+        <?php
+            while ($libchambre = $reqchambre->fetch()){
+                echo '<tr>';
+                echo '<td>'.$libchambre['numero'].'</td>';
+                echo '<td>'.$libchambre['id_lit'].'</td>';
+                echo '<td>'.$libchambre['libelle'].'</td>';
+            }
+            ?>
+        </tbody>
+        </table>
+</div>
         <br>
-        <div class="row">
-            <div class=" col-md-8">
+        <div class="">
+            <div class=" col-md-12">
                 <h4>Acte réalisé</h4>
                 <table class="table">
                     <thead>
@@ -70,7 +98,6 @@ $repAnte = $bdd->query("SELECT * FROM acte_antecedent WHERE idPatient=$q");
                         <th>Acte</th>
                         <th>Commentaire</th>
                         <th>Date</th>
-                        <th>Lit</th>
                     </tr>
                     </thead>
             </div>
@@ -83,13 +110,12 @@ $repAnte = $bdd->query("SELECT * FROM acte_antecedent WHERE idPatient=$q");
                 echo '<td>'.$donneesAc['nomActe'].'</td>';
                 echo '<td>'.$donneesAc['commentaire'].'</td>';
                 echo '<td>'.$donneesAc['date'].'</td>';
-                echo '<td>'.$donneesAc['idLit'].'</td>';
             }
             ?>
             </tbody>
             </table>
         </div>
-        <div class=" col-md-4">
+        <div class=" col-md-12">
             <h4>Traitement</h4>
             <table class="table">
                 <thead>
@@ -115,7 +141,7 @@ $repAnte = $bdd->query("SELECT * FROM acte_antecedent WHERE idPatient=$q");
         </table>
     </div>
             <br>
-            <div class="col-12 .col-md-8">
+<div class=" col-md-12">
                 <h4>Allergie</h4>
                 <table class="table col-6">
                     <thead>

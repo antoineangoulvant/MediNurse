@@ -44,7 +44,7 @@ if (isset($_POST['edit'])){
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="text-center">Patient n°<?php echo $resultat['idPatient']; ?></h1>
+            <h1 class="text-center">Patient n°<?php echo $_GET['id']; ?></h1>
         </div>
     </div>
     <h2 method="post" action="index.php?page=voirliste&id=<?php echo $_GET['id']; ?>" </h2>
@@ -100,7 +100,7 @@ if (isset($_POST['edit'])){
                             </div>
                             <div class="modal-body">
                                 <form method="post" action="" id="addtask">
-                                    <input type="hidden" name="id" value="<?php echo $idPat; ?>">
+                                    <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
                                     <div class="row margininscription">
                                         <div class="">
                                             <div class="form-group">
