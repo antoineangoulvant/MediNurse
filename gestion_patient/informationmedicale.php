@@ -70,14 +70,14 @@ if (isset($_POST['submitAllergie'])){
         <div class="tab-pane fade show active" id="nav-lit" role="tabpanel" aria-labelledby="nav-profile-tab">
             <br>
             <h3 class="text-center"> Affectation d'un lit</h3>
-            <form>
+            <form method="post" action="index.php?page=infomedicale&id=<?php echo $_GET['id']; ?>">
                 <div class="row margininscription">
                     <div class="col-lg-12">
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <label class="input-group-text" for="inputGroupSelect01">Affectation lit</label>
                             </div>
-                            <select class="custom-select" name="affectationLit"id="inputGroupSelect01">
+                            <select class="custom-select" name="affectationLit" id="inputGroupSelect01">
                                 <?php
                                 $rep= $bdd->query("SELECT * FROM lit WHERE id_patient IS NULL ");
                                 while ($donnees = $rep->fetch()){ ?>
