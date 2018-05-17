@@ -80,11 +80,10 @@ if (isset($_POST['edit'])){
                 echo '<td>' . $donnees['idTache'];
                 echo '<td>' . $donnees['nom'];
                 echo '<td>' . $donnees['commentaire']; ?>
-                <td
-                ><form method="post" action="">
+                <td>
+                    <form method="post" action="">
                         <input type="hidden" name="id" value="<?php echo $donnees['idTache']; ?>">
                         <button type="delete" name="delete" class="btn btn-danger delete">Done</button>
-                    <form
                         <input type="hidden" name="idTache" value="<?php echo $donnees['idTache']; ?>">
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit">Edit</button>
                     </form>
@@ -119,7 +118,7 @@ if (isset($_POST['edit'])){
                                     </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                                 <button type="submit" name="submit" class="btn btn-danger submit">Ajouter</button>
                             </div>
                             </form>
@@ -155,7 +154,7 @@ if (isset($_POST['edit'])){
                                     </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                                 <button type="edit" name="edit" class="btn btn-danger edit">Edit</button>
                             </div>
                             </form>
