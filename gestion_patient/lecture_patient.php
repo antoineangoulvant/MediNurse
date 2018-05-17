@@ -22,9 +22,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 if (isset($_POST['delete'])) {
     try {
+        $_SESSION['id'] = $_POST['idpatient'];
+        $idPat = $_SESSION['id'];
         $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $id = $_POST["id"];
-        $sql = "Delete from liste Where idTache=$id";
+        $sql = "UPDATE liste SET statut  =1 WHERE idTache=$id";
         $bdd->exec($sql);
 
     } catch (PDOException $e) {
@@ -75,17 +77,17 @@ if (isset($_POST['delete'])) {
                 <?php
                 if (isset($_POST['idpatient'])){
                 $idPat = $_POST['idpatient'];
-                $rep = $bdd->query("SELECT * FROM liste Where idPatient=$idPat");
+                $rep = $bdd->query("SELECT * FROM liste Where idPatient=$idPat HAVING statut=0");
                 while ($donnees = $rep->fetch()) {
                     echo '<tr>';
                     echo '<td>' . $donnees['idTache'];
                     echo '<td>' . $donnees['nom'];
-                    echo '<td>' . $donnees['commentaire'];
-                    echo '<td>' . $donnees['statut']; ?>
-                    <form method="post" action="">
+                    echo '<td>' . $donnees['commentaire']; ?>
+                    <td> <form method="post" action="">
+                        <input type="hidden" name="idpatient" value="<?php echo $_POST['idpatient']; ?>">
                         <input type="hidden" name="id" value="<?php echo $donnees['idTache']; ?>">
-                        <button name="delete" class="btn btn-danger delete">Supprimer</button>
-                    </form>
+                        <button name="delete" class="btn btn-danger delete">Done</button>
+                    </form> </td>
                     <?php
                 }
                 $rep->closeCursor();

@@ -17,7 +17,7 @@ if (isset($_POST['delete'])) {
     try {
         $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $id = $_POST["id"];
-        $sql = "Delete from liste Where idTache=$id";
+        $sql = "UPDATE liste SET statut  =1 WHERE idTache=$id";
         $bdd->exec($sql);
 
     } catch (PDOException $e) {
@@ -79,15 +79,16 @@ if (isset($_POST['edit'])){
                 echo '<tr>';
                 echo '<td>' . $donnees['idTache'];
                 echo '<td>' . $donnees['nom'];
-                echo '<td>' . $donnees['commentaire'];
-                echo '<td>' . $donnees['statut']; ?>
-                <form method="post" action="">
-                    <input type="hidden" name="id" value="<?php echo $donnees['idTache']; ?>">
-                    <button type="delete" name="delete" class="btn btn-danger delete">Supprimer</button>
-                <form
-                    <input type="hidden" name="idTache" value="<?php echo $donnees['idTache']; ?>">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit">Edit</button>
-                </form>
+                echo '<td>' . $donnees['commentaire']; ?>
+                <td
+                ><form method="post" action="">
+                        <input type="hidden" name="id" value="<?php echo $donnees['idTache']; ?>">
+                        <button type="delete" name="delete" class="btn btn-danger delete">Done</button>
+                    <form
+                        <input type="hidden" name="idTache" value="<?php echo $donnees['idTache']; ?>">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit">Edit</button>
+                    </form>
+                </td>
                 <!-- MODAL AJOUTER TACHE -->
                 <div class="modal fade" id="ajouter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
