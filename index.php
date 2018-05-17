@@ -48,6 +48,9 @@
         case 'dossiermedical':
             $titre = 'Dossier Médical';
             break;
+        case 'saisieclinique':
+            $titre = 'Saisie clinique';
+            break;
         default:
             $titre = 'Accueil';
     }
@@ -141,6 +144,9 @@ catch (Exception $e)
                     break;
                     case 'dossiermedical':
                         include "gestion_patient/dossiermedicale.php";
+                        break;
+                    case 'saisieclinique':
+                        include "gestion_patient/saisieclinique.php";
                         break;
                     default:
                         include "accueil.php";

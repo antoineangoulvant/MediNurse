@@ -44,6 +44,14 @@
                 </a>
             </li>
 
+            <!-- Sasiei cliniquel
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dossier médical">
+                <a class="nav-link" href="index.php?page=saisieclinique">
+                    <i class="fa fa-fw fa-link"></i>
+                    <span class="nav-link-text">Saisie clinique</span>
+                </a>
+            </li>-->
+
             <!-- Lecture patient -->
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Lecture patient">
                 <a class="nav-link" href="index.php?page=lecturepatient">

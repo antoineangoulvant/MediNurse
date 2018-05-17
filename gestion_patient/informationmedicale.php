@@ -4,6 +4,9 @@ $envoyeActe= false;
 $envoyerLit= false;
 $envoyerTraitement = false;
 $envoyeAllergie = false;
+$envoyerRythme= false;
+$envoyertension= false;
+$envoyertemp= false;
 /**
  * Created by PhpStorm.
  * User: David
@@ -53,6 +56,30 @@ if (isset($_POST['submitAllergie'])){
     $resA->execute(array($_POST['idtraitement'], $_POST['graviteAllergie'],$id));
     $envoyeAllergie=true;
 }
+
+
+        if (isset($_POST['submitRythme'])){
+            $resRy = $bdd->prepare('INSERT INTO rythmeC(idPatient, valeur, date) VALUES (? , ?,?)');
+            $id = $_GET['id'];
+            $date= date("Y-m-d H:i:s");
+            $resRy->execute(array($id, $_POST['valRythme'],$date));
+            $envoyerRythme=true;
+        }
+if (isset($_POST['submitTemp'])){
+    $resTemp = $bdd->prepare('INSERT INTO temperature(idPatient, valeur, date) VALUES (? , ?,?)');
+    $id = $_GET['id'];
+    $date= date("Y-m-d H:i:s");
+    $resTemp->execute(array($id, $_POST['valTemp'],$date));
+    $envoyertemp=true;
+}
+if (isset($_POST['submitTens'])){
+    $restension = $bdd->prepare('INSERT INTO tension(idPatient, valeur, date) VALUES (? , ?,?)');
+    $id = $_GET['id'];
+    $date= date("Y-m-d H:i:s");
+    $restension->execute(array($id, $_POST['valTens'],$date));
+    $envoyertension=true;
+}
+
 ?>
 <div class="container">
     <div class="row">
@@ -63,6 +90,9 @@ if (isset($_POST['submitAllergie'])){
             <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-antecedentHospi" role="tab" aria-controls="nav-home" aria-selected="true">Antécédent hospitalier</a>
             <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-traitement" role="tab" aria-controls="nav-profile" aria-selected="false">Traitement</a>
             <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-allergie" role="tab" aria-controls="nav-contact" aria-selected="false">Allergie</a>
+            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-rythme" role="tab" aria-controls="nav-contact" aria-selected="false">Rythme cardiaque</a>
+            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-tension" role="tab" aria-controls="nav-contact" aria-selected="false">Tension</a>
+            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-temp" role="tab" aria-controls="nav-contact" aria-selected="false">Température</a>
         </div>
     </nav>
     </div>
@@ -278,6 +308,131 @@ if (isset($_POST['submitAllergie'])){
                 <button type="submit" name="submitAllergie" class="btn btn-primary center-block" style="margin-bottom: 30px;">Enregistrer</button>
             </form>
         </div>
-    </div>
-</div>
+
+
+        <div class="tab-pane fade" id="nav-rythme" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <br>
+            <h3 class="text-center">Saisie rythme</h3>
+            <form method="post" action="index.php?page=infomedicale&id=<?php echo $_GET['id']; ?>">
+                <div class="col-lg-12">
+                    <label for="valRythme">Rythme cardiaque du jour</label>
+                    <input type="text" class="form-control" id="valRythme"  placeholder="Rythme cardiaque du jour" name="valRythme">
+                </div>
+                <br>
+                <button type="submit" name="submitRythme" class="btn btn-primary center-block" style="margin-bottom: 30px;">Enregistrer</button>
+                <?php if($envoyerRythme) echo '<div class="alert alert-success">Information enregistré !</div>'; ?>
+            </form>
+            <br>
+            <h3>Historique</h3>
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                <tr>
+                    <th>Valeur Rythme cardiaque</th>
+                    <th>date</th>
+                </tr>
+                </thead>
+                <tfoot>
+                <tr>
+                    <th>Valeur rythme cardiaque</th>
+                    <th>date</th>
+                </tr>
+                </tfoot>
+                <tbody>
+                <?php
+                $id=$_GET['id'];
+                $repC = $bdd->query("SELECT * FROM rythmeC WHERE idPatient=$id ORDER BY date DESC");
+                    while ($test = $repC->fetch()) {
+                        echo '<tr>';
+                        echo '<td>' . $test['valeur'] . '</td>';
+                        echo '<td>' . $test['date'] . '</td>';
+                    }
+                    ?>
+                </tbody>
+            </table>
+        </div>
+
+
+            <div class="tab-pane fade" id="nav-tension" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <br>
+                <h3 class="text-center">Saisie tension</h3>
+                <form method="post" action="index.php?page=infomedicale&id=<?php echo $_GET['id']; ?>">
+                    <div class="col-lg-12">
+                        <label for="valTens">Saisie tension du jour</label>
+                        <input type="text" class="form-control" id="valTens"  placeholder="Saisie tension du jour" name="valTens">
+                    </div>
+                    <br>
+                    <button type="submit" name="submitTens" class="btn btn-primary center-block" style="margin-bottom: 30px;">Enregistrer</button>
+                    <?php if($envoyertension) echo '<div class="alert alert-success">Information enregistré !</div>'; ?>
+                </form>
+                <br>
+                <h3>Historique</h3>
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <th>Valeur Tension</th>
+                        <th>date</th>
+                    </tr>
+                    </thead>
+                    <tfoot>
+                    <tr>
+                        <th>Valeur Tension</th>
+                        <th>date</th>
+                    </tr>
+                    </tfoot>
+                    <tbody>
+                    <?php
+                    $id=$_GET['id'];
+                    $repC = $bdd->query("SELECT * FROM tension WHERE idPatient=$id ORDER BY date DESC");
+                    while ($test = $repC->fetch()) {
+                        echo '<tr>';
+                        echo '<td>' . $test['valeur'] . '</td>';
+                        echo '<td>' . $test['date'] . '</td>';
+                    }
+                    ?>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="tab-pane fade" id="nav-temp" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <br>
+                <h3 class="text-center">Saisie température</h3>
+                <form method="post" action="index.php?page=infomedicale&id=<?php echo $_GET['id']; ?>">
+                    <div class="col-lg-12">
+                        <label for="valTemp">Température du jour</label>
+                        <input type="text" class="form-control" id="valTemp"  placeholder="Saisie température" name="valTemp">
+                    </div>
+                    <br>
+                    <button type="submit" name="submitTemp" class="btn btn-primary center-block" style="margin-bottom: 30px;">Enregistrer</button>
+                    <?php if($envoyertemp) echo '<div class="alert alert-success">Information enregistré !</div>'; ?>
+                </form>
+                <br>
+                <h3>Historique</h3>
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <th>Valeur Tension</th>
+                        <th>date</th>
+                    </tr>
+                    </thead>
+                    <tfoot>
+                    <tr>
+                        <th>Valeur Tension</th>
+                        <th>date</th>
+                    </tr>
+                    </tfoot>
+                    <tbody>
+                    <?php
+                    $id=$_GET['id'];
+                    $repC = $bdd->query("SELECT * FROM temperature WHERE idPatient=$id ORDER BY date DESC");
+                    while ($test = $repC->fetch()) {
+                        echo '<tr>';
+                        echo '<td>' . $test['valeur'] . '</td>';
+                        echo '<td>' . $test['date'] . '</td>';
+                    }
+                    ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 </div>
